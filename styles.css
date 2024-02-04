@@ -6,4 +6,9 @@
     --clr-light: #f4f4f4; 
     --clr-white: white;
  }
+
+* {
+    box-sizing: border-box; /* Border-box model for fixed size */
+}
+  
  
