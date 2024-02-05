@@ -28,4 +28,8 @@
     display: none;
   }
 
-
+  .mobile-navbar{
+    display: flex;
+    justify-content: space-between;
+  
+  }
