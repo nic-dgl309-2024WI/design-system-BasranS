@@ -18,5 +18,14 @@
   .side-navbar-hidden ul li{
     list-style-type: none;
   }
+  
+  .mobile-nav__link{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .side-navbar-hidden {
+    display: none;
+  }
 
 
