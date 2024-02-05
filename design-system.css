@@ -33,3 +33,17 @@
     justify-content: space-between;
   
   }
+  
+
+  @media (min-width: 768px) {
+  
+  
+    .mobile-navbar {
+      display: none; 
+    }
+    .top-navbar{
+      display: flex;
+      flex-direction: column;
+    }
+
+}
