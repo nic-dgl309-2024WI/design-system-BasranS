@@ -1,60 +1,79 @@
+
+/* Mobile navbar*/
+
 .top-navbar{
     display: none;
   }
   
+  /* Style header */
   header{
     background-color: rgb(215, 213, 213);
     padding:10px;
   }
+
+  /* Style links in header */
   header ul li a{
     text-decoration: none;
     color: black;
   }
-  
+
+  /* Style list items in side navbar */
   .side-navbar ul li {
      list-style-type: none;
   }
   
+  /* Style list items in hidden side navbar */
   .side-navbar-hidden ul li{
     list-style-type: none;
   }
   
+  /* Style links in mobile navbar */
   .mobile-nav__link{
     text-decoration: none;
     color: black;
   }
   
+  /* Hide the side navbar for mobile */
   .side-navbar-hidden {
     display: none;
   }
 
+/* Style mobile navbar for mobile */
   .mobile-navbar{
     display: flex;
     justify-content: space-between;
   
   }
   
+  /* Desktop navbar */
 
   @media (min-width: 768px) {
   
-  
+  /* Hide the mobile navbar for desktop */
     .mobile-navbar {
       display: none; 
     }
+
+    /* Display the top navbar in column for desktop */
     .top-navbar{
       display: flex;
       flex-direction: column;
     }
-
+    
+    /* Display the side navbar in column for desktop */
     .side-navbar{
         display: flex;
         flex-direction: column;
         padding: 0;
         margin: auto;
        }
+
+          /* Hide the list items for mobile*/
        .side-nav__list{
         display: none;
       }
+
+        /* Style list items in the top navbar for desktop*/
       .top-list{
         list-style-type: none;
         display: flex;
@@ -62,11 +81,15 @@
         justify-content: flex-end;
     
       }
-
+       
+      
+    /* Style links in the top navbar for desktop */
       .top-nav__link{
         text-decoration: none;
          color: black;
        }
+
+         /* Adjust top navbar layout for desktop*/
        .top-navbar{
          display: flex;
          flex-direction: column;
