@@ -52,6 +52,16 @@
         padding: 0;
         margin: auto;
        }
+       .side-nav__list{
+        display: none;
+      }
+      .top-list{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    
+      }
 
 
 
