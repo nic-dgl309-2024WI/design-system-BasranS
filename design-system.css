@@ -63,6 +63,14 @@
     
       }
 
-
-
+      .top-nav__link{
+        text-decoration: none;
+         color: black;
+       }
+       .top-navbar{
+         display: flex;
+         flex-direction: column;
+         
+       }
+     
 }
