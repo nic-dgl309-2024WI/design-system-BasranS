@@ -1,10 +1,11 @@
 /* Color variables for the theme */
 :root {
-    --clr-primary: black;
-    --clr-secondary: #333; 
-    --clr-accent: #333; 
-    --clr-light: #f4f4f4; 
-    --clr-white: white;
+  --clr-primary-bg: #8F2466;
+  --clr-secondary-bg:#90C6C6;
+  --clr-primary-text: #FFEBED; 
+  --clr-secondary-text:#000;
+  --clr-accent:#f2c2d4 ; 
+  --clr-light: #f4f4f4; 
  }
 
 * {
