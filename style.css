@@ -35,6 +35,24 @@ ul, ol {
 
 /* Utility classes for colors */
 
-.bg-primary{
+.bg-primary, .bg-primary-info{
 background-color: #8F2466;
+color: #FFEBED;
   }
+
+.text-primary, .text-primary-info{
+  background-color: #FFEBED;
+}
+
+.bg-secondary, .bg-secondary-info{
+  background-color:#90C6C6;
+}
+
+.text-secondary, .text-secondary-info{
+  background-color:#90C6C6;
+  color: #000;
+}
+
+.accent-colour, .accent-colour-info{
+  background-color:#f2c2d4;
+}
