@@ -8,8 +8,10 @@
   --clr-light: #f4f4f4; 
  }
 
+ /* Border-box model for fixed size */
+
 * {
-    box-sizing: border-box; /* Border-box model for fixed size */
+    box-sizing: border-box; 
 }
   
 body,
@@ -25,6 +27,14 @@ picture {
     margin: 0; /* Reset margins for body, all headings, p, figure, picture */
   }
  
+
+  /* Remove padding from lists */  
 ul, ol {
-    padding: 0; /* Remove padding from lists */
+    padding: 0; 
+  }
+
+/* Utility classes for colors */
+
+.bg-primary{
+background-color: #8F2466;
   }

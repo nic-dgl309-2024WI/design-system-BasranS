@@ -4,17 +4,18 @@
 .top-navbar{
     display: none;
   }
-  
+
   /* Style header */
   header{
-    background-color: rgb(215, 213, 213);
     padding:10px;
+    background-color: var(--clr-primary-bg);
+    color: var(--clr-primary-text);
   }
 
   /* Style links in header */
   header ul li a{
     text-decoration: none;
-    color: black;
+    color: var(--clr-primary-text);
   }
 
   /* Style list items in side navbar */
@@ -30,7 +31,7 @@
   /* Style links in mobile navbar */
   .mobile-nav__link{
     text-decoration: none;
-    color: black;
+    color: var(--clr-primary-text);
   }
   
   /* Hide the side navbar for mobile */
@@ -42,7 +43,6 @@
   .mobile-navbar{
     display: flex;
     justify-content: space-between;
-  
   }
   
   /* Desktop navbar */
@@ -86,7 +86,7 @@
     /* Style links in the top navbar for desktop */
       .top-nav__link{
         text-decoration: none;
-         color: black;
+        color: var(--clr-primary-text);
        }
 
          /* Adjust top navbar layout for desktop*/
