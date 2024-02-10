@@ -1,7 +1,7 @@
 /* Color variables for the theme */
 :root {
   --clr-primary-bg: #8F2466;
-  --clr-secondary-bg:#90C6C6;
+  --clr-secondary-bg:#7BA7A7;
   --clr-primary-text: #FFEBED; 
   --clr-secondary-text:#000;
   --clr-accent:#f2c2d4 ; 
@@ -45,11 +45,11 @@ color: #FFEBED;
 }
 
 .bg-secondary, .bg-secondary-info{
-  background-color:#90C6C6;
+  background-color:#7BA7A7;
 }
 
 .text-secondary, .text-secondary-info{
-  background-color:#90C6C6;
+  background-color:#7BA7A7;
   color: #000;
 }
 
