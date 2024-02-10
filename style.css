@@ -4,7 +4,7 @@
   --clr-secondary-bg:#7BA7A7;
   --clr-primary-text: #FFEBED; 
   --clr-secondary-text:#000;
-  --clr-accent:#f2c2d4 ; 
+  --clr-accent:#DE7CAA ; 
   --clr-light: #f4f4f4; 
  }
 
@@ -54,5 +54,5 @@ color: #FFEBED;
 }
 
 .accent-colour, .accent-colour-info{
-  background-color:#f2c2d4;
+  background-color:#DE7CAA;
 }
