@@ -10,7 +10,7 @@
 
  /* Typefaces for heading and body text */
  :root{
-  --heading-font: 'Playfair Display', serif;
+  --heading-font: 'Playfair Display', sans-serif;
   --body-font: 'Roboto', sans-serif;
  }
 
