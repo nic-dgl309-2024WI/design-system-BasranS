@@ -8,6 +8,12 @@
   --clr-light: #c9978c; 
  }
 
+ /* Typefaces for heading and body text */
+ :root{
+  --heading-font: 'Playfair Display', serif;
+  --body-font: 'Roboto', sans-serif;
+ }
+
  /* Border-box model for fixed size */
 
 * {
