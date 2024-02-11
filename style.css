@@ -22,6 +22,12 @@
  --body-font-size: 1.0rem; 
  }
 
+ /* Typeface font weight */
+ :root{
+  --bold-font-weight: 700;
+  --regular-font-weight: 400;
+  }
+
  /* Border-box model for fixed size */
 
 * {
