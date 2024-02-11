@@ -5,6 +5,9 @@
     display: none;
   }
 
+  header a:hover{
+    background-color: #c9978c;
+  }
   /* Style header */
   header{
     padding:10px;
