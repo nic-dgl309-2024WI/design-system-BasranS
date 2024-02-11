@@ -28,7 +28,15 @@
   --regular-font-weight: 400;
   }
 
- /* Border-box model for fixed size */
+  /* Typeface line height */
+ :root{
+  --heading-line-height: 1.2;
+  --body-line-height: 1.5;
+  }
+
+
+
+/* Border-box model for fixed size */
 
 * {
     box-sizing: border-box; 
