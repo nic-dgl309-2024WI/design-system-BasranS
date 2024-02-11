@@ -33,7 +33,13 @@
   --heading-line-height: 1.2;
   --body-line-height: 1.5;
   }
-
+ 
+    /* Typeface letter spacing */
+ :root{
+  --letter-spacing: 1px;
+  }
+   
+  
 
 
 /* Border-box model for fixed size */
