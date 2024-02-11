@@ -39,7 +39,11 @@
   --letter-spacing: 1px;
   }
    
-  
+  /* Typeface colours */
+ :root{
+  --heading-text-color: #8F2466; 
+  --body-text-color: #FFEBED; 
+  }
 
 
 /* Border-box model for fixed size */
