@@ -5,8 +5,8 @@
     display: none;
   }
 
-  header a:hover{
-    background-color: #c9978c;
+   a:hover{
+    color: #c9978c;
   }
   /* Style header */
   header{
@@ -85,13 +85,17 @@
 
         /* Style list items in the top navbar for desktop*/
       .top-list{
-        list-style-type: none;
+       
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
     
       }
-       
+      
+      .about-me{
+        padding-right: 20px;
+      }
+      
       
     /* Style links in the top navbar for desktop */
       .top-nav__link{
