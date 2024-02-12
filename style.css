@@ -101,38 +101,46 @@ color: #FFEBED;
 /* Font families */
 .serif-font{
   font-family: var(--primary-font);
+  list-style: none;
   }
   
   .sans-font{
   font-family: var(--secondary-font);
+  list-style: none;
   }
   
   
   /* Font size*/
   .u-fs-h1{
   font-size: var(--h1-font-size);
+  list-style: none;
   }
   
   .u-fs-h2{
     font-size: var(--h2-font-size);
+    list-style: none;
     }
   
   .u-fs-h3{
     font-size: var(--h3-font-size);
+    list-style: none;
     }
   
   .u-fs-body{
       font-size: var(--body-font-size);
+      list-style: none;
       }
   
       
   /* Font weight */
   .u-fw-heading{
     font-weight: var(--bold-font-weight);
+    list-style: none;
   }
   
   .u-fw-body{
     font-weight: var(--bold-font-weight);
+    list-style: none;
   }
   
   
@@ -140,15 +148,18 @@ color: #FFEBED;
   
   .u-lh-heading{
     line-height: var(--heading-line-height);
+    list-style: none;
   }
 
   .u-lh-body{
     line-height: var(--body-line-height);
+    list-style: none;
   }
   
   
   /* Font letter spacing*/
   .u-letter-spacing{
     letter-spacing: var(--letter-spacing);
+    list-style: none;
   }
   
