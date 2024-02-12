@@ -48,6 +48,11 @@
     justify-content: space-between;
   }
 
+  .fonts {
+    font-size:19px;
+    padding-left: 15px;
+    
+  }
 
 
   /* Desktop navbar */
