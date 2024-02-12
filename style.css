@@ -100,60 +100,60 @@ color: #FFEBED;
 
 /* Font families */
 .serif-font{
-font-family: var(--primary-font);
-}
-
-.sans-font{
-font-family: var(--secondary-font);
-}
-
-
-/* Font size*/
-.u-fs-h1{
-font-size: var(--h1-font-size);
-}
-
-.u-fs-h2{
-  font-size: var(--h2-font-size);
+  font-family: var(--primary-font);
   }
-
-.u-fs-h3{
-  font-size: var(--h3-font-size);
+  
+  .sans-font{
+  font-family: var(--secondary-font);
   }
-
-.u-fs-body{
-    font-size: var(--body-font-size);
+  
+  
+  /* Font size*/
+  .u-fs-h1{
+  font-size: var(--h1-font-size);
+  }
+  
+  .u-fs-h2{
+    font-size: var(--h2-font-size);
     }
-
-    
-/* Font weight */
-.u-fw-heading{
-  font-weight: var(--bold-font-weight);
-}
-
-.u-fw-body{
-  font-weight: var(--bold-font-weight);
-}
-
-
-/* Font line height */
-
-.u-line-height{
-  line-height: var(--heading-line-height);
-}
-
-
-/* Font letter spacing*/
-.u-letter-spacing{
-  letter-spacing: var(--letter-spacing);
-}
-
-
-/* Font colours */
-.u-text-primary{
-  color: var(--heading-text-color);
-}
-
-.u-text-accent{
-  color: var(--heading-text-color);
-}
+  
+  .u-fs-h3{
+    font-size: var(--h3-font-size);
+    }
+  
+  .u-fs-body{
+      font-size: var(--body-font-size);
+      }
+  
+      
+  /* Font weight */
+  .u-fw-heading{
+    font-weight: var(--bold-font-weight);
+  }
+  
+  .u-fw-body{
+    font-weight: var(--bold-font-weight);
+  }
+  
+  
+  /* Font line height */
+  
+  .u-line-height{
+    line-height: var(--heading-line-height);
+  }
+  
+  
+  /* Font letter spacing*/
+  .u-letter-spacing{
+    letter-spacing: var(--letter-spacing);
+  }
+  
+  
+  /* Font colours */
+  .u-text-primary{
+    color: var(--heading-text-color);
+  }
+  
+  .u-text-accent{
+    color: var(--heading-text-color);
+  }
