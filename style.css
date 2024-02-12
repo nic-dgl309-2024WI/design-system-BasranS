@@ -138,8 +138,12 @@ color: #FFEBED;
   
   /* Font line height */
   
-  .u-line-height{
+  .u-lh-heading{
     line-height: var(--heading-line-height);
+  }
+
+  .u-lh-body{
+    line-height: var(--body-line-height);
   }
   
   
@@ -148,12 +152,3 @@ color: #FFEBED;
     letter-spacing: var(--letter-spacing);
   }
   
-  
-  /* Font colours */
-  .u-text-primary{
-    color: var(--heading-text-color);
-  }
-  
-  .u-text-accent{
-    color: var(--heading-text-color);
-  }
