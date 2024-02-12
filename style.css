@@ -10,22 +10,22 @@
 
  /* Typefaces for heading and body text */
  :root{
-  --heading-font: 'Playfair Display', sans-serif;
-  --body-font: 'Roboto', sans-serif;
+  --primary-font: 'Playfair Display', serif;
+  --secondary-font: 'Roboto', sans-serif;
  }
 
  /* Typeface font sizes */
  :root{
- --h1-font-size: 2.5rem; 
- --h2-font-size: 2.0rem;
- --h3-font-size: 1.5rem;
+ --h1-font-size: 1.5rem; 
+ --h2-font-size: 1.2rem;
+ --h3-font-size: 1.0rem;
  --body-font-size: 1.0rem; 
  }
 
  /* Typeface font weight */
  :root{
   --bold-font-weight: 700;
-  --regular-font-weight: 400;
+  --normal-font-weight: 400;
   }
 
   /* Typeface line height */
@@ -93,4 +93,67 @@ color: #FFEBED;
 
 .accent-colour, .accent-colour-info{
   background-color:#DE7CAA;
+}
+
+/* Utility classes for typography */
+
+
+/* Font families */
+.serif-font{
+font-family: var(--primary-font);
+}
+
+.sans-font{
+font-family: var(--secondary-font);
+}
+
+
+/* Font size*/
+.u-fs-h1{
+font-size: var(--h1-font-size);
+}
+
+.u-fs-h2{
+  font-size: var(--h2-font-size);
+  }
+
+.u-fs-h3{
+  font-size: var(--h3-font-size);
+  }
+
+.u-fs-body{
+    font-size: var(--body-font-size);
+    }
+
+    
+/* Font weight */
+.u-fw-heading{
+  font-weight: var(--bold-font-weight);
+}
+
+.u-fw-body{
+  font-weight: var(--bold-font-weight);
+}
+
+
+/* Font line height */
+
+.u-line-height{
+  line-height: var(--heading-line-height);
+}
+
+
+/* Font letter spacing*/
+.u-letter-spacing{
+  letter-spacing: var(--letter-spacing);
+}
+
+
+/* Font colours */
+.u-text-primary{
+  color: var(--heading-text-color);
+}
+
+.u-text-accent{
+  color: var(--heading-text-color);
 }
