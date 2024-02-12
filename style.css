@@ -133,13 +133,13 @@ color: #FFEBED;
   
       
   /* Font weight */
-  .u-fw-heading{
+  .u-fw-bold{
     font-weight: var(--bold-font-weight);
     list-style: none;
   }
   
-  .u-fw-body{
-    font-weight: var(--bold-font-weight);
+  .u-fw-normal{
+    font-weight: var(--normal-font-weight);
     list-style: none;
   }
   
