@@ -5,20 +5,23 @@
     display: none;
   }
 
+  .active{
+    color: var(--clr-secondary-accent);
+  }
    a:hover{
-    color: #c9978c;
+    color: var(--clr-hover);
   }
   /* Style header */
   header{
     padding:10px;
-    background-color: var(--clr-primary-bg);
-    color: var(--clr-primary-text);
+    background-color: var(--clr-secondary-bg);
+    color: var(--clr-body-text);
   }
 
   /* Style links in header */
   header ul li a{
     text-decoration: none;
-    color: var(--clr-primary-text);
+    color: var(--clr-body-text);
   }
 
   /* Style list items in side navbar */
@@ -34,7 +37,7 @@
   /* Style links in mobile navbar */
   .mobile-nav__link{
     text-decoration: none;
-    color: var(--clr-primary-text);
+    color: var(--clr-body-text);
   }
   
   /* Hide the side navbar for mobile */
@@ -100,7 +103,7 @@
     /* Style links in the top navbar for desktop */
       .top-nav__link{
         text-decoration: none;
-        color: var(--clr-primary-text);
+        color: var(--clr-body-text);
        }
 
          /* Adjust top navbar layout for desktop*/

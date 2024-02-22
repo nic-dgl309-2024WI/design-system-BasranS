@@ -1,11 +1,13 @@
 /* Color variables for the theme */
 :root {
-  --clr-primary-bg: #8F2466;
-  --clr-secondary-bg:#7BA7A7;
-  --clr-primary-text: #FFEBED; 
-  --clr-secondary-text:#000;
-  --clr-accent:#DE7CAA ; 
-  --clr-light: #c9978c; 
+  --clr-primary-bg:#f9f8fc;
+  --clr-secondary-bg: #fec7d7;
+  --clr-tertiary-bg:#d9d4e7;
+  --clr-body-text: #0e172c; 
+  --clr-primary-accent:#0e172c; 
+  --clr-secondary-accent:#a786df;
+  --clr-accent-text:#fffffe; 
+  --clr-hover:#f6db43;
  }
 
  /* Typefaces for heading and body text */
@@ -41,8 +43,8 @@
    
   /* Typeface colours */
  :root{
-  --heading-text-color: #8F2466; 
-  --body-text-color: #FFEBED; 
+  --heading-text-color: var(--clr-primary-bg);
+  --body-text-color: var(--clr-primary-text); 
   }
 
 
@@ -75,25 +77,35 @@ ul, ol {
 /* Utility classes for colors */
 
 .bg-primary, .bg-primary-info{
-background-color: #8F2466;
-color: #FFEBED;
+background-color: var(--clr-primary-bg);
+color: var(--clr-body-text);
+
   }
 
 .text-primary, .text-primary-info{
-  background-color: #FFEBED;
+  background-color: var(--clr-body-text);
 }
 
 .bg-secondary, .bg-secondary-info{
-  background-color:#7BA7A7;
+  background-color:var(--clr-secondary-bg);
+  color: var(--clr-body-text);
 }
 
 .text-secondary, .text-secondary-info{
-  background-color:#7BA7A7;
-  color: #000;
+  background-color:var(--clr-tertiary-bg);
+  color: var(--clr-body-text);
 }
 
+.bg-third, .bg-third-info{
+  background-color: var(--clr-secondary-accent);
+  color: var(--clr-accent-text);
+}
+
+
+
 .accent-colour, .accent-colour-info{
-  background-color:#DE7CAA;
+  background-color:var(--clr-primary-accent);
+  color: var(--clr-accent-text);
 }
 
 /* Utility classes for typography */
