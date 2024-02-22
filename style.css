@@ -78,13 +78,21 @@ ul, ol {
 
 /* Primary colour swatches */
 
-.bg-primary, .bg-primary-info{
+.bg-primary{
+font-weight: var(--bold-font-weight);
 background-color: var(--clr-primary-bg);
 color: var(--clr-body-text);
+font-size: var(--h2-font-size);
 font-family: var(--secondary-font);
+}
 
+.bg-primary-info{
+  background-color: var(--clr-primary-bg);
+  color: var(--clr-body-text);
+  font-family: var(--secondary-font);
   }
- .bg-primary-example button{
+  
+.bg-primary-example button{
 background-color: var(--clr-primary-bg);
 color: var(--clr-body-text);
 font-weight: var(--bold-font-weight);
@@ -93,7 +101,15 @@ font-size: var(--body-font-size);
 
 /* Secondary colour swatches */
 
-.bg-secondary, .bg-secondary-info{
+.bg-secondary{
+  background-color:var(--clr-secondary-bg);
+  color: var(--clr-body-text);
+  font-family: var(--secondary-font);
+  font-size: var(--h2-font-size); 
+  font-weight: var(--bold-font-weight);
+}
+
+.bg-secondary-info{
   background-color:var(--clr-secondary-bg);
   color: var(--clr-body-text);
   font-family: var(--secondary-font);
@@ -106,9 +122,17 @@ font-size: var(--body-font-size);
   font-size: var(--body-font-size);
     }
 
-/* Tertiary color swatches */
+/* Tertiary colour swatches */
 
-.bg-tertiary, .bg-tertiary-info{
+.bg-tertiary{
+  background-color:var(--clr-tertiary-bg);
+  color: var(--clr-body-text);
+  font-family: var(--secondary-font);
+  font-size: var(--h2-font-size); 
+  font-weight: var(--bold-font-weight);
+}
+
+.bg-tertiary-info{
   background-color:var(--clr-tertiary-bg);
   color: var(--clr-body-text);
   font-family: var(--secondary-font);
@@ -121,9 +145,16 @@ font-size: var(--body-font-size);
   font-size: var(--body-font-size);
     }
 
-/* Text color swatches */
+/* Text colour swatches */
 
-.bg-text-body, .bg-bodytext-info{
+.bg-text-body{
+  color: var(--clr-body-text);
+  font-family: var(--secondary-font);
+  font-size: var(--h2-font-size); 
+  font-weight: var(--bold-font-weight);
+}
+
+.bg-bodytext-info{
   font-family: var(--secondary-font);
   font-size: var(--body-font-size);
 }
@@ -149,9 +180,18 @@ font-size: var(--body-font-size);
   font-size: var(--body-font-size);
 }
 
-/* Primary Accent Colour swatches */
+/* Primary accent colour swatches */
 
-.bg-primary-accent, .bg-primary-accentinfo{
+.bg-primary-accent{
+  background-color:var(--clr-primary-accent);
+  color: var(--clr-accent-text);
+  font-family: var(--secondary-font);
+  font-size: var(--h2-font-size); 
+  font-weight: var(--bold-font-weight);
+
+}
+
+.bg-primary-accentinfo{
   background-color:var(--clr-primary-accent);
   color: var(--clr-accent-text);
   font-family: var(--secondary-font);
@@ -164,9 +204,17 @@ font-size: var(--body-font-size);
   font-size: var(--body-font-size);
 }
 
-/* Secondary Accent Colour swatches */
+/* Secondary accent colour swatches */
 
-.bg-secondary-accent, .bg-secondary-accentinfo{
+.bg-secondary-accent{
+  background-color:var(--clr-secondary-accent);
+  color: var(--clr-accent-text);
+  font-family: var(--secondary-font);
+  font-size: var(--h2-font-size); 
+  font-weight: var(--bold-font-weight);
+} 
+
+.bg-secondary-accentinfo{
   background-color:var(--clr-secondary-accent);
   color: var(--clr-accent-text);
   font-family: var(--secondary-font);
@@ -179,12 +227,19 @@ font-size: var(--body-font-size);
   font-size: var(--body-font-size);
 }
 
-/* Accent Text Colour swatches */
+/* Accent text colour swatches */
 
-.bg-text-accent, .bg-info-accenttext{
+.bg-text-accent{
+  font-family: var(--secondary-font);
+  font-size: var(--h2-font-size); 
+  font-weight: var(--bold-font-weight);
+}
+
+.bg-info-accenttext{
   font-size: var(--body-font-size);
   font-family: var(--secondary-font);
 }
+
 .bg-primary-accenttext button{
 background-color: var(--clr-primary-accent);
 color: var(--clr-accent-text);
