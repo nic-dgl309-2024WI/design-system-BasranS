@@ -4,10 +4,6 @@
 .top-navbar{
     display: none;
   }
-
-  .active{
-    color: var(--clr-secondary-accent);
-  }
    a:hover{
     color: var(--clr-hover);
   }

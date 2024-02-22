@@ -76,36 +76,85 @@ ul, ol {
 
 /* Utility classes for colors */
 
+/* Primary colour swatches */
+
 .bg-primary, .bg-primary-info{
 background-color: var(--clr-primary-bg);
 color: var(--clr-body-text);
 
   }
+ .bg-primary-example button{
+background-color: var(--clr-primary-bg);
+color: var(--clr-body-text);
+  }
 
-.text-primary, .text-primary-info{
-  background-color: var(--clr-body-text);
-}
+/* Secondary colour swatches */
+
+.bg-secondary-example button{
+  background-color: var(--clr-secondary-bg);
+  color: var(--clr-body-text);
+    }
 
 .bg-secondary, .bg-secondary-info{
   background-color:var(--clr-secondary-bg);
   color: var(--clr-body-text);
 }
 
-.text-secondary, .text-secondary-info{
+/* Tertiary color swatches */
+
+.bg-tertiary-example button{
+  background-color: var(--clr-tertiary-bg);
+  color: var(--clr-body-text);
+    }
+
+.bg-tertiary, .bg-tertiary-info{
   background-color:var(--clr-tertiary-bg);
   color: var(--clr-body-text);
 }
 
-.bg-third, .bg-third-info{
-  background-color: var(--clr-secondary-accent);
+/* Text color swatches */
+
+
+.bg-primary-example1{
+color: var(--clr-body-text);
+background-color: var(--clr-primary-bg);
+}
+.bg-secondary-example1{
+  color: var(--clr-body-text);
+  background-color: var(--clr-secondary-bg);
+} 
+.bg-tertiary-example1 button{
+  color: var(--clr-body-text);
+  background-color: var(--clr-tertiary-bg);
+}
+
+/* Primary Accent Colour swatches */
+
+.bg-primary-accent, .bg-primary-accentinfo{
+  background-color:var(--clr-primary-accent);
   color: var(--clr-accent-text);
 }
 
-
-
-.accent-colour, .accent-colour-info{
+.bg-primary-accentexample button{
   background-color:var(--clr-primary-accent);
   color: var(--clr-accent-text);
+}
+
+/* Secondary Accent Colour swatches */
+
+.bg-secondary-accent, .bg-secondary-accentinfo{
+  background-color:var(--clr-secondary-accent);
+  color: var(--clr-accent-text);
+}
+
+.bg-secondary-accentexample button{
+  background-color:var(--clr-secondary-accent);
+  color: var(--clr-accent-text);
+}
+
+.bg-example-accenttext button{
+background-color: var(--clr-primary-accent);
+color: var(--clr-accent-text);
 }
 
 /* Utility classes for typography */
