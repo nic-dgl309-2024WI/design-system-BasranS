@@ -81,7 +81,7 @@
        }
 
           /* Hide the list items for mobile*/
-       .side-nav__list{
+       .side-nav__mobile{
         display: none;
       }
 
