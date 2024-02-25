@@ -1,5 +1,7 @@
-/* Color variables for the theme */
 :root {
+
+  /* Color variables for the theme */
+  
   --clr-primary-bg:#f9f8fc;
   --clr-secondary-bg: #fec7d7;
   --clr-tertiary-bg:#d9d4e7;
@@ -7,12 +9,12 @@
   --clr-primary-accent:#0e172c; 
   --clr-secondary-accent:#724592;
   --clr-accent-text:#fffffe; 
-  --clr-hover:#eda710;
+  --clr-hover:#D15D10;
   --clr-active:#bd26b5d8;
- }
+ 
 
  /* Typefaces for heading and body text */
- :root{
+ 
   --primary-font: 'Playfair Display', serif;
   --secondary-font: 'Roboto', sans-serif;
  
@@ -77,204 +79,133 @@ ul, ol {
 
 /* Utility classes for colors */
 
-/* Primary colour swatches */
+/* Primary colour swatch */
 
-.bg-primary{
+.u-primary-bg{
 font-weight: var(--bold-font-weight);
 background-color: var(--clr-primary-bg);
 color: var(--clr-body-text);
-font-size: var(--h2-font-size);
+font-size: var(--h3-font-size);
 font-family: var(--secondary-font);
 }
+  /* Primary colour example */
 
-
-.bg-primary-info{
-  background-color: var(--clr-primary-bg);
-  color: var(--clr-body-text);
-  font-family: var(--secondary-font);
-  }
-  
-  /* Primary colour example in normal font weight*/
-
-.bg-primary-normal button{
+.u-primary-example{
 background-color: var(--clr-primary-bg);
 color: var(--clr-body-text);
-font-weight: var(--normal-font-weight);
 font-size: var(--body-font-size);
+ font-family: var(--secondary-font);
   }
 
-/* Secondary colour swatches */
+/* Secondary colour swatch */
 
-.bg-secondary{
+.u-secondary-bg{
   background-color:var(--clr-secondary-bg);
   color: var(--clr-body-text);
   font-family: var(--secondary-font);
-  font-size: var(--h2-font-size); 
+  font-size: var(--h3-font-size); 
   font-weight: var(--bold-font-weight);
 }
 
-.bg-secondary-info{
-  background-color:var(--clr-secondary-bg);
-  color: var(--clr-body-text);
-  font-family: var(--secondary-font);
-}
+/* Secondary colour example*/
 
-/* Secondary colour example in normal font weight*/
-
-.bg-secondary-normal button{
+.u-secondary-example{
   background-color: var(--clr-secondary-bg);
   color: var(--clr-body-text);
-  font-weight: var(--normal-font-weight);
   font-size: var(--body-font-size);
-    }
+ font-family: var(--secondary-font);
+}
 
-/* Tertiary colour swatches */
+/* Tertiary colour swatch */
 
-.bg-tertiary{
+.u-tertiary-bg{
   background-color:var(--clr-tertiary-bg);
   color: var(--clr-body-text);
   font-family: var(--secondary-font);
-  font-size: var(--h2-font-size); 
+  font-size: var(--h3-font-size); 
   font-weight: var(--bold-font-weight);
 }
 
-.bg-tertiary-info{
-  background-color:var(--clr-tertiary-bg);
-  color: var(--clr-body-text);
-  font-family: var(--secondary-font);
-}
+/* Tertiary colour example*/
 
-/* Tertiary colour example in normal font weight*/
-
-.bg-tertiary-normal button{
+.u-tertiary-example{
   background-color: var(--clr-tertiary-bg);
   color: var(--clr-body-text);
-  font-weight: var(--normal-font-weight);
-  font-size: var(--body-font-size);
+ font-size: var(--body-font-size);
+ font-family: var(--secondary-font);
     }
 
-/* Text colour swatches */
+/* Text colour swatch */
 
-.bg-text-body{
-  color: var(--clr-body-text);
+.u-text-body{
+  background-color: var(--clr-body-text);
   font-family: var(--secondary-font);
-  font-size: var(--h2-font-size); 
+  font-size: var(--h3-font-size); 
   font-weight: var(--bold-font-weight);
+  color: var(--clr-accent-text);
 }
 
-.bg-bodytext-info{
-  font-family: var(--secondary-font);
-  font-size: var(--body-font-size);
-}
+/* Body text example*/
 
-/* Primary colour example in bold font weight*/
-
-.bg-primary-bold button{
-color: var(--clr-body-text);
-background-color: var(--clr-primary-bg);
-font-weight: var(--bold-font-weight);
-font-size: var(--body-font-size);
-}
-
-/* Secondary colour example in bold font weight*/
-
-.bg-secondary-bold button{
+.u-body-example{
   color: var(--clr-body-text);
-  background-color: var(--clr-secondary-bg);
-  font-weight: var(--bold-font-weight);
   font-size: var(--body-font-size);
-} 
-
-/* Tertiary colour example in bold font weight*/
-
-.bg-tertiary-bold button{
-  color: var(--clr-body-text);
-  background-color: var(--clr-tertiary-bg);
-  font-weight: var(--bold-font-weight);
-  font-size: var(--body-font-size);
+ font-family: var(--secondary-font);
 }
 
-/* Primary accent colour swatches */
+/* Primary accent colour swatch */
 
-.bg-primary-accent{
+.u-primary-accent{
   background-color:var(--clr-primary-accent);
   color: var(--clr-accent-text);
   font-family: var(--secondary-font);
-  font-size: var(--h2-font-size); 
+  font-size: var(--h3-font-size); 
   font-weight: var(--bold-font-weight);
 
 }
 
-.bg-primary-accentinfo{
+/* Primary accent colour example */
+
+.u-paccent-example{
   background-color:var(--clr-primary-accent);
   color: var(--clr-accent-text);
+  font-size: var(--body-font-size);
   font-family: var(--secondary-font);
 }
 
-/* Primary accent colour example with normal font weight */
+/* Secondary accent colour swatch */
 
-.bg-primary-accentnormal button{
-  background-color:var(--clr-primary-accent);
-  color: var(--clr-accent-text);
-  font-weight: var(--normal-font-weight);
-  font-size: var(--body-font-size);
-}
-
-/* Secondary accent colour swatches */
-
-.bg-secondary-accent{
+.u-secondary-accent{
   background-color:var(--clr-secondary-accent);
   color: var(--clr-accent-text);
   font-family: var(--secondary-font);
-  font-size: var(--h2-font-size); 
+  font-size: var(--h3-font-size); 
   font-weight: var(--bold-font-weight);
 } 
 
-.bg-secondary-accentinfo{
+/*  Secondary accent example*/
+
+.u-saccent-example{
   background-color:var(--clr-secondary-accent);
   color: var(--clr-accent-text);
   font-family: var(--secondary-font);
-}
-
-/*  Secondary accent example with normal font weight*/
-
-.bg-secondary-accentnormal button{
-  background-color:var(--clr-secondary-accent);
-  color: var(--clr-accent-text);
-  font-weight: var(--normal-font-weight);
   font-size: var(--body-font-size);
 }
 
 /* Accent text colour swatches */
 
-.bg-text-accent{
+.u-text-accent{
   font-family: var(--secondary-font);
-  font-size: var(--h2-font-size); 
+  font-size: var(--h3-font-size); 
   font-weight: var(--bold-font-weight);
+  background-color: var(--clr-accent-text);
 }
 
-.bg-info-accenttext{
-  font-size: var(--body-font-size);
+/* Accent text colour examples */
+.u-accent-examples{
   font-family: var(--secondary-font);
-}
-
-/* Accent text colour example with primary accent and bold font weight*/
-
-.bg-primary-accentbold button{
-background-color: var(--clr-primary-accent);
-color: var(--clr-accent-text);
-font-weight: var(--bold-font-weight);
-font-size: var(--body-font-size);
-}
-
-/* Accent text colour example with secondary accent and bold font weight*/
-
-.bg-secondary-accentbold button{
-  background-color: var(--clr-secondary-accent);
-  color: var(--clr-accent-text);
-  font-weight: var(--bold-font-weight);
   font-size: var(--body-font-size);
-  }
+}
 
 
 /* Utility classes for typography */

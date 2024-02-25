@@ -92,131 +92,147 @@
   <h1>01 Colours</h1>
   <h2>Primary colours</h2><br/>
   
-   <!--Primary Colour swatch-->
+   <!-- ALl Colour swatches-->
+   <div class="colours">
+    <div class="colours-swatch">
+    <button class="u-primary-bg">Primary Background #F9F8FC</button>
+    <button class="u-secondary-bg">Secondary background #FEC7D7</button>
+    <button class="u-tertiary-bg">Tertiary Background #D7D4E7</button>
+    <button class="u-text-body">Text Body #0E172C</button>
+    <button class="u-primary-accent">Primary accent #0E172</button>
+    <button class="u-secondary-accent">Secondary accent #724592</button>
+    <button class="u-text-accent">Accent Text #FFFFFE</button>
+    </div>
+   </div>
+
+   <br/>
+   <!-- Colours Information-->
+
+   <h2>Colours Information</h2>
+  <br/>
+<table>
  
-   <div class="bg-primary">(Primary Background) Hex Code of colour: #F9F8FC</div><br/>
+  <!--Information assets-->
+   <tr>
+    <th>Colours</th>
+    <th>Use</th>
+    <th>Utility Class</th>
+    <th>Colour Contrast Ratio</th>
+  </tr>
+
+    <!-- Primary Background Information-->
+  <tr>
+    <td>Primary Background</td>
+    <td>Used as Main Background</td>
+    <td>bg-primary</td>
+    <td>16.86:1 PASS</td>
+  </tr>
+
+  <!--Secondary Background Information-->
+  <tr>
+    <td>Secondary Background</td>
+    <td>Used as Secondary Background</td>
+    <td>bg-secondary</td>
+    <td>12.19:1 PASS</td>
+  </tr>
+
+    <!--Tertiary Background Information-->
+  <tr>
+    <td>Tertiary Background</td>
+    <td>Used to differentiate some sections</td>
+    <td>bg-tertiary</td>
+    <td>12.33:1 PASS</td>
+  </tr>
+
+  <!--Text BodyInformation-->
+  <tr>
+    <td>Text Body</td>
+    <td>Used for Headings and Paragraphs</td>
+    <td>bg-text-body</td>
+    <td>16.86:1, 12.19:1, 12.33:1  PASS</td>
+  </tr>
+
+  <!--Primary accent Information-->
+  <tr>
+    <td>Primary Accent</td>
+    <td>Used as primary accent colour</td>
+    <td>bg-primary-accent</td>
+    <td>17.82:1 PASS</td>
+  </tr>
   
-    <!--Primary Colour information-->
-   <div class="bg-primary-info">
-   <p>Class name: bg-primary</p>
-   <p>Used for: Main Background Colour</p>
-   <p>Web Aim colour contrast Ration: 16.86:1 PASS</p>
-    </div><br/>
+   <!--Secondary accent Information-->
+  <tr>
+    <td>Secondary Accent</td>
+    <td>Used as secondary accent colour</td>
+    <td>bg-secondary-accent</td>
+    <td>7.03:1 PASS</td>
+  </tr>
 
-     <!--Primary Colour example in normal weight-->
-   <div class="bg-primary-normal">
-    <button>Primary Background and Text in normal font weight</button>
-    </div><br/>
+   <!--Text accent Information-->
+  <tr>
+    <td>Text accent colour</td>
+    <td>Used as text accent colour</td>
+    <td>bg-text-accent</td>
+    <td>17.82:1, 7.03:1 PASS</td>
+  </tr>
+</table>
+ <br/>
 
-   
-    <!--Secondary Colour swatch-->
-     <div class="bg-secondary">(Secondary background) Hex Code of colour: #FEC7D7</div><br/>
-  
-        <!--Secondary Colour information-->
-    <div class="bg-secondary-info">
-    <p>Class name: bg-secondary</p>
-    <p>Used for: Secondary Background Colour for sections</p>
-    <p>Web Aim colour contrast Ration: 12.19:1 PASS</p>
-    </div><br/>
-    
-     <!--Secondary Colour example in normal weight-->
-    <div class="bg-secondary-normal">
-      <button>Secondary Background and Text in normal font weight</button>
-      </div><br/>
+ <!--Examples for all colours-->
 
-    
-    <!--Tertiary colour swatch-->
-    <div class="bg-tertiary">(Tertiary Background) Hex Code of colour: #D7D4E7</div><br/>
-  
-      <!--Tertiary colour information-->
-    <div class="bg-tertiary-info">
-    <p>Class name: bg-tertiary</p>
-    <p>Used for: Tertiary Background Colour to make sections different from one another</p>
-    <p>Web Aim colour contrast Ration: 12.33:1 PASS</p>
- </div><br/>
-
-   <!--Tertiary colour example in normal weight-->
-    <div class="bg-tertiary-normal">
-      <button>Tertiary Background and Text in normal font weight</button>
-      </div><br/>
-
-    
-      <!--Body text swatch-->
-     <div class="bg-text-body">(Body Text Colour) Hex Code of colour: #0E172C</div><br/>
-  
-      <!--Body text info-->
-     <div class="bg-bodytext-info">
-     <p>Class name: bg-text-body</p>
-     <p>Used for: Headings and Paragraphs</p>
-     <p>Web Aim colour contrast Ration: 16.86:1, 12.19:1, 12.33:1  PASS</p>
-     </div><br/>
+ <h2>Examples</h2> 
+     <div class="colours-examples"> 
      
-      <!--Body text example with primary background in bold weight-->
-     <div class="bg-primary-bold">
-      <button>Primary Background with body text colour in bold font weight</button>
+     <!--Primary Colour examples-->
+      <div class="u-primary-example">
+       <p class=" u-fw-normal ">Hello World!</p>
+       <p class="u-fw-bold ">Hello World!</p>
       </div><br/>
-      
-    <!--Body text example with secondary background in bold weight-->
-     <div class="bg-secondary-bold">
-      <button>Secondary Background with body text colour in bold font weight</button>
-      </div><br/>
-
-      <!--Body text example with Tertiary background in bold weight-->
-      <div class="bg-tertiary-bold">
-      <button>Tertiary Background with body text colour in bold font weight</button>
-      </div><br/>
- 
-      '
-      <!--Primary Accent Colour swatch-->
-      <div class="bg-primary-accent">(Primary Accent) Hex Code of colour: #0E172</div><br/>
-  
-       <!--Primary Accent Colour information-->
-      <div class="bg-primary-accentinfo">
-      <p>Class name: bg-primary-accent</p>
-      <p>Used for: Primary accent colour</p>
-      <p>Web Aim colour contrast Ration: 17.82:1 PASS</p>
-      </div><br/>
-      
-       <!--Primary Accent Colour example in normal weight-->
-      <div class="bg-primary-accentnormal">
-        <button>Primary Background and Text in normal font weight</button>
-        </div><br/>
-
-     <!--Secondary Accent Colour swatch-->
-    <div class="bg-secondary-accent">(Secondary Accent) Hex Code of colour: #724592</div><br/>
-  
-     <!--Secondary Accent Colour information-->
-     <div class="bg-secondary-accentinfo">
-     <p>Class name: bg-secondary-accent</p>
-     <p>Used for: Secondary accent colour</p>
-     <p>Web Aim colour contrast Ration: 7.03:1 PASS</p>
-     </div><br/>
-     
-      <!--Secondary Accent Colour example in normal weight-->
-     <div class="bg-secondary-accentnormal">
-      <button>Primary Background and Text in normal font weight</button>
+        
+      <!--Secondary Colour examples-->    
+      <div class="u-secondary-example">
+        <p class="u-fw-normal ">Hello World!</p>
+       <p class="u-fw-bold">Hello World!</p>
       </div><br/>
 
-      <!--Accent Text Colour swatch-->
-     <div class="bg-text-accent">(Accent text colour) Hex Code of colour: #FFFFFE</div><br/>
-  
-      <!--Accent Text Colour information-->
-   <div class="bg-info-accenttext">
-   <p>Class name: bg-text-accent</p>
-   <p>Used for: Text accent colour</p>
-   <p>Web Aim colour contrast Ration: 17.82:1, 7.03:1 PASS</p>
-   </div><br/>
-   
-   
-     <!--Primary Accent Colour example in bold weight-->
-    <div class="bg-primary-accentbold">
-    <button>Primary accent background and text in bold font weight</button>
-    </div><br/>
-
-    <!--Secondary Accent Colour example in bold weight-->
-    <div class="bg-secondary-accentbold">
-      <button>Secondary accent background and text in bold font weight</button>
+     <!--Tertiary Colour examples-->           
+      <div class="u-tertiary-example">
+        <p class=" u-fw-normal ">Hello World!</p>
+       <p class=" u-fw-bold ">Hello World!</p>
       </div><br/>
+
+        
+        <!--Text Body examples-->
+      <div class="u-body-example">
+        <p class=" u-fw-normal ">Hello World!</p>
+        <p class=" u-fw-bold ">Hello World!</p>
+       </div><br/>
+
+         <!--Primary accent examples-->       
+      <div class="u-paccent-example">
+        <p class=" u-fw-normal">Hello World!</p>
+       <p class="u-fw-bold ">Hello World!</p>
+      </div><br/>
+
+         <!--Secondary accent examples-->       
+      <div class="u-saccent-example">
+       <p class="u-fw-normal">Hello World!</p>
+       <p class="u-fw-bold">Hello World!</p>
+      </div><br/>
+
+        
+      <!--Text accent examples-->
+         <div class="u-accent-examples">
+             <!--Text accent examples on primary accent  background-->
+          <p class="u-fw-normal u-primary-accent">Hello World!</p>
+          <p class="u-fw-bold u-primary-accent">Hello World!</p>
+
+             <!--Text accent examples on secondary accent  background-->
+          <p class=" u-fw-normal  u-secondary-accent">Hello World!</p>
+          <p class="u-fw-bold u-secondary-accent">Hello World!</p>
+         </div>
+    </div>
+    <br/>
    </main>
    
   <script src="design-system.js"></script>

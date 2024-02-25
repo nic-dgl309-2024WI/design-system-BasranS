@@ -53,19 +53,6 @@
     justify-content: space-between;
   }
 
-  /* Style typography page fonts */
-
-  .fonts {
-    font-size:17px;
-    padding-left: 15px;
-    
-  }
-
-  /* Style typography page headings */
-.font-uses h2, .heading-c-normal h1, .heading-c-bold h1, .body-font-normal h2, .body-font-bold h2, .utility-classes h2{
-  color: var(--clr-secondary-accent);
-  text-decoration: underline;
-}
 
 
 
@@ -127,3 +114,71 @@
      
        
 }
+
+
+ /* Style typography page */
+
+  /* Style typography page fonts */
+
+.fonts {
+    font-size:17px;
+    padding-left: 15px;
+    
+  }
+
+  /* Style typography page headings */
+.font-uses h2, .heading-c-normal h1, .heading-c-bold h1, .body-font-normal h2, .body-font-bold h2, .utility-classes h2{
+  color: var(--clr-secondary-accent);
+  text-decoration: underline;
+}
+
+
+ /* Style Colours page */
+
+ /* Style colours buttons */
+.colours button{
+  padding:5px;
+  border-radius:10px;
+  text-align:center;
+  margin-left: 5px;
+  margin-top: 10px;
+  
+}
+
+ /* Style colours swatch*/
+.colours-swatch{
+  display: flex;
+  flex-direction: row;
+}
+
+ /* Style colours table*/
+table {
+  font-family: var(--secondary-font);
+  font-size: var( --body-font-size);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+ /* Style colours table content */
+td, th {
+
+  border: 1px solid var(--clr-secondary-bg);
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: var( --clr-tertiary-bg);
+}
+
+/* Style colours examples*/
+.colours-examples{
+ display: flex;
+ flex-direction: row;
+ margin-top: 20px;
+ justify-content: space-evenly;
+}
+
+
+
+
