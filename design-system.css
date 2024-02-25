@@ -4,7 +4,7 @@
     display: none;
   }
 
-  /* Style active class*/
+/* Style active class*/
   .active{
     color:var(--clr-active);
   }
@@ -58,6 +58,8 @@
     padding-left: 15px;
     
   }
+
+
 
 
   /* Desktop navbar */
@@ -116,4 +118,5 @@
          
        }
      
+       
 }
