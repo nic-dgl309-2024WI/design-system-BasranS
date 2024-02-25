@@ -7,42 +7,43 @@
   --clr-primary-accent:#0e172c; 
   --clr-secondary-accent:#724592;
   --clr-accent-text:#fffffe; 
-  --clr-hover:#f6db43;
+  --clr-hover:#eda710;
+  --clr-active:#bd26b5d8;
  }
 
  /* Typefaces for heading and body text */
  :root{
   --primary-font: 'Playfair Display', serif;
   --secondary-font: 'Roboto', sans-serif;
- }
+ 
 
  /* Typeface font sizes */
- :root{
+ 
  --h1-font-size: 24px; 
  --h2-font-size: 20px;
- --h3-font-size: 18px;
- --body-font-size: 16px; 
- }
+ --h3-font-size: 19px;
+ --body-font-size: 18px; 
+ 
 
  /* Typeface font weight */
- :root{
+ 
   --bold-font-weight: 700;
-  --normal-font-weight: 400;
-  }
+  --normal-font-weight: 500;
+  
 
   /* Typeface line height */
- :root{
+ 
   --heading-line-height: 1.2;
   --body-line-height: 1.5;
-  }
+  
  
     /* Typeface letter spacing */
- :root{
+ 
   --letter-spacing: 1px;
-  }
+  
    
   /* Typeface colours */
- :root{
+ 
   --heading-text-color: var(--clr-primary-bg);
   --body-text-color: var(--clr-primary-text); 
   }

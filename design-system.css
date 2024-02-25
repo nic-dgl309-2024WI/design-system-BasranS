@@ -3,6 +3,10 @@
 .top-navbar{
     display: none;
   }
+
+  .active{
+    color:var(--clr-active);
+  }
    a:hover{
     color: var(--clr-hover);
   }
