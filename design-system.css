@@ -53,12 +53,15 @@
     justify-content: space-between;
   }
 
+  /* Style typography page fonts */
+
   .fonts {
     font-size:17px;
     padding-left: 15px;
     
   }
 
+  /* Style typography page headings */
 .font-uses h2, .heading-c-normal h1, .heading-c-bold h1, .body-font-normal h2, .body-font-bold h2, .utility-classes h2{
   color: var(--clr-secondary-accent);
   text-decoration: underline;
