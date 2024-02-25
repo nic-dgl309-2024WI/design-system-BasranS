@@ -211,6 +211,8 @@ font-size: var(--body-font-size);
   font-family: var(--secondary-font);
 }
 
+/* Primary accent colour example with normal font weight */
+
 .bg-primary-accentexample button{
   background-color:var(--clr-primary-accent);
   color: var(--clr-accent-text);
@@ -234,6 +236,8 @@ font-size: var(--body-font-size);
   font-family: var(--secondary-font);
 }
 
+/*  Secondary accent example with normal font weight*/
+
 .bg-secondary-accentexample button{
   background-color:var(--clr-secondary-accent);
   color: var(--clr-accent-text);
@@ -254,12 +258,16 @@ font-size: var(--body-font-size);
   font-family: var(--secondary-font);
 }
 
+/* Accent text colour example with primary accent and bold font weight*/
+
 .bg-primary-accenttext button{
 background-color: var(--clr-primary-accent);
 color: var(--clr-accent-text);
 font-weight: var(--bold-font-weight);
 font-size: var(--body-font-size);
 }
+
+/* Accent text colour example with secondary accent and bold font weight*/
 
 .bg-secondary-accenttext button{
   background-color: var(--clr-secondary-accent);
@@ -272,44 +280,55 @@ font-size: var(--body-font-size);
 /* Utility classes for typography */
 
 
-/* Font families */
+/* Font family for Headings */
 .serif-font{
   font-family: var(--primary-font);
 
   }
   
+  /* Font family for body */
+
   .sans-font{
   font-family: var(--secondary-font);
  
   }
   
-   /* Font size*/
+   /* Font size for Main heading*/
+
   .u-fs-h1{
   font-size: var(--h1-font-size);
  
   }
   
+   /* Font size for sub-heading*/
+
   .u-fs-h2{
     font-size: var(--h2-font-size);
 
     }
   
+     /* Font size for content-heading*/
+
   .u-fs-h3{
     font-size: var(--h3-font-size);
     
     }
   
+     /* Font size for body*/
+
   .u-fs-body{
       font-size: var(--body-font-size);
   
       }
   
       
-  /* Font weight */
+  /* Font weight bold*/
   .u-fw-bold{
     font-weight: var(--bold-font-weight);
 
   }
+
+   /* Font weight normal */
   
   .u-fw-normal{
     font-weight: var(--normal-font-weight);
@@ -317,13 +336,14 @@ font-size: var(--body-font-size);
   }
   
   
-  /* Font line height */
+  /* Font line height for heading */
   
   .u-lh-heading{
     line-height: var(--heading-line-height);
   
   }
 
+   /* Font line height for body*/
   .u-lh-body{
     line-height: var(--body-line-height);
    
