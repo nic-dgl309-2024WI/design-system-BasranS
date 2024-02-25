@@ -4,9 +4,12 @@
     display: none;
   }
 
+  /* Style active class*/
   .active{
     color:var(--clr-active);
   }
+
+  /* Style hover*/
    a:hover{
     color: var(--clr-hover);
   }
@@ -94,6 +97,7 @@
     
       }
       
+      /* Style about me in the top navbar for desktop*/
       .about-me{
         padding-right: 20px;
       }
