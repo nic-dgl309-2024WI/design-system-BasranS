@@ -96,7 +96,7 @@ font-family: var(--secondary-font);
   
   /* Primary colour example in normal font weight*/
 
-.bg-primary-example button{
+.bg-primary-normal button{
 background-color: var(--clr-primary-bg);
 color: var(--clr-body-text);
 font-weight: var(--normal-font-weight);
@@ -121,7 +121,7 @@ font-size: var(--body-font-size);
 
 /* Secondary colour example in normal font weight*/
 
-.bg-secondary-example button{
+.bg-secondary-normal button{
   background-color: var(--clr-secondary-bg);
   color: var(--clr-body-text);
   font-weight: var(--normal-font-weight);
@@ -146,7 +146,7 @@ font-size: var(--body-font-size);
 
 /* Tertiary colour example in normal font weight*/
 
-.bg-tertiary-example button{
+.bg-tertiary-normal button{
   background-color: var(--clr-tertiary-bg);
   color: var(--clr-body-text);
   font-weight: var(--normal-font-weight);
@@ -169,7 +169,7 @@ font-size: var(--body-font-size);
 
 /* Primary colour example in bold font weight*/
 
-.bg-primary-example1 button{
+.bg-primary-bold button{
 color: var(--clr-body-text);
 background-color: var(--clr-primary-bg);
 font-weight: var(--bold-font-weight);
@@ -178,7 +178,7 @@ font-size: var(--body-font-size);
 
 /* Secondary colour example in bold font weight*/
 
-.bg-secondary-example1 button{
+.bg-secondary-bold button{
   color: var(--clr-body-text);
   background-color: var(--clr-secondary-bg);
   font-weight: var(--bold-font-weight);
@@ -187,7 +187,7 @@ font-size: var(--body-font-size);
 
 /* Tertiary colour example in bold font weight*/
 
-.bg-tertiary-example1 button{
+.bg-tertiary-bold button{
   color: var(--clr-body-text);
   background-color: var(--clr-tertiary-bg);
   font-weight: var(--bold-font-weight);
@@ -213,7 +213,7 @@ font-size: var(--body-font-size);
 
 /* Primary accent colour example with normal font weight */
 
-.bg-primary-accentexample button{
+.bg-primary-accentnormal button{
   background-color:var(--clr-primary-accent);
   color: var(--clr-accent-text);
   font-weight: var(--normal-font-weight);
@@ -238,7 +238,7 @@ font-size: var(--body-font-size);
 
 /*  Secondary accent example with normal font weight*/
 
-.bg-secondary-accentexample button{
+.bg-secondary-accentnormal button{
   background-color:var(--clr-secondary-accent);
   color: var(--clr-accent-text);
   font-weight: var(--normal-font-weight);
@@ -260,7 +260,7 @@ font-size: var(--body-font-size);
 
 /* Accent text colour example with primary accent and bold font weight*/
 
-.bg-primary-accenttext button{
+.bg-primary-accentbold button{
 background-color: var(--clr-primary-accent);
 color: var(--clr-accent-text);
 font-weight: var(--bold-font-weight);
@@ -269,7 +269,7 @@ font-size: var(--body-font-size);
 
 /* Accent text colour example with secondary accent and bold font weight*/
 
-.bg-secondary-accenttext button{
+.bg-secondary-accentbold button{
   background-color: var(--clr-secondary-accent);
   color: var(--clr-accent-text);
   font-weight: var(--bold-font-weight);
