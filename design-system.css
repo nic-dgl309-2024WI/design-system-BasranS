@@ -54,8 +54,6 @@
   }
 
 
-
-
   /* Desktop navbar */
 
   @media (min-width: 768px) {
@@ -69,14 +67,16 @@
     .top-navbar{
       display: flex;
       flex-direction: column;
+     
     }
     
     /* Display the side navbar in column for desktop */
     .side-navbar{
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        margin: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: auto;
+         
        }
 
           /* Hide the list items for mobile*/
@@ -112,26 +112,41 @@
          
        }
      
-       
-       
 }
+
 
  /* Style typography page */
 
   /* Style typography page fonts */
 
-.fonts {
-    font-size:17px;
+.fonts{
+  font-size: var(--h1-font-size);
     padding-left: 15px;
     
   }
 
-  /* Style typography page headings */
-.font-uses h2, .heading-c-normal h1, .heading-c-bold h1, .body-font-normal h2, .body-font-bold h2, .utility-classes h2{
-  color: var(--clr-secondary-accent);
-  text-decoration: underline;
-}
+  .fonts h2{
+    color: var(--clr-secondary-accent);
+    text-decoration: underline;
+    font-size: var(--h1-font-size);
 
+  }
+
+  .fonts h1{
+    color: var(--clr-secondary-accent);
+    text-decoration: underline;
+  }
+
+  /* Style typography page headings */
+  .section-heading{
+    font-family: var(--primary-font);
+    font-size: var(--h1-font-size);
+    font-weight: var(--bold-font-weight);
+    color: var(--clr-secondary-accent);
+    text-decoration: underline;
+
+  }
+  
 
  /* Style Colours page */
 
@@ -180,11 +195,6 @@ tr:nth-child(even) {
  justify-content: space-evenly;
 }
 
-.section-heading{
-  font-family: var(--primary-font);
-  font-size: var(--h2-font-size);
-  font-weight: var(--bold-font-weight);
-}
 
 
 
