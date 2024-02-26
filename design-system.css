@@ -113,6 +113,7 @@
        }
      
        
+       
 }
 
  /* Style typography page */
@@ -138,17 +139,18 @@
 .colours button{
   padding:5px;
   border-radius:10px;
-  text-align:center;
+  text-align: center;
   margin-left: 5px;
-  margin-top: 10px;
-  
+  margin-top: 10px; 
 }
 
  /* Style colours swatch*/
 .colours-swatch{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
+
+
 
  /* Style colours table*/
 table {
@@ -163,7 +165,7 @@ td, th {
 
   border: 1px solid var(--clr-secondary-bg);
   text-align: left;
-  padding: 8px;
+  padding: 2px;
 }
 
 tr:nth-child(even) {
