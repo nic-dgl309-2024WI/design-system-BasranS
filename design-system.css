@@ -178,6 +178,11 @@ tr:nth-child(even) {
  justify-content: space-evenly;
 }
 
+.section-heading{
+  font-family: var(--primary-font);
+  font-size: var(--h2-font-size);
+  font-weight: var(--bold-font-weight);
+}
 
 
 
