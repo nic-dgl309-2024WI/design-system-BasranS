@@ -165,7 +165,7 @@ td, th {
 
   border: 1px solid var(--clr-secondary-bg);
   text-align: left;
-  padding: 2px;
+  
 }
 
 tr:nth-child(even) {
