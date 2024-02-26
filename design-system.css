@@ -120,7 +120,7 @@
   /* Style typography page fonts */
 
 .fonts{
-  font-size: var(--h1-font-size);
+  font-size: var(--h2-font-size);
     padding-left: 15px;
     
   }
