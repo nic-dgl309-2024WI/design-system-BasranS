@@ -21,10 +21,10 @@
 
  /* Typeface font sizes */
  
- --h1-font-size: 24px; 
- --h2-font-size: 20px;
- --h3-font-size: 19px;
- --body-font-size: 18px; 
+ --h1-font-size: 32px; 
+ --h2-font-size: 24px;
+ --h3-font-size: 18px;
+ --body-font-size: 16px; 
  
 
  /* Typeface font weight */
@@ -36,13 +36,13 @@
   /* Typeface line height */
  
   --heading-line-height: 1.2;
-  --body-line-height: 1.5;
+  --body-line-height: 1.5rem;
   
  
     /* Typeface letter spacing */
  
-  --letter-spacing: 1px;
-  
+  --heading-letter-spacing: 2px;
+  --body-letter-spacing: 1px;
    
   /* Typeface colours */
  
