@@ -75,13 +75,15 @@ header ul li a{
     font-family: var(--primary-font);
     font-size: var(--h2-font-size);
     color: var(--clr-secondary-accent);
-  
+   margin-top: 20px;
+   padding: 10px;
   }
   
   .main-heading{
     font-family: var(--primary-font);
     font-size: var(--h1-font-size);
     font-weight: var(--bold-font-weight);
+    margin-top: 16px;
   }
   
 
