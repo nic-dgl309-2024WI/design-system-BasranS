@@ -360,6 +360,53 @@ font-size: var(--body-font-size);
   margin-bottom: 2.25rem; /* 36px */
 }
 
+/* Margin left */
+
+
+.l-ml-1 {
+  margin-left: 1rem; /* 16px */
+}
+
+.l-ml-1-25 {
+  margin-left: 1.25rem; /* 20px */
+}
+
+.l-ml-1-5 {
+  margin-left: 1.5rem; /* 24px */
+}
+
+.l-ml-2 {
+  margin-left: 2rem; /* 32px */
+}
+
+.l-ml-2-25 {
+  margin-left: 2.25rem; /* 36px */
+}
+
+
+
+/* Margin right */
+
+.l-mr-1 {
+  margin-right: 1rem; /* 16px */
+}
+
+.l-mr-1-25 {
+  margin-right: 1.25rem; /* 20px */
+}
+
+.l-mr-1-5 {
+  margin-right: 1.5rem; /* 24px */
+}
+
+.l-mr-2 {
+  margin-right: 2rem; /* 32px */
+}
+
+.l-mr-2-25 {
+  margin-right: 2.25rem; /* 36px */
+}
+
 
 
 
