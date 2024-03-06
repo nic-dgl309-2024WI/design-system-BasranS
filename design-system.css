@@ -131,6 +131,13 @@ header ul li a{
 
 /* Style typography page */
 
+.fonts{
+  padding: 16px;
+}
+
+.characters{
+  margin-top: 10px;
+}
   /* Style font sizing*/
  .font-sans, .font-serif{
    box-sizing:content-box;
@@ -337,17 +344,18 @@ header ul li a{
       
         /* Style the background colours content */
       .container-desk__accent{      
-      margin-left: 180px;
+      margin-left: 95px;
       padding: 15px;
 
       }
             
       .desk-colours__accent{
-       margin-left: 190px;
+       margin-left: 110px;
       }
 
       
       /* Style Typography page*/
+
 
       .font-uses-mobile{
         display: none;
@@ -390,8 +398,6 @@ header ul li a{
           }
         
           
-      
-        
           .fonts-li ul{
             display: flex;
             flex-direction: column;
@@ -408,4 +414,5 @@ header ul li a{
             }
      
 
+            
 }
