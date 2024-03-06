@@ -282,11 +282,41 @@ font-size: var(--body-font-size);
   
   
   /* Font letter spacing*/
-  .u-letter-spacing{
-    letter-spacing: var(--letter-spacing);
+  .u-ls-heading{
+    letter-spacing: var(--heading-letter-spacing);
    
   }
   
+  .u-ls-body{
+    letter-spacing: var(--body-letter-spacing);
+  }
+
+  /*  Margin space layout classes*/
+
+/* margin for all sides */
+
+.l-m-1 { 
+  margin: 1rem; 
+ }
+
+ .l-m-1-25 {
+  margin-top: 1.25rem; /* 20px */
+}
+
+.l-m-1-5 {
+  margin-top: 1.5rem; /* 24px */
+}
+
+.l-m-2 {
+  margin-top: 2rem; /* 32px */
+}
+
+.l-m-2-25 {
+  margin-top: 2.25rem; /* 36px */
+}
+
+
+
 
 
 

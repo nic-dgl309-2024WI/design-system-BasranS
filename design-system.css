@@ -1,142 +1,81 @@
-
 /* Mobile navbar*/
 .top-navbar{
-    display: none;
-  }
+  display: none;
+}
 
 /* Style active class*/
-  .active{
-    color:var(--clr-active);
-  }
+ .active{
+   color:var(--clr-active);
+}
 
-  /* Style hover*/
-   a:hover{
-    color: var(--clr-hover);
-  }
-  /* Style header */
-  header{
-    padding:10px;
-    background-color: var(--clr-secondary-bg);
-    color: var(--clr-body-text);
-  }
+/* Style hover*/
+ a:hover{
+  color: var(--clr-hover);
+}
+/* Style header */
+header{
+  padding:10px;
+  background-color: var(--clr-secondary-bg);
+  color: var(--clr-body-text);
+}
 
-  /* Style links in header */
-  header ul li a{
-    text-decoration: none;
-    color: var(--clr-body-text);
-  }
+/* Style links in header */
+header ul li a{
+  text-decoration: none;
+  color: var(--clr-body-text);
+}
 
-  /* Style list items in side navbar */
-  .side-navbar ul li {
-     list-style-type: none;
-  }
-  
-  /* Style list items in hidden side navbar */
-  .side-navbar-hidden ul li{
-    list-style-type: none;
-  }
-  
-  /* Style links in mobile navbar */
-  .mobile-nav__link{
-    text-decoration: none;
-    color: var(--clr-body-text);
-  }
-  
-  /* Hide the side navbar for mobile */
-  .side-navbar-hidden {
-    display: none;
-  }
+/* Style list items in side navbar */
+.side-navbar ul li {
+   list-style-type: none;
+}
+
+/* Style list items in hidden side navbar */
+.side-navbar-hidden ul li{
+  list-style-type: none;
+}
+
+/* Style links in mobile navbar */
+.mobile-nav__link{
+  text-decoration: none;
+  color: var(--clr-body-text);
+}
+
+/* Hide the side navbar for mobile */
+.side-navbar-hidden {
+  display: none;
+}
 
 /* Style mobile navbar for mobile */
-  .mobile-navbar{
-    display: flex;
-    justify-content: space-between;
-  }
-
-
-  /* Desktop navbar */
-
-  @media (min-width: 768px) {
-  
-  /* Hide the mobile navbar for desktop */
-    .mobile-navbar {
-      display: none; 
-    }
-
-    /* Display the top navbar in column for desktop */
-    .top-navbar{
-      display: flex;
-      flex-direction: column;
-     
-    }
-    
-    /* Display the side navbar in column for desktop */
-    .side-navbar{
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-      margin: auto;
-         
-       }
-
-          /* Hide the list items for mobile*/
-       .side-nav__mobile{
-        display: none;
-      }
-
-        /* Style list items in the top navbar for desktop*/
-      .top-list{
-       
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    
-      }
-      
-      /* Style about me in the top navbar for desktop*/
-      .about-me{
-        padding-right: 20px;
-      }
-      
-      
-    /* Style links in the top navbar for desktop */
-      .top-nav__link{
-        text-decoration: none;
-        color: var(--clr-body-text);
-       }
-
-         /* Adjust top navbar layout for desktop*/
-       .top-navbar{
-         display: flex;
-         flex-direction: column;
-         
-       }
-     
+.mobile-navbar{
+  display: flex;
+  justify-content: space-between;
 }
 
 
- /* Style typography page */
 
-  /* Style typography page fonts */
+/* Style typography page */
+
+/* Style typography page fonts */
 
 .fonts{
   font-size: var(--h2-font-size);
     padding-left: 15px;
     
   }
-
+  
   .fonts h2{
     color: var(--clr-secondary-accent);
     text-decoration: underline;
     font-size: var(--h1-font-size);
-
+  
   }
-
+  
   .fonts h1{
     color: var(--clr-secondary-accent);
     text-decoration: underline;
   }
-
+  
   /* Style typography page headings */
   .section-heading{
     font-family: var(--primary-font);
@@ -144,57 +83,115 @@
     font-weight: var(--bold-font-weight);
     color: var(--clr-secondary-accent);
     text-decoration: underline;
-
+  
   }
   
-
- /* Style Colours page */
-
- /* Style colours buttons */
-.colours button{
+  
+  /* Style Colours page */
+  
+  /* Style colours buttons */
+  .colours button{
   padding:5px;
   border-radius:10px;
   text-align: center;
   margin-left: 5px;
   margin-top: 10px; 
-}
-
- /* Style colours swatch*/
-.colours-swatch{
+  }
+  
+  /* Style colours swatch*/
+  .colours-swatch{
   display: flex;
   flex-direction: column;
-}
-
-
-
- /* Style colours table*/
-table {
+  }
+  
+  
+  
+  /* Style colours table*/
+  table {
   font-family: var(--secondary-font);
   font-size: var( --body-font-size);
   border-collapse: collapse;
   width: 100%;
-}
-
- /* Style colours table content */
-td, th {
-
+  }
+  
+  /* Style colours table content */
+  td, th {
+  
   border: 1px solid var(--clr-secondary-bg);
   text-align: left;
   
-}
-
-tr:nth-child(even) {
+  }
+  
+  tr:nth-child(even) {
   background-color: var( --clr-tertiary-bg);
+  }
+  
+  /* Style colours examples*/
+  .colours-examples{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-evenly;
+  }
+
+  
+/* Desktop navbar */
+
+@media (min-width: 768px) {
+
+/* Hide the mobile navbar for desktop */
+  .mobile-navbar {
+    display: none; 
+  }
+
+  /* Display the top navbar in column for desktop */
+  .top-navbar{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  /* Display the side navbar in column for desktop */
+  .side-navbar{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: auto;
+       
+     }
+
+        /* Hide the list items for mobile*/
+     .side-nav__mobile{
+      display: none;
+    }
+
+      /* Style list items in the top navbar for desktop*/
+    .top-list{
+     
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+  
+    }
+    
+    /* Style about me in the top navbar for desktop*/
+    .about-me{
+      padding-right: 20px;
+    }
+    
+    
+  /* Style links in the top navbar for desktop */
+    .top-nav__link{
+      text-decoration: none;
+      color: var(--clr-body-text);
+     }
+
+       /* Adjust top navbar layout for desktop*/
+     .top-navbar{
+       display: flex;
+       flex-direction: column;
+       
+     }
+   
 }
-
-/* Style colours examples*/
-.colours-examples{
- display: flex;
- flex-direction: row;
- margin-top: 20px;
- justify-content: space-evenly;
-}
-
-
-
 
