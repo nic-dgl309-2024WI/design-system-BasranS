@@ -82,11 +82,9 @@ ul, ol {
 /* Primary colour swatch */
 
 .u-primary-bg{
-font-weight: var(--bold-font-weight);
+
 background-color: var(--clr-primary-bg);
 color: var(--clr-body-text);
-font-size: var(--h3-font-size);
-font-family: var(--secondary-font);
 }
   /* Primary colour example */
 

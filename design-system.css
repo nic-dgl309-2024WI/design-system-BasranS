@@ -76,32 +76,58 @@ header ul li a{
     text-decoration: underline;
   }
   
-  /* Style typography page headings */
+  /* Style  all page headings */
+
   .section-heading{
+    font-family: var(--primary-font);
+    font-size: var(--h2-font-size);
+    color: var(--clr-secondary-accent);
+  
+  }
+  
+  .main-heading{
     font-family: var(--primary-font);
     font-size: var(--h1-font-size);
     font-weight: var(--bold-font-weight);
-    color: var(--clr-secondary-accent);
-    text-decoration: underline;
-  
   }
   
-  
+
   /* Style Colours page */
+
   
-  /* Style colours buttons */
-  .colours button{
-  padding:5px;
-  border-radius:10px;
-  text-align: center;
-  margin-left: 5px;
-  margin-top: 10px; 
+  .colours-content{
+    border: 10px solid rgba(200, 199, 199, 0.329);
+    border-radius: 50px;
+    box-shadow: rgba(28, 28, 28, 0.2) 0px 2px 8px 0px;
+    font-size: 45px;
+    height: 1.5em;
+    width: 1.5em;
   }
   
-  /* Style colours swatch*/
-  .colours-swatch{
-  display: flex;
-  flex-direction: column;
+  .mobile-colours__info p{
+    font-size: var(--body-font-size);
+    font-family: var(--secondary-font);
+    
+  }
+
+  .mobile-body__container{
+    text-align: left;
+  }
+  
+  .mobile-colour__body{
+  border: 2px solid var(--clr-tertiary-bg);
+  }
+  
+  .mobile-colour__body h3 {
+    font-size: var(--h3-font-size);
+    font-family: var(--primary-font);
+    
+  
+  }
+  
+
+  .colours-desk{
+    display: none;
   }
   
   
@@ -124,17 +150,8 @@ header ul li a{
   
   tr:nth-child(even) {
   background-color: var( --clr-tertiary-bg);
-  }
-  
-  /* Style colours examples*/
-  .colours-examples{
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-  justify-content: space-evenly;
-  }
 
-  
+  }
 /* Desktop navbar */
 
 @media (min-width: 768px) {
@@ -194,4 +211,3 @@ header ul li a{
      }
    
 }
-
