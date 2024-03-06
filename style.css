@@ -337,6 +337,28 @@ font-size: var(--body-font-size);
   margin-top: 2.25rem; /* 36px */
 }
 
+/* Margin bottom */
+
+
+.l-mb-1 {
+  margin-bottom: 1rem; /* 16px */
+}
+
+.l-mb-1-25 {
+  margin-bottom: 1.25rem; /* 20px */
+}
+
+.l-mb-1-5 {
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+.l-mb-2 {
+  margin-bottom: 2rem; /* 32px */
+}
+
+.l-mb-2-25 {
+  margin-bottom: 2.25rem; /* 36px */
+}
 
 
 
