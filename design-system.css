@@ -305,15 +305,17 @@ header ul li a{
       
       /* Style Typography page*/
 
-      .font-serif h2, .font-sans h2{
-        color: var(--clr-secondary-accent);
-        }
-        
+      .font-uses-mobile{
+        display: none;
+      }
+
+      .characters{
+        padding: 16px;
+      }
         .font-serif, .font-sans{
           box-sizing:content-box;
-          border: 5px solid var(--clr-tertiary-bg);
-          margin-top: 16px;
-          padding: 16px;
+          border: 3px solid var(--clr-tertiary-bg);
+          padding: 10px;
          }
         
         .body-font-normal, .body-font-bold{
@@ -323,17 +325,19 @@ header ul li a{
         
          }
         
-         .sans1-font, .sans2-font{
-          font-size: 140px;
+         .c-serif, .c-sans{
+          font-size: 130px;
+          
          }
         
           .heading-c-bold,  .heading-c-normal{
-         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+          display: flex;
+         flex-direction: row;
+         justify-content: space-around;
          align-items: center;
           }
-          .serif1, .serif{
+
+          .serif-character, .sans-character{
             font-size: 120px;
           }
         
@@ -341,36 +345,22 @@ header ul li a{
             text-align: center;
           }
         
-        .fonts{
-          font-size: var(--h3-font-size);
-          }
+          
+      
         
-          .fonts h2{
-           
-            font-size: var(--h2-font-size);
-           font-family: var(--primary-font);
-          }
-        
-          .fonts h1{
-           
-            font-size: var(--h1-font-size);
-            margin-top: 16px;
-            font-family: var(--primary-font);
-          }
-        
-          .li ul{
+          .fonts-li ul{
             display: flex;
             flex-direction: column;
             }
             
-            .li2{
+            .fonts-li{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             }
             .font-uses {
               font-family: var(--secondary-font);
-             
+              display: block;
             }
      
 
