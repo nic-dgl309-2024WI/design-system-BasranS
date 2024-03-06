@@ -94,7 +94,7 @@ header ul li a{
 
   /* Style Colours page */
 
-  
+    /* Style colours container for mobile */
   .colours-content{
     border: 10px solid rgba(200, 199, 199, 0.329);
     border-radius: 50px;
@@ -103,29 +103,33 @@ header ul li a{
     height: 1.5em;
     width: 1.5em;
   }
-  
+
+
   .mobile-colours__info p{
+    font-size: var(--body-font-size);
+    font-family: var(--secondary-font);
+  }
+    
+  .mobile-colours__info h2{
+    font-size: var(--h3-font-size);
+    font-family: var(--primary-font);
+  }
+  
+  /* Style body colour container paragrahs*/
+  .mobile-colour__body p{
     font-size: var(--body-font-size);
     font-family: var(--secondary-font);
     
   }
-
-  .mobile-body__container{
-    text-align: left;
-  }
   
+    /* Style body text colours content */
   .mobile-colour__body{
   border: 2px solid var(--clr-tertiary-bg);
+  width: 90%;
+  text-align: center;
   }
-  
-  .mobile-colour__body h3 {
-    font-size: var(--h3-font-size);
-    font-family: var(--primary-font);
-    
-  
-  }
-  
-
+ 
+    /* Hide desktop colours content from mobile*/
   .colours-desk{
     display: none;
   }
