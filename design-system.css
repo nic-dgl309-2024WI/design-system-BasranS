@@ -52,29 +52,6 @@ header ul li a{
   justify-content: space-between;
 }
 
-
-
-/* Style typography page */
-
-/* Style typography page fonts */
-
-.fonts{
-  font-size: var(--h2-font-size);
-    padding-left: 15px;
-    
-  }
-  
-  .fonts h2{
-    color: var(--clr-secondary-accent);
-    text-decoration: underline;
-    font-size: var(--h1-font-size);
-  
-  }
-  
-  .fonts h1{
-    color: var(--clr-secondary-accent);
-    text-decoration: underline;
-  }
   
   /* Style  all page headings */
 
@@ -130,32 +107,56 @@ header ul li a{
   }
  
     /* Hide desktop colours content from mobile*/
-  .colours-desk{
+  .colours-desk__container{
     display: none;
   }
   
+
+/* Style typography page */
+
+/* Style typography page fonts */
+
+.fonts{
+  font-size: var(--h2-font-size);
+    padding-left: 15px;
+    
+  }
   
+  .fonts h2{
+    color: var(--clr-secondary-accent);
+    text-decoration: underline;
+    font-size: var(--h1-font-size);
   
+  }
+  
+  .fonts h1{
+    color: var(--clr-secondary-accent);
+    text-decoration: underline;
+  }
+
   /* Style colours table*/
   table {
-  font-family: var(--secondary-font);
-  font-size: var( --body-font-size);
-  border-collapse: collapse;
-  width: 100%;
-  }
+    font-family: var(--secondary-font);
+    font-size: var( --body-font-size);
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+    /* Style colours table content */
+    td, th {
+    
+    border: 1px solid var(--clr-secondary-bg);
+    text-align: left;
+    
+    }
+    
+    tr:nth-child(even) {
+    background-color: var( --clr-tertiary-bg);
   
-  /* Style colours table content */
-  td, th {
-  
-  border: 1px solid var(--clr-secondary-bg);
-  text-align: left;
-  
-  }
-  
-  tr:nth-child(even) {
-  background-color: var( --clr-tertiary-bg);
+    }
 
-  }
+
+
 /* Desktop navbar */
 
 @media (min-width: 768px) {
@@ -213,5 +214,79 @@ header ul li a{
        flex-direction: column;
        
      }
+
+      /* Style colours page*/
+
+       /* Show desktop colour content*/
+
+       .colours-desk__container{
+        display: block;
+       }
+
+        /* Hide mobile colours content*/
+       .colours-mobile{
+        display: none;
+       }
+
+       /* Style the background colours content*/
+       .colours-desk{
+        border: 20px solid rgba(200, 199, 199, 0.329);
+        border-radius: 60px;
+        box-shadow: rgba(28, 28, 28, 0.2) 0px 2px 8px 0px;
+        font-size: 75px;
+        height: 1.5em;
+        width: 1.5em;
+        
+      }
+      
+       /* Style the background colours content paragraphs*/
+
+      .desk-colours__info p, .desk-colours__accent p{
+        font-size: var(--body-font-size);
+        font-family: var(--secondary-font);   
+      }
+      
+       /* Style the background colours content heading*/
+      .desk-colours__info h2, .desk-colours__accent h2{
+        font-family: var(--primary-font);
+        font-size: var(--h2-font-size);
+      }
    
+       /* Style the body colours content */
+      .body-colour__info{
+       text-align: center; 
+       padding-top: 60px;
+     
+      }
+    
+        /* Style the body colours heading */
+      .body-colour__container h2{
+        font-size: var(--h2-font-size);
+        font-family: var(--primary-font);
+        
+      }
+      
+        /* Style the body colours content paragraphs*/
+      .body-colour__container p{
+        font-size: var(--body-font-size);
+        font-family: var(--secondary-font);
+        font-weight: var(--normal-font-weight);
+      }
+      
+        /* Style the body colours content container */
+      .body-colour__container{
+      text-align: left;
+     
+      }
+      
+        /* Style the background colours content */
+      .container-desk__accent{      
+      margin-left: 180px;
+      padding: 15px;
+
+      }
+            
+      .desk-colours__accent{
+       margin-left: 190px;
+      }
 }
