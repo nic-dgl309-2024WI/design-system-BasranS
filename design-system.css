@@ -190,23 +190,25 @@ header ul li a{
   
     }
 
+/* Style Spacing page*/
 
-     /* Style Spacing page*/
-
-    /* Style margin container*/ 
+ /* Style margin container*/ 
   
- 
-   .container-margin{
+  .container-margin{
      padding: 10px;
 
    }
-   /* Style padding container*/
+ /* Style padding container*/
 
 .container-padding{
   padding: 10px;
 
 }
 
+ /* Style About page*/
+.about-content{
+  margin-top:10px;
+}
  
 
 /* Desktop navbar */
@@ -218,9 +220,6 @@ header ul li a{
     display: none; 
   }
 
-  
- 
-   
     main {
       position: absolute;
       top: 0px;
@@ -235,7 +234,6 @@ header ul li a{
     display: block;
     top:0;
     left: 0;
-    padding-top: 16px;
     padding-left: 16px;
     z-index: 1000;
     width: 100%;
@@ -441,6 +439,11 @@ header ul li a{
               display: block;
             }
      
-
+        /*Style about content*/
+            
+       .about-content{
+        margin-top: 80px;
+      }
+ 
             
 }
