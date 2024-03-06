@@ -116,29 +116,35 @@ header ul li a{
 /* Style typography page */
 
 
-/* Style typography page fonts */
-
-.characters{
-  margin-top: 16px;
-}
-
+  /* Style font sizing*/
  .font-sans, .font-serif{
    box-sizing:content-box;
-   border: 5px solid var(--clr-tertiary-bg);
-  
+   border: 3px solid var(--clr-tertiary-bg);
+   padding: 3px;
+   text-align: left;
  }
- 
- .serif-content, .sans-content{
 
+ 
+   /* Style text content*/
+ .serif-content, .sans-content{
    font-size: var(--body-font-size);
  }
 
- 
- .serif-content, .sans-content p{
+   /* Style text character paragraphs*/
+ .serif-content p, .sans-content p{
    font-size: var(--h3-font-size);
- 
+   font-family: var(--secondary-font);
+ }
+
+   /* Style text characters*/
+ .sans-character, .serif-character {
+  font-size: 70px;
  }
  
+   /* Style font use*/
+ .font-uses{
+ display: none;
+ }
 
   /* Style colours table*/
   table {
@@ -297,12 +303,6 @@ header ul li a{
       
       /* Style Typography page*/
 
-      .font-uses-mobile{
-        display: none;
-      }
-
-      .font-uses{
-        display: flex;
-      }
+     
 
 }
