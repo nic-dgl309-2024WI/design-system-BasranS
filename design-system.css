@@ -46,13 +46,29 @@ header ul li a{
   display: none;
 }
 
-/* Style mobile navbar for mobile */
-.mobile-navbar{
-  display: flex;
-  justify-content: space-between;
+/* Make side and top navbar fixed in mobile*/
+    .side-navbar{
+      margin-top: 24px;
+      left: 0;
+      position: fixed;
+      width: 1000%;
+      background-color: var(--clr-secondary-bg);
+      padding:5px; 
 }
 
-  
+/* Style mobile navbar for mobile */
+    
+.mobile-navbar{
+  width: 100%;
+  padding: 5px;
+  left: 0;
+  top:0;
+  position: fixed;
+  background-color: var(--clr-secondary-bg);
+  display: flex;
+  justify-content: space-between;
+
+  }
   /* Style  all page headings */
 
   .section-heading{
@@ -145,8 +161,6 @@ header ul li a{
  display: none;
  }
 
- 
-
 
   /* Style colours table*/
   table {
@@ -178,21 +192,51 @@ header ul li a{
     display: none; 
   }
 
-  /* Display the top navbar in column for desktop */
-  .top-navbar{
-    display: flex;
-    flex-direction: column;
-   
-  }
   
-  /* Display the side navbar in column for desktop */
-  .side-navbar{
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: auto;
-       
-     }
+ 
+   
+    main {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      width: 70%;
+      margin: 120px;
+      
+    }
+    
+    .top-navbar{
+    display: block;
+    top:0;
+    left: 0;
+    padding-top: 16px;
+    padding-left: 16px;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    background-color: var(--clr-secondary-bg);
+    }
+    
+
+    /* Display the side navbar in column for desktop */
+    .side-navbar-hidden{
+      width: 170px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-left: 10px;
+      height: 100%;
+      background-color: var(--clr-secondary-bg);
+      padding-top: 70px;
+      display: block;
+         
+    }
+
+          /* Hide the list items for mobile*/
+       .side-nav__mobile{
+        display: none;
+      }
+
 
         /* Hide the list items for mobile*/
      .side-nav__mobile{
