@@ -165,7 +165,7 @@
    </div>
   
      <!-- Body text colour conatiner-->
-     
+
   <div class="mobile-colour__body">
   <h2>White text for accent</h2>
   <p> For accent colours the text is white</p><br/>
@@ -174,142 +174,112 @@
   <p>CSS variable name: --clr-accent-text</p>
     </div>
   </div>
-
 </div>
 
 
+<!-- Desktop  colours containers-->
 
-
-
-   <br/>
-   <!-- Colours Information-->
-
-   <h2 class="section-heading">Colours Information</h2>
-  <br/>
-<table>
- 
-  <!--Information assets-->
-   <tr>
-    <th>Colours</th>
-    <th>Use</th>
-    <th>Utility Class</th>
-    <th>Colour Contrast Ratio</th>
-  </tr>
-
-    <!-- Primary Background Information-->
-  <tr>
-    <td>Primary Background</td>
-    <td>Used as Main Background</td>
-    <td>bg-primary</td>
-    <td>16.86:1 PASS</td>
-  </tr>
-
-  <!--Secondary Background Information-->
-  <tr>
-    <td>Secondary Background</td>
-    <td>Used as Secondary Background</td>
-    <td>bg-secondary</td>
-    <td>12.19:1 PASS</td>
-  </tr>
-
-    <!--Tertiary Background Information-->
-  <tr>
-    <td>Tertiary Background</td>
-    <td>Used to differentiate some sections</td>
-    <td>bg-tertiary</td>
-    <td>12.33:1 PASS</td>
-  </tr>
-
-  <!--Text BodyInformation-->
-  <tr>
-    <td>Text Body</td>
-    <td>Used for Headings and Paragraphs</td>
-    <td>bg-text-body</td>
-    <td>16.86:1, 12.19:1, 12.33:1  PASS</td>
-  </tr>
-
-  <!--Primary accent Information-->
-  <tr>
-    <td>Primary Accent</td>
-    <td>Used as primary accent colour</td>
-    <td>bg-primary-accent</td>
-    <td>17.82:1 PASS</td>
-  </tr>
+<div class="colours-desk">
   
-   <!--Secondary accent Information-->
-  <tr>
-    <td>Secondary Accent</td>
-    <td>Used as secondary accent colour</td>
-    <td>bg-secondary-accent</td>
-    <td>7.03:1 PASS</td>
-  </tr>
+  <!-- Primary background colour container-->
 
-   <!--Text accent Information-->
-  <tr>
-    <td>Text accent colour</td>
-    <td>Used as text accent colour</td>
-    <td>bg-text-accent</td>
-    <td>17.82:1, 7.03:1 PASS</td>
-  </tr>
-</table>
- <br/>
+  <div class="container-desk">
+   <div class="colours-desk" style="background-color:var(--clr-primary-bg);"></div>
+  <div class="desk-colours__info">
+    <h2>#F9F8FC</h2>
+    <p>u-primary-bg</p>
+    <p>16.86:1 (PASS)</p>
+  </div>
+  
+  <!-- Secondary background colour container-->
 
- <!--Examples for all colours-->
+  <div class="colours-content" style="background-color:var(--clr-secondary-bg);"></div>
+  <div class="desk-colours__info">
+    <h2>#FEC7D7</h2>
+    <p>u-secondary-bg</p>
+    <p>12.19:1 (PASS)</p>
+  </div>
+  </div>
+  
+  <!-- Tertiary background colour container-->
 
- <h2 class="section-heading">Examples</h2> 
-     <div class="colours-examples"> 
-     
-     <!--Primary Colour examples-->
-      <div class="u-primary-example">
-       <p class=" u-fw-normal ">Hello World!</p>
-       <p class="u-fw-bold ">Hello World!</p>
-      </div><br/>
-        
-      <!--Secondary Colour examples-->    
-      <div class="u-secondary-example">
-        <p class="u-fw-normal ">Hello World!</p>
-       <p class="u-fw-bold">Hello World!</p>
-      </div><br/>
-
-     <!--Tertiary Colour examples-->           
-      <div class="u-tertiary-example">
-        <p class=" u-fw-normal ">Hello World!</p>
-       <p class=" u-fw-bold ">Hello World!</p>
-      </div><br/>
-
-        
-        <!--Text Body examples-->
-      <div class="u-body-example">
-        <p class=" u-fw-normal ">Hello World!</p>
-        <p class=" u-fw-bold ">Hello World!</p>
-       </div><br/>
-
-         <!--Primary accent examples-->       
-      <div class="u-paccent-example">
-        <p class=" u-fw-normal">Hello World!</p>
-       <p class="u-fw-bold ">Hello World!</p>
-      </div><br/>
-
-         <!--Secondary accent examples-->       
-      <div class="u-saccent-example">
-       <p class="u-fw-normal">Hello World!</p>
-       <p class="u-fw-bold">Hello World!</p>
-      </div><br/>
-
-        
-      <!--Text accent examples-->
-         <div class="u-accent-examples">
-             <!--Text accent examples on primary accent  background-->
-          <p class="u-fw-normal u-primary-accent">Hello World!</p>
-          <p class="u-fw-bold u-primary-accent">Hello World!</p>
-
-             <!--Text accent examples on secondary accent  background-->
-          <p class=" u-fw-normal  u-secondary-accent">Hello World!</p>
-          <p class="u-fw-bold u-secondary-accent">Hello World!</p>
-         </div>
+  <div class="container-desk">
+    <div class="colours-desk" style="background-color:var(--clr-tertiary-bg);"></div>
+    <div class="desk-colours__info">
+      <h2>#FEC7D7</h2>
+      <p>u-secondary-bg</p>
+      <p>12.19:1 (PASS)</p>
     </div>
-    <br/>
-   </main>
+  
+    <!-- Primary accent colour container-->
+
+  <div class="colours-desk" style="background-color:var(--clr-primary-accent);"></div>
+    <div class="desk-colours__info">
+      <h2>#0E172C</h2>
+      <p>u-primary-accent</p>
+      <p>17.82:1 (PASS)</p>
+    </div>
+  </div>
+  
+   <!-- Secondary accent colour container-->
+  
+  <div class="container-desk">
+    <div class="colours-desk" style="background-color:var(--clr-secondary-accent);"></div>
+    <div class="desk-colours__info">
+      <h2>#724592</h2>
+      <p>u-secondary-accent</p>
+      <p>7.03:1 (PASS)</p>
+    </div>
+  </div>
+  
+  <!-- Body text colours-->
+
+  <h2 class="section-heading">Text Colours</h2><br/>
+    
+  <div class="desk-container__body">
+
+    <!-- Body text colour conatiner-->
+  
+   <div class="body-colour__container">
+  <h2>Black text for body</h2>
+  <p> For background colours the text will be black</p><br/>
+  <p> Hex Code:</p>
+  <p>CSS utility class: </p>
+    <p>CSS variable name: </p>
+   
+  </div>
+  
+   <!-- Body text colour information-->
+
+  <div class="body-colour__info">
+  <p>#0E172</p>
+  <p>  u-text-body</p>
+    <p>--clr-body-text</p>
+  </div>
+  
+   <!-- Body text colour conatiner-->
+
+  <div class="body-colour__container">
+    <h2>White text for accent</h2>
+    <p> For accent colours the text will be white</p><br/>
+    <p> Hex Code:</p>
+    <p>CSS utility class:</p>
+      <p>CSS variable name:</p>
+    </div>
+  
+     <!-- Body text colour information-->
+
+    <div class="body-colour__info">
+      <p> #FFFFFE</p>
+      <p> u-text-accent</p>
+        <p> --clr-accent-text</p>
+      </div>
+  </div>
+ </div>
+ 
+<br/>
+ 
+</main>
    
   <script src="design-system.js"></script>
   </body>
