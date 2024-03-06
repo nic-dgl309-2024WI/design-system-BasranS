@@ -464,6 +464,31 @@ font-size: var(--body-font-size);
   margin-bottom: 2.25rem; /* 36px */
 }
 
+/* Padding space layout classes*/
+
+ /* Padding for all sides */
+
+ .l-p-1 {
+  padding-top: 1rem; /* 16px */
+}
+
+.l-p-1-25 {
+  padding-top: 1.25rem; /* 20px */
+}
+
+.l-p-1-5 {
+  padding-top: 1.5rem; /* 24px */
+}
+
+.l-p-2 {
+  padding-top: 2rem; /* 32px */
+}
+
+.l-p-2-25 {
+  padding-top: 2.25rem; /* 36px */
+}
+
+
 
 
 
