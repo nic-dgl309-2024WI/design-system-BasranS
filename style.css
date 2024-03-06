@@ -728,6 +728,34 @@ font-size: var(--body-font-size);
 
 
 
+/* Mobile container */
+.container {
+  max-width: 100%;
+  margin: 0 auto; 
+  padding: 20px;
+  box-sizing: border-box; 
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+.constrained-container {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+/* Full-width container */
+
+.full-width-container {
+  width: 100%; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
 
 
 
