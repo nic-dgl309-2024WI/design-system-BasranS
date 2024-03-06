@@ -190,6 +190,25 @@ header ul li a{
   
     }
 
+
+     /* Style Spacing page*/
+
+    /* Style margin container*/ 
+  
+ 
+   .container-margin{
+     padding: 10px;
+
+   }
+   /* Style padding container*/
+
+.container-padding{
+  padding: 10px;
+
+}
+
+ 
+
 /* Desktop navbar */
 
 @media (min-width: 768px) {
@@ -357,19 +376,24 @@ header ul li a{
       /* Style Typography page*/
 
 
+       /* Hide font use content of mobile*/
       .font-uses-mobile{
         display: none;
       }
 
+       /* Style characters content*/
+
       .characters{
         padding: 16px;
       }
+
         .font-serif, .font-sans{
           box-sizing:content-box;
           border: 3px solid var(--clr-tertiary-bg);
           padding: 10px;
          }
         
+          /* Style character body*/
         .body-font-normal, .body-font-bold{
         display: flex;
         flex-direction: row;
@@ -397,17 +421,21 @@ header ul li a{
             text-align: center;
           }
         
+           /* Style font uses list*/
           
           .fonts-li ul{
             display: flex;
             flex-direction: column;
             }
             
+             
             .fonts-li{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             }
+
+              /* Show font uses section of desktop*/
             .font-uses {
               font-family: var(--secondary-font);
               display: block;
