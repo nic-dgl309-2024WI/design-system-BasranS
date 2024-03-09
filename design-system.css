@@ -133,13 +133,7 @@ header ul li a{
 
 /* Style typography page */
 
-.fonts{
-  padding: 16px;
-}
 
-.characters{
-  margin-top: 10px;
-}
   /* Style font sizing*/
  .font-sans, .font-serif{
    box-sizing:content-box;
@@ -192,26 +186,14 @@ header ul li a{
   
     }
 
-/* Style Spacing page*/
-
- /* Style margin container*/ 
-  
-  .container-margin{
-     padding: 10px;
-
-   }
- /* Style padding container*/
-
-.container-padding{
-  padding: 10px;
-
-}
-
  /* Style About page*/
 .about-content{
   margin-top:10px;
 }
  
+.img{
+  width:250px;
+}
 
 /* Desktop navbar */
 
@@ -222,27 +204,29 @@ header ul li a{
     display: none; 
   }
 
-    main {
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      width: 70%;
-      margin: 120px;
-      
-    }
+  /* Style the main for desktop navbar to be fixed */
+  main {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 70%;
+    margin: 120px;
     
-    .top-navbar{
-    display: block;
-    top:0;
-    left: 0;
-    padding-left: 16px;
-    z-index: 1000;
-    width: 100%;
-    position: fixed;
-    background-color: var(--clr-secondary-bg);
-    }
-    
+  }
+  
+   /* Style the top navbar for desktop to be fixed */
+  .top-navbar{
+  display: block;
+  top:0;
+  left: 0;
+  padding-left: 16px;
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  background-color: var(--clr-secondary-bg);
+  }
+  
 
     /* Display the side navbar in column for desktop */
     .side-navbar-hidden{
@@ -306,10 +290,10 @@ header ul li a{
        }
 
         /* Hide mobile colours content*/
-       .colours-mobile{
-        display: none;
-       }
-
+        .colours-mobile{
+          display: none;
+         }
+  
        /* Style the background colours content*/
        .colours-desk{
         border: 20px solid rgba(200, 199, 199, 0.329);
@@ -441,11 +425,7 @@ header ul li a{
               display: block;
             }
      
-        /*Style about content*/
-            
-       .about-content{
-        margin-top: 80px;
-      }
+        
  
      
             

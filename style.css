@@ -759,9 +759,7 @@ font-size: var(--body-font-size);
 /* Example for containers */
 .c-example {
   border: 3px solid var(--clr-active);
-  margin: 20px;
-  padding: 20px;
-  transition: width 0.5s ease; 
+  padding: 30px;
 }
 
 
@@ -771,15 +769,14 @@ font-size: var(--body-font-size);
   padding: 20px;
   margin-bottom: 20px;
   max-width: 600px; 
-  margin-left: auto;
-  margin-right: auto;
+ 
 }
 
 /* Full-Width Example */
 .full-width-example {
   background-color: var(--clr-primary-bg); 
-  padding: 20px;
   width: 100%;
+ margin-top: 10px;
 }
 
 /* Desktop Container */
@@ -787,7 +784,6 @@ font-size: var(--body-font-size);
   .container-desktop-example {
       max-width: 1400px; 
       margin: auto;
-      padding: 0 40px;
       background-color: var(--clr-primary-bg);
   }
 }
