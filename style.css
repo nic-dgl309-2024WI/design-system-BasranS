@@ -729,7 +729,7 @@ font-size: var(--body-font-size);
 
 
 /* Mobile container */
-.max-width-mobile{
+.container-mobile{
   max-width: 100%;
   margin: 0 auto; 
   padding: 20px;
@@ -745,10 +745,10 @@ font-size: var(--body-font-size);
   box-sizing: border-box; 
 }
 
-
+/* Desktop container */
 @media (min-width: 768px) {
 
-.desktop-container {
+.container-desktop {
   max-width: 1200px; 
   margin: 0 auto; 
   box-sizing: border-box; 
@@ -756,6 +756,41 @@ font-size: var(--body-font-size);
 
 }
 
+/* Example for containers */
+.c-example {
+  border: 3px solid var(--clr-active);
+  margin: 20px;
+  padding: 20px;
+  transition: width 0.5s ease; 
+}
+
+
+/* Max-Width Example */
+.max-width-example {
+  background-color: var(--clr-primary-bg);
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 600px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Full-Width Example */
+.full-width-example {
+  background-color: var(--clr-primary-bg); 
+  padding: 20px;
+  width: 100%;
+}
+
+/* Desktop Container */
+@media (min-width: 1024px) {
+  .container-desktop-example {
+      max-width: 1400px; 
+      margin: auto;
+      padding: 0 40px;
+      background-color: var(--clr-primary-bg);
+  }
+}
 
 
 

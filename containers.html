@@ -1,233 +1,262 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="design-system.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header class="header">
-      <!--Top navbar-->
-      <nav class="top-navbar">
-          <a href="index.html" class="top-nav__link serif-font u-fs-h2 u-fw-bold active">Design System</a>
-      
-
-          <ul class="top-list">
-          <li class="serif-font u-fs-h3 u-fw-normal"><a href="about-me.html" class="about-me">About Me</a></li>
-          <li class="serif-font u-fs-h3 u-fw-normal"> <a href="#">Demo Site</a></li>
-         </ul>
-      </nav>
-  
-      <!--Mobile navbar-->
-    
-      <nav class="mobile-navbar" >
-       <a href="index.html" class="mobile-nav__link serif-font u-fs-h3 u-fw-bold active">Design System</a>
-       
-
-          <!-- toggle -->
-          <i class="toggle fa fa-bars" onclick="toggleNav()" aria-hidden="true"></i>
-         </nav>
-  
-  
-       <!--Side navbar-->
-  
-      <nav class="side-navbar side-navbar-hidden">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <link rel="stylesheet" type="text/css" href="design-system.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <header class="header">
+        <!--Top navbar-->
+        <nav class="top-navbar">
+            <a href="index.html" class="top-nav__link serif-font u-fs-h2 u-fw-bold active">Design System</a>
         
-          <!--Side navbar mobile-->
-        <ul class="side-nav__mobile">
-          <li class="serif-font u-fs-body u-fw-bold"><a href="about-me.html">About Me</a></li>
-          <li class="serif-font u-fs-body u-fw-bold"><a href="#">Demo Site</a></li>
-         </ul>
-       
-        <ul class="side-nav__desk">
-           <li class="serif-font u-fs-h3 u-fw-bold">Branding</li>
-           <li class="sans-font u-fs-body u-fw-normal"><a href="colours.html">01 Colours</a></li>
-           <li class="sans-font u-fs-body u-fw-normal"><a href="typography.html">02 Typography</a></li>
-           <li class="sans-font u-fs-body u-fw-normal"><a href="#">03 Logo</a></li>  
-         </ul>
-   
-         <ul class="side-nav__desk">
-          <li class="serif-font u-fs-h3 u-fw-bold">Utilities</li>
-          <li class="sans-font u-fs-body u-fw-normal"><a href="spacing.html">04 Spacing</a></li>
-          <li class="sans-font u-fs-body u-fw-normal"><a href="containers.html" class="active">05 Containers</a></li>
-          <li class="sans-font u-fs-body u-fw-normal"><a href="#">06 Images</a></li>
-          <li class="sans-font u-fs-body u-fw-normal"><a href="#">07 Interactive</a></li>
-          <li class="sans-font u-fs-body u-fw-normal"><a href="#">08 Feedback</a></li>
-         </ul>
-   
-         <ul class="side-nav__desk">
-           <li class="serif-font u-fs-h3 u-fw-bold">Navigation</li>
-           <li class="sans-font u-fs-body u-fw-normal"><a href="#">09 Navbars</a></li>
-           <li class="sans-font u-fs-body u-fw-normal"><a href="#">10 Breadcrumbs</a></li>
-           <li class="sans-font u-fs-body u-fw-normal"><a href="#">11 Pagination</a></li>
-           
-          </ul>
-        
-          <ul class="side-nav__desk">
-           <li class="serif-font u-fs-h3 u-fw-bold">Blocks</li>
-           <li class="sans-font u-fs-body u-fw-normal"><a href="#">12 Hero</a></li>
-           <li class="sans-font u-fs-body u-fw-normal"><a href="#">13 Carousel</a></li>
-           <li class="sans-font u-fs-body u-fw-normal"><a href="#">14 Slats</a></li>
-           <li class="sans-font u-fs-body u-fw-normal"><a href="#">15 Footer</a></li>
+  
+            <ul class="top-list">
+            <li class="serif-font u-fs-h3 u-fw-normal"><a href="about-me.html" class="about-me">About Me</a></li>
+            <li class="serif-font u-fs-h3 u-fw-normal"> <a href="#">Demo Site</a></li>
            </ul>
-   
-          <ul class="side-nav__desk">
-           <li class="serif-font u-fs-h3 u-fw-bold" >Components</li>
-           <li class="sans-font u-fs-body u-fw-normal"><a href="#">16 Cards</a></li>
-           <li class="sans-font u-fs-body u-fw-normal"><a href="#">17 Forms</a></li>
-           <li class="sans-font u-fs-body u-fw-normal"><a href="#">18 Accordion</a></li>
-           <li class="sans-font u-fs-body u-fw-normal"><a href="#">19 Lists</a></li>
-          </ul>
         </nav>
-    </header>
-
-      <main>
-        <h1 class="main-heading">05 Containers</h1>
-        <section>
-        <h2 class="section-heading">Flex Utility Classes</h2>
-        <table>
-          <tr>
-            <th>Class</th>
-            <th>Use</th>
-            <th>Example</th>
-          </tr>
-          <tr>
-            <td>l-block</td>
-            <td>Display block</td>
-            <td><h3 class="l-block"><p>Container</p><p>Container</p></h3></td>
-          </tr>
-          <tr>
-
-            <td>l-flex</td>
-            <td>Flex display</td>
-            <td><h3 class="l-flex"><p>Container</p><p>Container</p></h3></td>
-          </tr>
-          <tr>
-          <td>l-flex-column</td>
-            <td>Flex column</td>
-            <td><h3 class="l-flex l-flex-column"><p>Container</p><p>Container</p></h3></td>
-          </tr>
-          <tr>
-            <td>l-flex-row</td>
-            <td>Flex row</td>
-            <td><h3 class="l-flex l-flex-row"><p>Container</p><p>Container</p></h3></td>
-          </tr>
-          <tr>
-            <td>l-flex-wrap </td>
-            <td>Flex wrap</td>
-            <td><h3 class="l-flexl-flex-wrap "><p>Container</p><p>Container</p></h3></td>
-          </tr>
-          <tr>
-            <td>l-flex-nowrap </td>
-            <td>Flex nowrap</td>
-            <td><h3 class="l-flex  l-flex-nowrap "><p>Container</p><p>Container</p></h3></td>
-          </tr>
-          <tr>
-            <td>l-flex-row-reverse  </td>
-            <td>Flex row reverse</td>
-            <td><h3 class="l-flex l-flex-row-reverse  "><p>Container</p><p>Container</p></h3></td>
-          </tr>
-          <tr>
-            <td>l-flex-column-reverse  </td>
-            <td>Flex column reverse</td>
-            <td><h3 class="l-flex l-flex-column-reverse  "><p>Container</p><p>Container</p></h3></td>
-          </tr>
-          <tr>
-            <td>l-flex-justify-center </td>
-            <td>Justify content center</td>
-            <td><h3 class="l-flex l-flex-justify-center "><p>Container</p><p>Container</p></h3></td>
-          </tr>
-          <tr>
-            <td>l-flex-justify-between</td>
-            <td>Space between</td>
-            <td><h3 class="l-flex l-flex-justify-between"><p>Container</p><p>Container</p></h3></td>
-          </tr>
-          <tr>
-            <td>l-flex-justify-around</td>
-            <td>Space around</td>
-            <td><h3 class="l-flex l-flex-justify-around "><p>Container</p><p>Container</p></h3></td>
-          </tr>
-          <tr>
-            <td>l-flex-justify-evenly</td>
-            <td>Space evenly</td>
-            <td><h3 class="l-flex l-flex-justify-evenly "><p>Container</p><p>Container</p></h3></td>
-          </tr>
-          <tr>
-            <td>l-flex-align-center</td>
-            <td>Align content center</td>
-            <td><h3 class="l-flex l-flex-align-center "><p>Container</p><p>Container</p></h3></td>
-          </tr>
-
-        </table>
-
-        <h2 class="section-heading ">Grid Utility Classes</h2>
-        <table>
-          <tr>
-            <th>Class</th>
-            <th>Use</th>
-         
-          </tr>
-          <tr>
-            <td>l-grid</td>
-            <td>Display grid</td>
-         
-          </tr>
-          <tr>
-            <td>l-grid-gap-1</td>
-            <td>Grid gap</td>
+    
+        <!--Mobile navbar-->
       
-          </tr>
-          <tr>
-            <td>l-grid-cols-2</td>
-            <td>Grid col</td>
+        <nav class="mobile-navbar" >
+         <a href="index.html" class="mobile-nav__link serif-font u-fs-h3 u-fw-bold active">Design System</a>
          
-          </tr>
-          <tr>
-            <td>l-grid-cols-3</td>
-            <td>Grid col</td>
+  
+            <!-- toggle -->
+            <i class="toggle fa fa-bars" onclick="toggleNav()" aria-hidden="true"></i>
+           </nav>
+    
+    
+         <!--Side navbar-->
+    
+        <nav class="side-navbar side-navbar-hidden">
+          
+            <!--Side navbar mobile-->
+          <ul class="side-nav__mobile">
+            <li class="serif-font u-fs-body u-fw-bold"><a href="about-me.html">About Me</a></li>
+            <li class="serif-font u-fs-body u-fw-bold"><a href="#">Demo Site</a></li>
+           </ul>
          
-          </tr>
-         
-          <tr>
-            <td>l-gap-0 </td>
-            <td>Grid gap</td>
-        
-          </tr>
-          <tr>
-            <td>l-gap-1 </td>
-            <td>Grid gap</td>
+          <ul class="side-nav__desk">
+             <li class="serif-font u-fs-h3 u-fw-bold">Branding</li>
+             <li class="sans-font u-fs-body u-fw-normal"><a href="colours.html">01 Colours</a></li>
+             <li class="sans-font u-fs-body u-fw-normal"><a href="typography.html">02 Typography</a></li>
+             <li class="sans-font u-fs-body u-fw-normal"><a href="#">03 Logo</a></li>  
+           </ul>
+     
+           <ul class="side-nav__desk">
+            <li class="serif-font u-fs-h3 u-fw-bold">Utilities</li>
+            <li class="sans-font u-fs-body u-fw-normal"><a href="spacing.html">04 Spacing</a></li>
+            <li class="sans-font u-fs-body u-fw-normal"><a href="containers.html" class="active">05 Containers</a></li>
+            <li class="sans-font u-fs-body u-fw-normal"><a href="#">06 Images</a></li>
+            <li class="sans-font u-fs-body u-fw-normal"><a href="#">07 Interactive</a></li>
+            <li class="sans-font u-fs-body u-fw-normal"><a href="#">08 Feedback</a></li>
+           </ul>
+     
+           <ul class="side-nav__desk">
+             <li class="serif-font u-fs-h3 u-fw-bold">Navigation</li>
+             <li class="sans-font u-fs-body u-fw-normal"><a href="#">09 Navbars</a></li>
+             <li class="sans-font u-fs-body u-fw-normal"><a href="#">10 Breadcrumbs</a></li>
+             <li class="sans-font u-fs-body u-fw-normal"><a href="#">11 Pagination</a></li>
+             
+            </ul>
+          
+            <ul class="side-nav__desk">
+             <li class="serif-font u-fs-h3 u-fw-bold">Blocks</li>
+             <li class="sans-font u-fs-body u-fw-normal"><a href="#">12 Hero</a></li>
+             <li class="sans-font u-fs-body u-fw-normal"><a href="#">13 Carousel</a></li>
+             <li class="sans-font u-fs-body u-fw-normal"><a href="#">14 Slats</a></li>
+             <li class="sans-font u-fs-body u-fw-normal"><a href="#">15 Footer</a></li>
+             </ul>
+     
+            <ul class="side-nav__desk">
+             <li class="serif-font u-fs-h3 u-fw-bold" >Components</li>
+             <li class="sans-font u-fs-body u-fw-normal"><a href="#">16 Cards</a></li>
+             <li class="sans-font u-fs-body u-fw-normal"><a href="#">17 Forms</a></li>
+             <li class="sans-font u-fs-body u-fw-normal"><a href="#">18 Accordion</a></li>
+             <li class="sans-font u-fs-body u-fw-normal"><a href="#">19 Lists</a></li>
+            </ul>
+          </nav>
+      </header>
+  
+        <main class="l-pl-1-5">
+          <h1 class="main-heading">05 Containers</h1>
+          <section>
+          <h2 class="section-heading">Flex Utility Classes</h2>
+          <table>
+            <tr>
+              <th>Class</th>
+              <th>Use</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td>l-block</td>
+              <td>Display block</td>
+              <td><h3 class="l-block"><p>Container</p><p>Container</p></h3></td>
+            </tr>
+            <tr>
+  
+              <td>l-flex</td>
+              <td>Flex display</td>
+              <td><h3 class="l-flex"><p>Container</p><p>Container</p></h3></td>
+            </tr>
+            <tr>
+            <td>l-flex-column</td>
+              <td>Flex column</td>
+              <td><h3 class="l-flex l-flex-column"><p>Container</p><p>Container</p></h3></td>
+            </tr>
+            <tr>
+              <td>l-flex-row</td>
+              <td>Flex row</td>
+              <td><h3 class="l-flex l-flex-row"><p>Container</p><p>Container</p></h3></td>
+            </tr>
+            <tr>
+              <td>l-flex-wrap </td>
+              <td>Flex wrap</td>
+              <td><h3 class="l-flexl-flex-wrap "><p>Container</p><p>Container</p></h3></td>
+            </tr>
+            <tr>
+              <td>l-flex-nowrap </td>
+              <td>Flex nowrap</td>
+              <td><h3 class="l-flex  l-flex-nowrap "><p>Container</p><p>Container</p></h3></td>
+            </tr>
+            <tr>
+              <td>l-flex-row-reverse  </td>
+              <td>Flex row reverse</td>
+              <td><h3 class="l-flex l-flex-row-reverse  "><p>Container</p><p>Container</p></h3></td>
+            </tr>
+            <tr>
+              <td>l-flex-column-reverse  </td>
+              <td>Flex column reverse</td>
+              <td><h3 class="l-flex l-flex-column-reverse  "><p>Container</p><p>Container</p></h3></td>
+            </tr>
+            <tr>
+              <td>l-flex-justify-center </td>
+              <td>Justify content center</td>
+              <td><h3 class="l-flex l-flex-justify-center "><p>Container</p><p>Container</p></h3></td>
+            </tr>
+            <tr>
+              <td>l-flex-justify-between</td>
+              <td>Space between</td>
+              <td><h3 class="l-flex l-flex-justify-between"><p>Container</p><p>Container</p></h3></td>
+            </tr>
+            <tr>
+              <td>l-flex-justify-around</td>
+              <td>Space around</td>
+              <td><h3 class="l-flex l-flex-justify-around "><p>Container</p><p>Container</p></h3></td>
+            </tr>
+            <tr>
+              <td>l-flex-justify-evenly</td>
+              <td>Space evenly</td>
+              <td><h3 class="l-flex l-flex-justify-evenly "><p>Container</p><p>Container</p></h3></td>
+            </tr>
+            <tr>
+              <td>l-flex-align-center</td>
+              <td>Align content center</td>
+              <td><h3 class="l-flex l-flex-align-center "><p>Container</p><p>Container</p></h3></td>
+            </tr>
+  
+          </table>
+  
+          <h2 class="section-heading ">Grid Utility Classes</h2>
+          <table>
+            <tr>
+              <th>Class</th>
+              <th>Use</th>
            
-          </tr>
-          <tr>
-            <td>l-gap-2</td>
-            <td>Grid gap</td>
-       
-          </tr>
-        </table>
-        </section>
+            </tr>
+            <tr>
+              <td>l-grid</td>
+              <td>Display grid</td>
+           
+            </tr>
+            <tr>
+              <td>l-grid-gap-1</td>
+              <td>Grid gap</td>
+        
+            </tr>
+            <tr>
+              <td>l-grid-cols-2</td>
+              <td>Grid col</td>
+           
+            </tr>
+            <tr>
+              <td>l-grid-cols-3</td>
+              <td>Grid col</td>
+           
+            </tr>
+           
+            <tr>
+              <td>l-gap-0 </td>
+              <td>Grid gap</td>
+          
+            </tr>
+            <tr>
+              <td>l-gap-1 </td>
+              <td>Grid gap</td>
+             
+            </tr>
+            <tr>
+              <td>l-gap-2</td>
+              <td>Grid gap</td>
+         
+            </tr>
+          </table>
+          </section>
+  
+           <!--Container classes-->
+          <section>
+            <h2 class="section-heading">Container Classes</h2>
+          
+              <!--Container mobile-->
+            <div class="container-mobile sans-font c-example max-width-example">
+              <h3>Class name: container-mobile</h3>
+              <ul>
+                <li class="u-fs-h3">Values </li>
+                <li>max-width: 100%</li>
+               <li> margin: 0 auto</li>
+               <li> padding: 20px</li>
+                <li>box-sizing: border-box</li>
+                </ul>
+           <p class="u-fs-body">The content will be in max-width for mobile by applying some properties on it.</p>
+            </div>
 
-         <!--Container classes-->
-        <section>
-          <h2 class="section-heading">Container Classes</h2>
-          <div class="container centered-container">
-          <p class="u-fs-h3">container </p>
-          </div>
-          <div class="constrained-container centered-container">
-          <p class="u-fs-h3">constrained-container</p>
-          </div>
-          <div class="full-width-container centered-container">
-          <p class="u-fs-h3">full-width-container</p>
-          </div>
-        </section>
+              <!--Container desktop-->
+            <div class="container-desktop sans-font c-example container-desktop-example">
+              <h3>Class name: container-desktop</h3>
+              <ul>
+                <li class="u-fs-h3">Values </li>
+                <li>max-width: 1200px</li>
+               <li> margin: 0 auto</li>
+               <li> padding: 20px</li>
+                <li>box-sizing: border-box</li>
+                </ul>
+            <p class="u-fs-body">This class and their values used to set the content for desktop</p>
+            </div>
 
-    </main>
-  <script src="design-system.js"></script>
-  </body>
-  </html>
+              <!--Container for full width-->
+            <div class="full-width-container sans-font c-example full-width-example">
+              <h3>Class name: full-width-container</h3>
+              <ul>
+                <li class="u-fs-h3">Values </li>
+                <li>width: 100%</li>
+               <li> padding: 20px</li>
+                <li>box-sizing: border-box</li>
+                </ul>
+            <p class="u-fs-body">full-width-container</p>
+            </div>
+          </section>
+  
+      </main>
+    <script src="design-system.js"></script>
+    </body>
+    </html>
