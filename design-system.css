@@ -72,18 +72,14 @@ header ul li a{
   /* Style  all page headings */
 
   .section-heading{
-    font-family: var(--primary-font);
     font-size: var(--h2-font-size);
     color: var(--clr-secondary-accent);
-   margin-top: 20px;
-   padding: 10px;
+  
   }
   
   .main-heading{
-    font-family: var(--primary-font);
     font-size: var(--h1-font-size);
     font-weight: var(--bold-font-weight);
-    margin-top: 16px;
   }
   
 
@@ -137,9 +133,10 @@ header ul li a{
   /* Style font sizing*/
  .font-sans, .font-serif{
    box-sizing:content-box;
-   border: 3px solid var(--clr-tertiary-bg);
+   border: 5px solid var(--clr-tertiary-bg);
+   border-radius: 10px;
    padding: 3px;
-   text-align: left;
+   text-align: center;
  }
 
  
@@ -359,14 +356,12 @@ header ul li a{
 
        /* Style characters content*/
 
-      .characters{
-        padding: 16px;
-      }
-
+      
         .font-serif, .font-sans{
           box-sizing:content-box;
-          border: 3px solid var(--clr-tertiary-bg);
-          padding: 10px;
+          border: 5px solid var(--clr-tertiary-bg);
+          border-radius: 10px;
+          text-align: left;
          }
         
           /* Style character body*/
@@ -382,7 +377,7 @@ header ul li a{
           
          }
         
-          .heading-c-bold,  .heading-c-normal{
+          .heading-char-bold,  .heading-char-normal{
           display: flex;
          flex-direction: row;
          justify-content: space-around;
