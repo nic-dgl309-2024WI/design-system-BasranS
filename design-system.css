@@ -166,15 +166,17 @@ header ul li a{
   table {
     font-family: var(--secondary-font);
     font-size: var( --body-font-size);
-    border-collapse: collapse;
+    border-collapse:collapse;
     width: 100%;
+  
     }
     
     /* Style colours table content */
     td, th {
     
-    border: 1px solid var(--clr-secondary-bg);
+    border: 2px solid var(--clr-secondary-bg);
     text-align: left;
+  
     
     }
     
@@ -347,7 +349,7 @@ header ul li a{
 
       
       /* Style Typography page*/
-
+   
 
        /* Hide font use content of mobile*/
       .font-uses-mobile{
@@ -412,7 +414,5 @@ header ul li a{
               display: block;
             }
      
-        
-     
-            
+          
 }
