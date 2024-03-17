@@ -81,129 +81,61 @@ ul, ol {
 
 /* Primary colour swatch */
 
-.u-primary-bg{
+.bg-primary{
 
 background-color: var(--clr-primary-bg);
-color: var(--clr-body-text);
+
 }
-  /* Primary colour example */
-
-.u-primary-example{
-background-color: var(--clr-primary-bg);
-color: var(--clr-body-text);
-font-size: var(--body-font-size);
- font-family: var(--secondary-font);
-  }
 
 /* Secondary colour swatch */
 
-.u-secondary-bg{
+.bg-secondary{
   background-color:var(--clr-secondary-bg);
-  color: var(--clr-body-text);
-  font-family: var(--secondary-font);
-  font-size: var(--h3-font-size); 
-  font-weight: var(--bold-font-weight);
+
 }
 
-/* Secondary colour example*/
 
-.u-secondary-example{
-  background-color: var(--clr-secondary-bg);
-  color: var(--clr-body-text);
-  font-size: var(--body-font-size);
- font-family: var(--secondary-font);
-}
 
 /* Tertiary colour swatch */
 
-.u-tertiary-bg{
+.bg-tertiary{
   background-color:var(--clr-tertiary-bg);
-  color: var(--clr-body-text);
-  font-family: var(--secondary-font);
-  font-size: var(--h3-font-size); 
-  font-weight: var(--bold-font-weight);
+  
 }
 
-/* Tertiary colour example*/
-
-.u-tertiary-example{
-  background-color: var(--clr-tertiary-bg);
-  color: var(--clr-body-text);
- font-size: var(--body-font-size);
- font-family: var(--secondary-font);
-    }
 
 /* Text colour swatch */
 
-.u-text-body{
+.text-body{
   background-color: var(--clr-body-text);
-  font-family: var(--secondary-font);
-  font-size: var(--h3-font-size); 
-  font-weight: var(--bold-font-weight);
-  color: var(--clr-accent-text);
+
 }
 
-/* Body text example*/
-
-.u-body-example{
-  color: var(--clr-body-text);
-  font-size: var(--body-font-size);
- font-family: var(--secondary-font);
-}
 
 /* Primary accent colour swatch */
 
-.u-primary-accent{
+.bg-accent-primary{
   background-color:var(--clr-primary-accent);
-  color: var(--clr-accent-text);
-  font-family: var(--secondary-font);
-  font-size: var(--h3-font-size); 
-  font-weight: var(--bold-font-weight);
+ 
 
 }
 
-/* Primary accent colour example */
-
-.u-paccent-example{
-  background-color:var(--clr-primary-accent);
-  color: var(--clr-accent-text);
-  font-size: var(--body-font-size);
-  font-family: var(--secondary-font);
-}
 
 /* Secondary accent colour swatch */
 
-.u-secondary-accent{
+.bg-accent-secondary{
   background-color:var(--clr-secondary-accent);
-  color: var(--clr-accent-text);
-  font-family: var(--secondary-font);
-  font-size: var(--h3-font-size); 
-  font-weight: var(--bold-font-weight);
+
 } 
 
-/*  Secondary accent example*/
-
-.u-saccent-example{
-  background-color:var(--clr-secondary-accent);
-  color: var(--clr-accent-text);
-  font-family: var(--secondary-font);
-  font-size: var(--body-font-size);
-}
 
 /* Accent text colour swatches */
 
-.u-text-accent{
-  font-family: var(--secondary-font);
-  font-size: var(--h3-font-size); 
-  font-weight: var(--bold-font-weight);
+.text-accent{
+  
   background-color: var(--clr-accent-text);
 }
 
-/* Accent text colour examples */
-.u-accent-examples{
-  font-family: var(--secondary-font);
-  font-size: var(--body-font-size);
-}
 
 
 /* Utility classes for typography */

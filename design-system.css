@@ -85,42 +85,13 @@ header ul li a{
 
   /* Style Colours page */
 
-    /* Style colours container for mobile */
-  .colours-content{
-    border: 10px solid rgba(200, 199, 199, 0.329);
-    border-radius: 50px;
-    box-shadow: rgba(28, 28, 28, 0.2) 0px 2px 8px 0px;
-    font-size: 45px;
-    height: 1.5em;
-    width: 1.5em;
-  }
-
-/* Style colours container paragraphsfor mobile */
-  .mobile-colours__info p{
-    font-size: var(--body-font-size);
-    font-family: var(--secondary-font);
-  }
-    
-  /* Style colours container heading for mobile */
-  .mobile-colours__info h2{
-    font-size: var(--h3-font-size);
-    font-family: var(--primary-font);
-  }
+  .color-background{
+    border: 1px solid var(--clr-body-text);
+    border-radius: 3px;
   
-  /* Style body colour container paragrahs*/
-  .mobile-colour__body p{
-    font-size: var(--body-font-size);
-    font-family: var(--secondary-font);
-    
-  }
-  
-    /* Style body text colours content */
-  .mobile-colour__body{
-  border: 2px solid var(--clr-tertiary-bg);
-  width: 90%;
-  text-align: center;
   }
  
+
     /* Hide desktop colours content from mobile*/
   .colours-desk__container{
     display: none;
@@ -292,67 +263,14 @@ header ul li a{
           display: none;
          }
   
-       /* Style the background colours content*/
-       .colours-desk{
-        border: 20px solid rgba(200, 199, 199, 0.329);
-        border-radius: 60px;
-        box-shadow: rgba(28, 28, 28, 0.2) 0px 2px 8px 0px;
-        font-size: 75px;
-        height: 1.5em;
-        width: 1.5em;
-        
-      }
-      
-       /* Style the background colours content paragraphs*/
-
-      .desk-colours__info p, .desk-colours__accent p{
-        font-size: var(--body-font-size);
-        font-family: var(--secondary-font);   
-      }
-      
-       /* Style the background colours content heading*/
-      .desk-colours__info h2, .desk-colours__accent h2{
-        font-family: var(--primary-font);
-        font-size: var(--h2-font-size);
-      }
+         .color-swatch p {
+          font-size: var(--body-font-size);
+          font-weight: var(--normal-font-weight);
+          font-family: var(--secondary-font);
+          text-align: left;
+         
+         }
    
-       /* Style the body colours content */
-      .body-colour__info{
-       text-align: center; 
-       padding-top: 60px;
-     
-      }
-    
-        /* Style the body colours heading */
-      .body-colour__container h2{
-        font-size: var(--h2-font-size);
-        font-family: var(--primary-font);
-        
-      }
-      
-        /* Style the body colours content paragraphs*/
-      .body-colour__container p{
-        font-size: var(--body-font-size);
-        font-family: var(--secondary-font);
-        font-weight: var(--normal-font-weight);
-      }
-      
-        /* Style the body colours content container */
-      .body-colour__container{
-      text-align: left;
-     
-      }
-      
-        /* Style the background colours content */
-      .container-desk__accent{      
-      margin-left: 95px;
-      padding: 15px;
-
-      }
-            
-      .desk-colours__accent{
-       margin-left: 110px;
-      }
 
       
       /* Style Typography page*/
