@@ -756,37 +756,7 @@ font-size: var(--body-font-size);
 
 }
 
-/* Example for containers */
-.c-example {
-  border: 3px solid var(--clr-active);
-  padding: 30px;
-}
 
-
-/* Max-Width Example */
-.max-width-example {
-  background-color: var(--clr-primary-bg);
-  padding: 20px;
-  margin-bottom: 20px;
-  max-width: 600px; 
- 
-}
-
-/* Full-Width Example */
-.full-width-example {
-  background-color: var(--clr-primary-bg); 
-  width: 100%;
- margin-top: 10px;
-}
-
-/* Desktop Container */
-@media (min-width: 1024px) {
-  .container-desktop-example {
-      max-width: 1400px; 
-      margin: auto;
-      background-color: var(--clr-primary-bg);
-  }
-}
 
 
 
