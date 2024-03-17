@@ -186,14 +186,6 @@ header ul li a{
   
     }
 
- /* Style About page*/
-.about-content{
-  margin-top:10px;
-}
- 
-.img{
-  width:250px;
-}
 
 /* Desktop navbar */
 
@@ -426,7 +418,6 @@ header ul li a{
             }
      
         
- 
      
             
 }
