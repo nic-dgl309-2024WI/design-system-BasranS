@@ -184,6 +184,13 @@ header ul li a{
     background-color: var( --clr-tertiary-bg);
   
     }
+    
+    .container-classes p{
+    border: 3px solid var(--clr-tertiary-bg);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: var(--bold-font-weight);
+    }
 
 
 /* Desktop navbar */
