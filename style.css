@@ -81,7 +81,7 @@ ul, ol {
 
 /* Primary colour swatch */
 
-.bg-primary{
+.u-bg-primary{
 
 background-color: var(--clr-primary-bg);
 
@@ -89,7 +89,7 @@ background-color: var(--clr-primary-bg);
 
 /* Secondary colour swatch */
 
-.bg-secondary{
+.u-bg-secondary{
   background-color:var(--clr-secondary-bg);
 
 }
@@ -98,7 +98,7 @@ background-color: var(--clr-primary-bg);
 
 /* Tertiary colour swatch */
 
-.bg-tertiary{
+.u-bg-tertiary{
   background-color:var(--clr-tertiary-bg);
   
 }
@@ -106,7 +106,7 @@ background-color: var(--clr-primary-bg);
 
 /* Text colour swatch */
 
-.text-body{
+.u-text-body{
   background-color: var(--clr-body-text);
 
 }
@@ -114,7 +114,7 @@ background-color: var(--clr-primary-bg);
 
 /* Primary accent colour swatch */
 
-.bg-accent-primary{
+.u-bg-accent-primary{
   background-color:var(--clr-primary-accent);
  
 
@@ -123,7 +123,7 @@ background-color: var(--clr-primary-bg);
 
 /* Secondary accent colour swatch */
 
-.bg-accent-secondary{
+.u-bg-accent-secondary{
   background-color:var(--clr-secondary-accent);
 
 } 
@@ -131,7 +131,7 @@ background-color: var(--clr-primary-bg);
 
 /* Accent text colour swatches */
 
-.text-accent{
+.u-text-accent{
   
   background-color: var(--clr-accent-text);
 }
@@ -661,7 +661,7 @@ background-color: var(--clr-primary-bg);
 
 
 /* Mobile container */
-.container-mobile{
+.u-container-mobile{
   max-width: 100%;
   margin: 0 auto; 
   padding: 20px;
@@ -671,7 +671,7 @@ background-color: var(--clr-primary-bg);
 
 /* Full-width container */
 
-.full-width-container {
+.u-full-width-container {
   width: 100%; 
   padding: 20px; 
   box-sizing: border-box; 
@@ -680,7 +680,7 @@ background-color: var(--clr-primary-bg);
 /* Desktop container */
 @media (min-width: 768px) {
 
-.container-desktop {
+.u-container-desktop {
   max-width: 1200px; 
   margin: 0 auto; 
   box-sizing: border-box; 
