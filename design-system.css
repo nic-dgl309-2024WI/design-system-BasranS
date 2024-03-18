@@ -3,15 +3,18 @@
   display: none;
 }
 
+
 /* Style active class*/
  .active{
    color:var(--clr-active);
 }
 
+
 /* Style hover*/
  a:hover{
   color: var(--clr-hover);
 }
+
 /* Style header */
 header{
   padding:10px;
@@ -19,21 +22,25 @@ header{
   color: var(--clr-body-text);
 }
 
+
 /* Style links in header */
 header ul li a{
   text-decoration: none;
   color: var(--clr-body-text);
 }
 
+
 /* Style list items in side navbar */
 .side-navbar ul li {
    list-style-type: none;
 }
 
+
 /* Style list items in hidden side navbar */
 .side-navbar-hidden ul li{
   list-style-type: none;
 }
+
 
 /* Style links in mobile navbar */
 .mobile-nav__link{
@@ -41,10 +48,12 @@ header ul li a{
   color: var(--clr-body-text);
 }
 
+
 /* Hide the side navbar for mobile */
 .side-navbar-hidden {
   display: none;
 }
+
 
 /* Make side and top navbar fixed in mobile*/
     .side-navbar{
@@ -55,6 +64,7 @@ header ul li a{
       background-color: var(--clr-secondary-bg);
       padding:5px; 
 }
+
 
 /* Style mobile navbar for mobile */
     
@@ -68,7 +78,8 @@ header ul li a{
   display: flex;
   justify-content: space-between;
 
-  }
+}
+
   /* Style  all page headings */
 
   .section-heading{
@@ -83,21 +94,40 @@ header ul li a{
   }
   
 
-  /* Style Colours page */
+/* Style Colours page */
 
-  .color-background{
-    border: 1px solid var(--clr-body-text);
-    border-radius: 3px;
-  
-  }
- 
-
-    /* Hide desktop colours content from mobile*/
+/* Hide desktop colours content from mobile*/
   .colours-desk__container{
     display: none;
   }
-  
 
+    
+.color-background p, .color-accent p, .text-colors p{
+  font-size: var(--body-font-size);
+  font-weight: var(--normal-font-weight);
+  font-family: var(--secondary-font);
+  text-align: center;
+ 
+ }
+
+ .color-background{
+  color: var(--clr-body-text);
+  border: 3px solid var(--clr-tertiary-bg);
+  border-radius: 10px;
+ }
+ .color-accent{
+  color: var(--clr-accent-text);
+  border: 3px solid var(--clr-tertiary-bg);
+  border-radius: 10px;
+}
+
+
+
+.text-colors{
+  color: var(--clr-accent-text);
+  border: 3px solid var(--clr-tertiary-bg);
+  border-radius: 10px;
+}
 /* Style typography page */
 
 
@@ -262,15 +292,6 @@ header ul li a{
         .colours-mobile{
           display: none;
          }
-  
-         .color-swatch p {
-          font-size: var(--body-font-size);
-          font-weight: var(--normal-font-weight);
-          font-family: var(--secondary-font);
-          text-align: left;
-         
-         }
-   
 
       
       /* Style Typography page*/
@@ -282,7 +303,6 @@ header ul li a{
       }
 
        /* Style characters content*/
-
       
         .font-serif, .font-sans{
           box-sizing:content-box;
@@ -291,6 +311,7 @@ header ul li a{
           text-align: left;
          }
         
+
           /* Style character body*/
         .body-font-normal, .body-font-bold{
         display: flex;
