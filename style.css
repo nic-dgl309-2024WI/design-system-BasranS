@@ -11,7 +11,7 @@
   --clr-accent-text:#fffffe; 
   --clr-hover:#D15D10;
   --clr-active:#bc2b73d8;
- 
+  --clr-transparent: rgb(254, 199, 215, 0.5);
 
  /* Typefaces for heading and body text */
  
@@ -705,7 +705,7 @@ header{
 
 
 /* Style links in header */
-header ul li a{
+header ul a{
   text-decoration: none;
   color: var(--clr-body-text);
 }
@@ -719,11 +719,31 @@ header ul li a{
   background-color: var(--clr-secondary-bg);
 }
 
-.header-navbar__mobile-hidden ul {
-  display: none; /* Initially hide the navigation menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 60%;
+  background-color: var(--clr-transparent);
+  padding: 10px;
+  width: 100%;
 }
 
-.header-navbar__mobile-hidden ul.show {
-  display: block; /* Display the navigation menu when the show class is applied */
+.dropdown-menu li {
+  list-style: none;
+  margin: 5px 0;
+  padding: 3px 0;
 }
 
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Show the dropdown menu when the toggle is clicked */
+.navbar-toggle {
+  cursor: pointer;
+}
+
+.show-dropdown {
+  display: block !important;
+}
