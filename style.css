@@ -11,7 +11,7 @@
   --clr-accent-text:#fffffe; 
   --clr-hover:#D15D10;
   --clr-active:#bc2b73d8;
-  --clr-transparent: rgb(254, 199, 215, 0.5);
+  --clr-transparent: rgb(254, 199, 215, 0.8);
 
  /* Typefaces for heading and body text */
  
@@ -724,26 +724,47 @@ header ul a{
   position: absolute;
   top: 60%;
   background-color: var(--clr-transparent);
-  padding: 10px;
   width: 100%;
 }
 
 .dropdown-menu li {
   list-style: none;
   margin: 5px 0;
-  padding: 3px 0;
+  padding: 5px 0;
 }
 
 .dropdown-menu li a {
   text-decoration: none;
-  color: #333;
+  color: var(--clr-body-text);
+
 }
 
-/* Show the dropdown menu when the toggle is clicked */
-.navbar-toggle {
-  cursor: pointer;
+.dropdown-menu img{
+  margin-right: 7px;
 }
 
 .show-dropdown {
   display: block !important;
 }
+
+
+
+
+
+
+
+
+/* Desktop navbar */
+
+@media (min-width: 768px) {
+
+  /* Hide the mobile navbar for desktop */
+    .header-navbar__desk {
+      display: block; 
+    }
+
+     .header-navbar__mobile{
+      display: none;
+     }
+
+  }
