@@ -687,3 +687,43 @@ background-color: var(--clr-primary-bg);
 }
 
 }
+
+
+/* Nursery navigation bar for mobile */
+
+/* Style the mobile navbar */
+
+.header-navbar__desk{
+  display: none;
+}
+
+/* Style header */
+header{
+  background-color: var(--clr-secondary-bg);
+  color: var(--clr-body-text);
+}
+
+
+/* Style links in header */
+header ul li a{
+  text-decoration: none;
+  color: var(--clr-body-text);
+}
+
+/* Style mobile navbar for mobile */
+    
+.header-navbar__mobile{
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  background-color: var(--clr-secondary-bg);
+}
+
+.header-navbar__mobile-hidden ul {
+  display: none; /* Initially hide the navigation menu */
+}
+
+.header-navbar__mobile-hidden ul.show {
+  display: block; /* Display the navigation menu when the show class is applied */
+}
+

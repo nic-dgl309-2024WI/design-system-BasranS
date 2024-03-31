@@ -6,21 +6,29 @@
     <title>Outback Nursery</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="nursery.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <header>
-      
+  
         <!--Mobile navbar-->
-        <nav class="mobile-navbar" >
-          <a href="index.html"><img src="images/logo.png" alt="logo" width="50" height="50"></a>
+        <nav class="header-navbar__mobile-hidden header-navbar__mobile-show l-flex l-flex-justify-between" >
+          <a href="index.html"><img src="images/logo.png" alt="logo" width="35" height="36"></a>
 
           <!-- toggle -->
-          <i class="toggle fa fa-bars" onclick="toggleNav()" aria-hidden="true"></i>
+          <i class="toggle fa fa-bars l-px-1 l-pt-1" onclick="toggleNav()" aria-hidden="true"></i>
+
+          <ul>
+            <a href="coming-soon.html"><li><img src="images/heart.png" alt="products" width="15" height="15">Products</li></a>
+            <a href="coming-soon.html"><li><img src="images/partnership.png" alt="services" width="15" height="15">Services
+            </li></a>
+            <a href="coming-soon.html"><li><img src="images/smile.png" alt="guide" width="15" height="13">Guide</li></a>
+            <a href="coming-soon.html"><li><img src="images/group.png" alt="about" width="15" height="15">About us</li></a>
+            </ul>
          </nav>
       
         <!--Desktop navbar-->
-        <nav>
+        <nav class="header-navbar__desk">
           <a href="index.html"><img src="images/logo.png" alt="logo" width="80" height="80"></a>
           <ul>
           <a href="coming-soon.html"><li><img src="images/heart.png" alt="products" width="15" height="15">Products</li></a>
