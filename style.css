@@ -11,7 +11,7 @@
   --clr-accent-text:#fffffe; 
   --clr-hover:#D15D10;
   --clr-active:#bc2b73d8;
-  --clr-transparent: rgb(254, 199, 215, 0.8);
+  --clr-transparent: rgba(234, 189, 200, 0.8);
 
  /* Typefaces for heading and body text */
  
@@ -568,6 +568,7 @@ background-color: var(--clr-primary-bg);
 }
 
 
+
 /* Base layout classes */
 
 /* Block */
@@ -689,7 +690,7 @@ background-color: var(--clr-primary-bg);
 }
 
 
-/* Nursery navigation bar for mobile */
+/* === Style header for mobile  === */
 
 /* Style the mobile navbar */
 
@@ -710,7 +711,7 @@ header ul a{
   color: var(--clr-body-text);
 }
 
-/* Style mobile navbar for mobile */
+/* Style mobile navbar */
     
 .header-navbar__mobile{
   width: 100%;
@@ -718,6 +719,8 @@ header ul a{
   position: fixed;
   background-color: var(--clr-secondary-bg);
 }
+
+/* Style mobile dropdown navbar*/
 
 .dropdown-menu {
   display: none;
@@ -727,11 +730,15 @@ header ul a{
   width: 100%;
 }
 
+/* Style mobile dropdown navbar list*/
+
 .dropdown-menu li {
   list-style: none;
   margin: 5px 0;
   padding: 5px 0;
 }
+
+/* Style mobile dropdown navbar links*/
 
 .dropdown-menu li a {
   text-decoration: none;
@@ -739,26 +746,90 @@ header ul a{
 
 }
 
+/* Style mobile dropdown navbar image*/
+
 .dropdown-menu img{
   margin-right: 7px;
 }
 
+/* Show mobile dropdown navbar when toggle clicked*/
 .show-dropdown {
   display: block !important;
 }
 
 
 
+/* === Style hero section for mobile  === */
+.main-slider__container {
+  position: relative;
+  overflow: hidden;
+}
+.slider__container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.main-slider__image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-heading {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 20%;
+  text-align: center;
+  transform: translateY(-60%);
+  z-index: 1;
+  color: var(--clr-accent-text);
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
 
 
+.pagination-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
 
+.pagination {
+  width: 30px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.pagination.active {
+  background-color: var(--clr-secondary-bg);
+}
+
+.slider-anchor{
+background-color: var(--clr-secondary-accent);
+color: var(--clr-accent-text);
+text-decoration: none;
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+}
 
 
 /* Desktop navbar */
 
 @media (min-width: 768px) {
 
-  /* Hide the mobile navbar for desktop */
+     .content-wrapper {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1200px; 
+
+     }
+  
+      /* Hide the mobile navbar for desktop */
     .header-navbar__desk {
       display: block; 
     }
@@ -767,4 +838,6 @@ header ul a{
       display: none;
      }
 
-  }
+
+ 
+}
