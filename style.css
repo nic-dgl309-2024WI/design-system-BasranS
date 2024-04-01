@@ -695,7 +695,7 @@ background-color: var(--clr-primary-bg);
 /* === Style header for mobile  === */
 
 .content-wrapper__mobile {
-  margin: 0 auto;
+  margin: 1px auto;
   padding: 0 20px; 
   max-width: 100%; 
 }
@@ -933,16 +933,18 @@ text-align: center;
 
 .scrollable-container::-webkit-scrollbar {
   width: 5px;
-  border: 1px solid var(--clr-body-text);
+  border: 1px solid var(--clr-primary-bg);
 }
 
 .scrollable-container::-webkit-scrollbar-thumb {
   background-color: var(--clr-tertiary-bg);
   border-radius: 5px;
+  border: 1px solid var(--clr-body-text);
 }
 
 
 /* === Style about section of mobile  === */
+
 
 
 
