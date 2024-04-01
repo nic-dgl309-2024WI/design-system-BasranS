@@ -757,21 +757,29 @@ header ul a{
 }
 
 
-
 /* === Style hero section for mobile  === */
+
+
+/* Style the slider container*/
 .main-slider__container {
   position: relative;
   overflow: hidden;
 }
+
+
 .slider__container {
   display: flex;
   transition: transform 0.5s ease;
 }
+
+/* Style the slider images*/
 .main-slider__image {
   width: 100%;
   height: auto;
 }
 
+
+/* Style the hero section heading*/
 .hero-heading {
   position: absolute;
   top: 20%;
@@ -785,6 +793,7 @@ header ul a{
 }
 
 
+/* Style the pagination container*/
 .pagination-container {
   position: absolute;
   bottom: 10px;
@@ -793,19 +802,25 @@ header ul a{
   display: flex;
 }
 
+
+/* Style the pagination*/
 .pagination {
   width: 30px;
   height: 4px;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--clr-accent-text);
   margin: 0 5px;
   cursor: pointer;
 }
 
+
+/* Add active link to pagination*/
 .pagination.active {
   background-color: var(--clr-secondary-bg);
 }
 
+
+/* Style the slider anchor*/
 .slider-anchor{
 background-color: var(--clr-secondary-accent);
 color: var(--clr-accent-text);
@@ -826,6 +841,7 @@ text-align: center;
 
 @media (min-width: 768px) {
 
+  /* Wrapper width for content */
      .content-wrapper {
       width: 90%;
       margin: 0 auto;
@@ -833,11 +849,12 @@ text-align: center;
 
      }
   
-      /* Hide the mobile navbar for desktop */
+      /* Show the desktop navbar */
     .header-navbar__desk {
       display: block; 
     }
-
+   
+     /* Hide the mobile navbar for desktop */
      .header-navbar__mobile{
       display: none;
      }

@@ -1,9 +1,10 @@
+// Toggle 
 function toggleNav() {
 var dropdownMenu = document.querySelector('.dropdown-menu');
 dropdownMenu.classList.toggle('show-dropdown');
 }
 
-// Execute the following code when the DOM content is fully loaded
+// Slider
 document.addEventListener('DOMContentLoaded', function () {
 // Initialize slide index to 0
 var slideIndex = 0;
