@@ -691,9 +691,10 @@ background-color: var(--clr-primary-bg);
 
 }
 
+
 /* === Style header for mobile  === */
 
-.content-wrapper-mobile {
+.content-wrapper__mobile {
   margin: 0 auto;
   padding: 0 20px; 
   max-width: 100%; 
@@ -852,9 +853,7 @@ text-align: center;
   display: none;
 }
 
-/* Additional styles as needed */
-
-
+/* Style the product cards */
 .card-products {
   background-color: var(--clr-tertiary-bg);
   border-radius: 8px;
@@ -862,10 +861,10 @@ text-align: center;
   text-align: center;
 }
 
+/* Style the product cards image*/
 .card-products img {
   border-radius: 8px;
 }
-
 
 /* Hover effect */
 .card-products:hover {
@@ -874,6 +873,7 @@ text-align: center;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Style the product pagination for mobile*/
 .products-pagination a {
   color: var(--clr-body-text);
   text-decoration: none;
@@ -883,14 +883,16 @@ text-align: center;
 
 }
 
+/* Style the product pagination hover*/
 .products-pagination a:hover {
   background-color:var(--clr-active) ;
   color: var(--clr-accent-text);
 }
 
-
+/* Add the pagination active colour*/
 .pagination a:hover:not(.active) {background-color: #ddd;}
 
+/* Style the plant anchor*/
 .plants-anchor {
 background-color: var(--clr-primary-accent);
 text-decoration: none;
@@ -898,26 +900,32 @@ border-radius: 25px;
 text-align: center;
 }
 
+/* Style the information section paragraph*/
 .info-para{
   text-align: left;
  
 }
+
+/* Style the information section image*/
 .info-image{
   border: 1px solid;
   border-radius: 80px;
   background-color: var(--clr-active);
 }
 
+/* Style the main information container*/
 .main-information {
   overflow-x: hidden; 
   overflow-y: scroll; 
   border: 1px solid var(--clr-body-text); 
 }
 
+/* Style the main info section*/
 .main-info {
   background-color: var(--clr-secondary-bg);
 }
 
+/* Style the scrollable container*/
 .scrollable-container {  
   overflow-y: auto; /* Enable vertical scrollbar */
   
@@ -934,12 +942,16 @@ text-align: center;
 }
 
 
+/* === Style about section of mobile  === */
+
+
+
 /* === Style Desktop Content  === */
 
 @media (min-width: 768px) {
 
   /* Wrapper width for content */
-     .content-wrapper {
+     .content-wrapper__desk {
       width: 90%;
       margin: 0 auto;
       max-width: 1200px; 
