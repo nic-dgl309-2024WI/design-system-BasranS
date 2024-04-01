@@ -689,7 +689,6 @@ background-color: var(--clr-primary-bg);
 
 }
 
-
 /* === Style header for mobile  === */
 
 /* Style the mobile navbar */
@@ -775,8 +774,8 @@ header ul a{
 
 .hero-heading {
   position: absolute;
-  top: 25%;
-  left: 25%;
+  top: 20%;
+  left: 22%;
   right: 20%;
   text-align: center;
   transform: translateY(-60%);
@@ -802,6 +801,7 @@ header ul a{
   margin: 0 5px;
   cursor: pointer;
 }
+
 .pagination.active {
   background-color: var(--clr-secondary-bg);
 }
@@ -811,10 +811,14 @@ background-color: var(--clr-secondary-accent);
 color: var(--clr-accent-text);
 text-decoration: none;
 position: absolute;
-bottom: 10px;
+bottom: 50px;
+padding: 13px;
+padding-left: 13px;
 left: 50%;
 transform: translateX(-50%);
 display: flex;
+border-radius: 25px;
+text-align: center;
 }
 
 
