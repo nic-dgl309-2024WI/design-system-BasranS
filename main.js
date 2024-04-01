@@ -5,63 +5,47 @@ dropdownMenu.classList.toggle('show-dropdown');
 }
 
 // Slider
-document.addEventListener('DOMContentLoaded', function () {
-// Initialize slide index to 0
-var slideIndex = 0;
-// Display the initial slide
-showSlides(slideIndex);
-
-// Function to display slides
-function showSlides(index) {
-    // Select all slides and pagination elements
+document.addEventListener('DOMContentLoaded', function() {
     var slides = document.querySelectorAll('.main-slider__image');
-    var pagination = document.querySelectorAll('.pagination');
-
-    // Loop through each slide
-    for (var i = 0; i < slides.length; i++) {
-        // Hide all slides and remove 'active' class from pagination elements
-        slides[i].style.display = "none";
-        pagination[i].classList.remove('active');
+    var paginationLinks = document.querySelectorAll('.pagination');
+    var currentIndex = 0;
+    var totalSlides = slides.length;
+  
+    function showSlide(index) {
+      // Hide all slides
+      slides.forEach(function(slide) {
+        slide.style.display = "none";
+      });
+      // Display the slide at the given index
+      slides[index].style.display = "block";
+  
+      // Remove active class from all pagination links
+      paginationLinks.forEach(function(link) {
+        link.classList.remove('active');
+      });
+      // Add active class to the corresponding pagination link
+      paginationLinks[index].classList.add('active');
     }
-
-    // Display the slide at the given index and mark its pagination as 'active'
-    slides[index].style.display = "block";
-    pagination[index].classList.add('active');
-}
-
-// Initialize current slide index
-var currentIndex = 0;
-// Select all slides
-var slides = document.querySelectorAll('.main-slider__image');
-// Get total number of slides
-var totalSlides = slides.length;
-
-// Function to show a specific slide
-function showSlide(n) {
-    currentIndex = n;
-    showSlides(currentIndex);
-}
-
-// Function to show the next slide
-function nextSlide() {
-    currentIndex++;
-    // If reached the end, go back to the first slide
-    if (currentIndex >= totalSlides) {
+  
+    function nextSlide() {
+      currentIndex++;
+      if (currentIndex >= totalSlides) {
         currentIndex = 0;
+      }
+      showSlide(currentIndex);
     }
-    showSlides(currentIndex);
-}
-
-// Function to show the previous slide
-function prevSlide() {
-    currentIndex--;
-    // If at the beginning, go to the last slide
-    if (currentIndex < 0) {
+  
+    function prevSlide() {
+      currentIndex--;
+      if (currentIndex < 0) {
         currentIndex = totalSlides - 1;
+      }
+      showSlide(currentIndex);
     }
-    showSlides(currentIndex);
-}
-
-// Set interval to automatically change slide every 2 seconds
-var timer = setInterval(nextSlide, 2000);
-});
+  
+    // Set interval to automatically change slide every 2 seconds
+    var timer = setInterval(nextSlide, 2000);
+  });
+  
+ 
+  
