@@ -77,7 +77,7 @@
     </div>
 
     <!-- Hero Call-to-action -->
-    <a href="coming-soon.html" class="slider-anchor u-fs-body u-fw-bold serif-font">Explore our space</a>
+    <a href="coming-soon.html" class="slider-anchor u-fs-h3 u-fw-bold serif-font">Explore our space</a>
     
   </div> 
   </section>  
@@ -184,7 +184,7 @@
   
   </div>
  <!--Products link-->
- <div class=" plants-anchor serif-font u-fs-body u-fw-bold l-mt-1 l-px-1 l-py-1">
+ <div class=" plants-anchor serif-font u-fs-h3 u-fw-bold l-mt-1 l-px-1 l-py-1">
  <a href="coming-soon.html"  style="color: var(--clr-accent-text); text-decoration: none;">Grab Your Happiness</a>
  </div>
 </section>
@@ -226,7 +226,8 @@
 <div class="about-information l-flex l-flex-column l-flex-align-center">
 
 <h2 class="about-heading l-py-1 serif-font">Our Nursery Tale</h2>
-<p class="about-para l-py-1 sans-font u-fs-body u-fw-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+<p class="about-para l-py-1 sans-font u-fs-body u-fw-normal">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   Ut enim ad minim veniam, quis nostrud exercitation ullamco
   laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -235,10 +236,14 @@
 
   <!-- About customers content-->
   <div class="about-customers l-py-2">
-  <h2 class="about-heading l-py-1 serif-font u-fs-h2 u-fw-bold">Heartfelt! Thanks to our customers</h2>
-
+  
+    <div class="about-heading l-py-1 serif-font u-fs-body u-fw-bold">
+  <h2>Heartfelt! Thanks to our customers</h2>
+  <img src="images/heart.png" alt="heartt" width="30" height="30">
+    </div>
+    
   <!-- About carousel-->
-  <div class="about-carousel l-px-2-25 l-py-2-25">
+  <div class="about-carousel l-px-2 l-py-2 l-mb-1">
 
       <!-- About Carousel Slides-->
 
@@ -271,31 +276,102 @@
   </div>
 
     <!-- About link-->
-  <a href="coming-soon.html" class=" about-anchor serif-font u-fs-body u-fw-bold l-px-1 l-py-1 ">Connect through Stories</a>
+  <a href="coming-soon.html" class=" about-anchor serif-font u-fs-h3 u-fw-bold l-px-1 l-py-1 l-ml-1 ">Connect through Stories</a>
 </div>
 </section>
 
 
 <!-- Guide section-->
-<section class="guide l-pt-1">
-  <img src="images/info.jpg" alt="info" width="100">
-  <img src="images/before.jpg" alt="before" width="100">
-  <img src="images/after.jpg" alt="after" width="100">
-  <img src="images/spacing.jpg" alt="space" width="100" height="150">
-  <a href="coming-soon.html">Cultivate your knowledge</a>
+<section class="guide l-pt-1 content-wrapper__mobile u-bg-tertiary l-py-2">
+  <h2 class="serif-font u-fs-h2 l-pt-1-5">Gardening Basics</h2>
+
+  <div class="accordion l-py-2">
+  
+<!-- Guide accordion-->
+  <div class="guide-accordion l-flex l-flex-column l-flex-align-center l-pt-1">
+  <img class=" guide-image l-mx-1" src="images/info.jpg" style="border-radius: 20px; box-shadow:0 4px 8px var(--clr-primary-accent);" alt="info" width="300" height="250">
+  <p class="guide-para u-fs-body sans-font l-px-1 l-py-1"> Some Important Information 
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+  do eiusmod tempor incididunt <span id="dots">...</span><span id="more"> ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+  <p class="guide-read u-fs-body serif-font u-fw-bold l-pl-1" style="text-align: left;" onclick="myFunction()" id="myBtn">Read On</p>
+  </div>
+
+  <!-- Guide accordion-->
+  <div class="guide-accordion l-flex l-flex-column l-flex-align-center l-pt-1">
+  <img  class=" guide-image l-mx-1" src="images/before.jpg" style="border-radius: 20px; box-shadow:0 4px 8px var(--clr-primary-accent);" alt="before" width="300" height="250">
+ <p class="guide-para u-fs-body sans-font l-px-1 l-py-1">Before Planting tips
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+  do eiusmod tempor incididunt <span id="dots1">...</span><span id="more1"> ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+  <p class="guide-read u-fs-body serif-font u-fw-bold l-pl-1" style="text-align: left;" onclick="myFunction()" id="myBtn1">Read On</p>
+ </div>
+  
+ <!-- Guide accordion-->
+  <div class="guide-accordion l-flex l-flex-column l-flex-align-center l-pt-1">
+  <img  class=" guide-image l-mx-1" src="images/after.jpg" style="border-radius: 20px; box-shadow:0 4px 8px var(--clr-primary-accent);" alt="after" width="300" height="250">
+  <p class="guide-para u-fs-body sans-font l-px-1 l-py-1">After Planting tips
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+  do eiusmod tempor incididunt <span id="dots2">...</span><span id="more2">  ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+  <p class="guide-read u-fs-body serif-font u-fw-bold l-pl-1" style="text-align: left;" onclick="myFunction()" id="myBtn2">Read On</p>
+  </div>
+
+  <!-- Guide accordion-->
+  <div class="guide-accordion l-flex l-flex-column l-flex-align-center l-pt-1">
+  <img  class=" guide-image l-mx-1" src="images/spacing.jpg" style="border-radius: 20px; box-shadow:0 4px 8px var(--clr-primary-accent);" alt="space" width="300" height="250">
+  <p class="guide-para u-fs-body sans-font l-px-1 l-py-1">Spacing requirements
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+  do eiusmod tempor incididunt <span id="dots3">...</span><span id="more3">  ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+  <p class="guide-read u-fs-body serif-font u-fw-bold l-pl-1" style="text-align: left;" onclick="myFunction()" id="myBtn3">Read On</p>
+  </div>
+
+    <!-- Pagination Dots -->
+    <div class="guide-pagination l-mb-2" style="text-align:center;margin-top:20px;">
+      <span class="dot" onclick="currentSlide(0)"></span> 
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- Guide anchor-->
+  <a href="coming-soon.html" class=" guide-anchor u-fs-h3 serif-font u-fw-bold l-px-2 l-py-1 l-mb-1-5 l-ml-2" style="text-decoration: none; color: var(--clr-accent-text); background-color: var(--clr-secondary-accent); border-radius: 30px;">Cultivate your knowledge</a>
+  </div>
 </section>
 
 
 <!-- Gift section-->
-<section class="gift">
-<h2>Give yourself a gift Today!</h2>
-<ul>
-<li><h3>Step 1</h3></li>
-<li><h3>Step 2</h3></li>
-<li><h3>Step 3</h3></li>
-</ul>
+<section class="main-gift__certificates content-wrapper__mobile u-bg-primary">
+<div class="main-gift__content l-py-1">
+<h2 class="serif-font u-fs-h2 u-fw-bold" style="text-align: left;">Give yourself a gift Today!</h2>
 
-<a href="coming-soon.html">Unwrap Nature's gift</a>
+<div class="gift-content">
+<ul>
+<li class="gift-accordion l-flex l-flex-justify-between u-fs-body sans-font"><h3>Step 1</h3><p>+</p></li>
+<div class="gift-panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<li class="gift-accordion l-flex l-flex-justify-between u-fs-body sans-font"><h3>Step 2</h3><p>+</p></li>
+<div class="gift-panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<li class="gift-accordion l-flex l-flex-justify-between u-fs-body sans-font"><h3>Step 3</h3><p>+</p></li>
+<div class="gift-panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+</ul>
+</div>
+<a href="coming-soon.html" class="gift-anchor u-fs-h3 serif-font u-fw-bold l-px-1 l-py-1 ">Unwrap Nature's gift</a>
+
+</div>
 </section>
 </main>
 

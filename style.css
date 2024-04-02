@@ -1006,6 +1006,66 @@ border-radius: 25px;
 margin-left: 60px;
 }
 
+#more {display: none;}
+
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+
+.guide-para{
+  text-align: left;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.active {
+  background-color: #717171;
+}
+
+/* Hide all images within guide accordions */
+.guide-accordion{
+  display: none;
+}
+
+/* Display the first image within the first guide accordion */
+.guide-accordion:first-child{
+  display: block;
+}
+
+/* === Style Gift certificate section  === */
+
+.gift-accordion {
+  background-color: var(--clr-secondary-bg);
+  color: var(--clr-body-text);
+  cursor: pointer;
+  border: 1px solid var(--clr-primary-accent);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .gift-accordion:hover {
+  background-color: var(--clr-tertiary-bg); 
+}
+
+.gift-panel {
+  padding: 0 18px;
+  display: none;
+  background-color: var(--clr-accent-text);
+  overflow: hidden;
+}
+
 
 /* === Style Desktop Content  === */
 
