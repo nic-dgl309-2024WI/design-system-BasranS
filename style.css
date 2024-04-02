@@ -21,9 +21,9 @@
 
  /* Typeface font sizes */
  
- --h1-font-size: 2.5rem; 
- --h2-font-size: 2.0rem;
- --h3-font-size: 1.5rem;
+ --h1-font-size: 2.0rem; 
+ --h2-font-size: 1.5rem;
+ --h3-font-size: 1.25rem;
  --body-font-size: 1.0rem; 
  
 
@@ -696,9 +696,10 @@ background-color: var(--clr-primary-bg);
 
 /* Wrapper width for content on mobile */
 .content-wrapper__mobile {
-  width: 100%;
-  padding: 0 20px; 
-  box-sizing: border-box; 
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* === Style header for mobile  === */
@@ -826,7 +827,7 @@ header ul a{
 
 
 /* Add active link to pagination*/
-.pagination.active {
+.pagination.active-link {
   background-color: var(--clr-secondary-bg);
 }
 
@@ -892,7 +893,7 @@ text-align: center;
 }
 
 /* Add the pagination active colour*/
-.pagination a:hover:not(.active) {background-color: #ddd;}
+.pagination a:hover:not(.active-link) {background-color: #ddd;}
 
 /* Style the plant anchor*/
 .plants-anchor {
@@ -1033,7 +1034,7 @@ margin-left: 60px;
 }
 
 /* Add active link */
-.active {
+.active-link {
   background-color: #717171;
 }
 
@@ -1065,7 +1066,7 @@ margin-left: 60px;
 }
 
 /* Add active color to gift accordion */
-.active, .gift-accordion:hover {
+.active-link, .gift-accordion:hover {
   background-color: var(--clr-tertiary-bg); 
 }
 
@@ -1118,6 +1119,10 @@ button:hover {
   background-color: var(--clr-tertiary-bg);
 }
 
+.heading__desk{
+  display: none;
+}
+
 /* === Style Desktop Content  === */
 
 @media (min-width: 768px) {
@@ -1126,7 +1131,8 @@ button:hover {
 .content-wrapper__desk {
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 
 }
       /* Show the desktop navbar */
@@ -1152,16 +1158,27 @@ button:hover {
 
    .main-slider__image{
     height: 600px;
-  
    }
 
    .slider-anchor{
-    font-size: var(--h3-font-size);
-    padding: 10px 10px;
+    font-size: var(--h1-font-size);
+    
    }
 
-   .hero-heading {
-     font-size: var(--h1-font-size);
-     margin-top:200px;
+   .hero-heading{
+    display: none;
    }
+ 
+   .heading__desk{
+    display: block;
+   }
+   
+   .products-heading{
+    font-size: var(--h1-font-size);
+   }
+
+   .card-products{
+    padding: 20px;
+   }
+
 }

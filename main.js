@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', function() {
   
       // Remove active class from all pagination links
       paginationLinks.forEach(function(link) {
-        link.classList.remove('active');
+        link.classList.remove('active-link');
       });
       // Add active class to the corresponding pagination link
-      paginationLinks[index].classList.add('active');
+      paginationLinks[index].classList.add('active-link');
     }
   
     function nextSlide() {
@@ -129,7 +129,7 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    this.classList.toggle("active-link");
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
