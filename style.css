@@ -856,14 +856,15 @@ text-align: center;
 /* Style the product cards */
 .card-products {
   background-color: var(--clr-tertiary-bg);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--clr-secondary-accent);
   text-align: center;
 }
 
 /* Style the product cards image*/
 .card-products img {
   border-radius: 8px;
+
 }
 
 /* Hover effect */
@@ -910,7 +911,7 @@ text-align: center;
 .info-image{
   border: 1px solid;
   border-radius: 80px;
-  background-color: var(--clr-active);
+  background-color: var(--clr-active); 
 }
 
 /* Style the main information container*/
@@ -945,9 +946,49 @@ text-align: center;
 
 /* === Style about section of mobile  === */
 
+.about-carousel{
+  position: relative;
+}
+.about-carousel img {
+  display: none;
+}
 
+.about-carousel img:first-child {
+  display: block;
+}
 
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--clr-primary-accent);
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
 
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.customer-image {
+  border-radius: 50%;
+  width: 100px; 
+  height: 100px;
+
+}
+.customer-slide {
+  border-radius: 25px;
+  box-shadow: 0 4px 8px var(--clr-secondary-accent);
+  text-align: center;
+}
 /* === Style Desktop Content  === */
 
 @media (min-width: 768px) {
