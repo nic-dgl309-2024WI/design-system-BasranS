@@ -946,9 +946,12 @@ text-align: center;
 
 /* === Style about section of mobile  === */
 
+/* Style the carousel*/
 .about-carousel{
   position: relative;
 }
+
+/* Style the carousel about image*/
 .about-carousel img {
   display: none;
 }
@@ -957,6 +960,7 @@ text-align: center;
   display: block;
 }
 
+/* Style the carousel buttons*/
 .prev,
 .next {
   position: absolute;
@@ -978,17 +982,31 @@ text-align: center;
   right: 0;
 }
 
+/* Style the carousel customer image*/
 .customer-image {
   border-radius: 50%;
   width: 100px; 
   height: 100px;
 
 }
+
+/* Style the carousel customet slide*/
 .customer-slide {
   border-radius: 25px;
   box-shadow: 0 4px 8px var(--clr-secondary-accent);
   text-align: center;
 }
+
+/* Style the carousel about links*/
+.about-anchor{
+color: var(--clr-accent-text);
+background-color: var(--clr-primary-accent);
+text-decoration: none;
+border-radius: 25px;
+margin-left: 60px;
+}
+
+
 /* === Style Desktop Content  === */
 
 @media (min-width: 768px) {
