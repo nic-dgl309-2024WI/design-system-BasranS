@@ -1006,16 +1006,21 @@ border-radius: 25px;
 margin-left: 60px;
 }
 
+
+/* === Style Guide section  === */
+
 #more {display: none;}
 
 #more1 {display: none;}
 #more2 {display: none;}
 #more3 {display: none;}
 
+/* Style guide paragraphs */
 .guide-para{
   text-align: left;
 }
 
+/* Style the accordion  */
 .dot {
   height: 15px;
   width: 15px;
@@ -1025,6 +1030,8 @@ margin-left: 60px;
   margin: 0 5px;
   cursor: pointer;
 }
+
+/* Add active link */
 .active {
   background-color: #717171;
 }
@@ -1040,6 +1047,7 @@ margin-left: 60px;
 }
 
 /* === Style Gift certificate section  === */
+/* Style the gift certificate accordion*/
 
 .gift-accordion {
   background-color: var(--clr-secondary-bg);
@@ -1055,10 +1063,12 @@ margin-left: 60px;
   transition: 0.4s;
 }
 
+/* Add active color to gift accordion */
 .active, .gift-accordion:hover {
   background-color: var(--clr-tertiary-bg); 
 }
 
+/* Style the gift panel*/
 .gift-panel {
   padding: 0 18px;
   display: none;
@@ -1066,6 +1076,7 @@ margin-left: 60px;
   overflow: hidden;
 }
 
+/* Style the gift anchor links */
 .gift-anchor{
  text-decoration: none;
  background-color: var(--clr-primary-accent);
@@ -1073,6 +1084,7 @@ margin-left: 60px;
  border-radius: 30px;
 }
 
+/* Style the footer form */
 .footer-form {
   display: inline-block;
   text-align: left;
@@ -1090,6 +1102,7 @@ textarea {
   border-radius: 4px;
 }
 
+/* Style the form button */
 button {
   background-color: var(--clr-secondary-accent);
   color: var(--clr-accent-text);
@@ -1099,6 +1112,7 @@ button {
   font-size: 15px;
 }
 
+/* Apply hover to form button */
 button:hover {
   background-color: var(--clr-tertiary-bg);
 }
