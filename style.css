@@ -1066,6 +1066,42 @@ margin-left: 60px;
   overflow: hidden;
 }
 
+.gift-anchor{
+ text-decoration: none;
+ background-color: var(--clr-primary-accent);
+ color:var(--clr-accent-text);
+ border-radius: 30px;
+}
+
+.footer-form {
+  display: inline-block;
+  text-align: left;
+  border: 1px solid var(--clr-secondary-accent);
+  border-radius: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid var(--clr-secondary-bg);
+  border-radius: 4px;
+}
+
+button {
+  background-color: var(--clr-secondary-accent);
+  color: var(--clr-accent-text);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 55px;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: var(--clr-tertiary-bg);
+}
 
 /* === Style Desktop Content  === */
 
