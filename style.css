@@ -769,6 +769,15 @@ header ul a{
   display: block !important;
 }
 
+/* For mobile navbar */
+.dropdown-menu li:hover{
+ color: var(--clr-hover);
+}
+
+/* For desktop navbar */
+.dropdown-menu__desk li:hover{
+color: var(--clr-hover);
+}
 
 /* === Style hero section for mobile  === */
 /* Style the slider container*/
@@ -1121,18 +1130,40 @@ button:hover {
   background-color: var(--clr-tertiary-bg);
 }
 
+.coming-soon{
+  margin-top: 190px;
+}
+
+.coming-soon h1 {
+  transition: color 0.3s ease-in-out; 
+}
+
+/* Define the hover effect */
+.coming-soon h1:hover {
+  color: var(--clr-active); 
+}
+
+.footer-form__desk{
+  display: none;
+}
+
+.main-hero__desk{
+  display: none;
+}
+
 /* === Style Desktop Content  === */
 
 @media (min-width: 768px) {
+
 
   /* Wrapper width for content */
 .content-wrapper__desk {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
   box-sizing: border-box;
 
 }
+
       /* Show the desktop navbar */
     .header-navbar__desk {
       display: flex; 
@@ -1154,21 +1185,172 @@ button:hover {
    margin-right: 10px;
    }
 
-   .main-slider__image{
-    height: 600px;
+   .main-hero__desk{
+    display: block;
    }
 
-   .slider-anchor{
-    font-size: var(--h1-font-size);
-    
+   .main-hero{
+    display: none;
    }
+
    
-   .products-heading{
+   /* Style the slider container*/
+.maindesk-slider__container {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.slider-desk__container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Style the slider images*/
+.maindesk-slider__image {
+  width: 100%;
+  height: auto;
+ opacity: 0.8;
+}
+
+
+/* Style the hero section heading*/
+.hero-heading__desk {
+  position: absolute;
+  top: 50%;
+  left: 22%;
+  right: 20%;
+  text-align: center;
+  transform: translateY(-60%);
+  z-index: 1;
+  color: var(--clr-accent-text);
+  text-shadow: 3px 3px 5px var(--clr-body-text);
+
+}
+
+
+/* Style the pagination container*/
+.pagination-desk__container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+
+/* Style the pagination*/
+.pagination-desk {
+  width: 30px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--clr-accent-text);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+
+/* Add active link to pagination*/
+.pagination-desk.active-link {
+  background-color: var(--clr-secondary-bg);
+}
+
+
+/* Style the slider anchor*/
+.slider-anchor__desk{
+background-color: var(--clr-secondary-accent);
+color: var(--clr-accent-text);
+text-decoration: none;
+position: absolute;
+bottom: 150px;
+left: 50%;
+transform: translateX(-50%);
+border-radius: 25px;
+text-align: center;
+}
+
+
+.hero-para{
+  position: absolute;
+ top:60%;
+  left: 22%;
+  right: 20%;
+  text-align: center;
+  transform: translateY(-60%);
+  z-index: 1;
+  color: var(--clr-accent-text);
+  text-shadow: 3px 3px 5px var(--clr-body-text);
+}
+
+
+
+ .products-heading{
     font-size: var(--h1-font-size);
    }
 
    .card-products{
     padding: 20px;
    }
+
+   .footer-form__desk{
+    display: flex;
+    flex-direction: column;
+   }
+   .footer-form{
+    display: none;
+   }
+
+   .footer-content__desk label{
+    padding: 20px;
+
+   }
+
+   .footer-form__desk{  
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    background-color: var(--clr-tertiary-bg);
+    margin-top: 10px;
+    color: var(--clr-body-text);
+    border: 1px solid var(--clr-body-text);
+  }
+  .form-content__desk{
+   display: flex;
+   flex-direction: column;
+  }
+
+  .form-desk{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .form-desk label {
+    margin-top: 12px;
+    padding: 5px;
+    color: var(--clr-body-text);
+  }
+  
+  .form-desk input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: var(--clr-primary-bg);
+  }
+  
+  .button button{
+    background-color: var(--clr-secondary-accent);
+    border: 1px solid var(--clr-primary-bg);
+    color: var(--clr-accent-text);
+    cursor: pointer;
+    border-radius:10px;
+  
+  }
+
+  
+  .button button:hover {
+    background-color: var(--clr-active);
+  }
+  
+  
 
 }

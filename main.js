@@ -48,6 +48,52 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
 
+  
+// Slider
+document.addEventListener('DOMContentLoaded', function() {
+  var slides = document.querySelectorAll('.maindesk-slider__image');
+  var paginationLinks = document.querySelectorAll('.pagination-desk');
+  var currentIndex = 0;
+  var totalSlides = slides.length;
+
+  function showSlide(index) {
+    // Hide all slides
+    slides.forEach(function(slide) {
+      slide.style.display = "none";
+    });
+    // Display the slide at the given index
+    slides[index].style.display = "block";
+
+    // Remove active class from all pagination links
+    paginationLinks.forEach(function(link) {
+      link.classList.remove('active-link');
+    });
+    // Add active class to the corresponding pagination link
+    paginationLinks[index].classList.add('active-link');
+  }
+
+  function nextSlide() {
+    currentIndex++;
+    if (currentIndex >= totalSlides) {
+      currentIndex = 0;
+    }
+    showSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = totalSlides - 1;
+    }
+    showSlide(currentIndex);
+  }
+
+ 
+  var timer = setInterval(nextSlide, 2000);
+});
+
+
+
 // product
 
   // Card Carousel

@@ -28,11 +28,10 @@
 
            <!-- Toggle dropdown menu-->
           <ul class="dropdown-menu l-py-1 l-px-1 serif-font u-fw-bold u-fs-body">
-            <a href="coming-soon.html"><li><img src="images/heart.png" alt="products" width="15" height="15">Products</li></a>
-            <a href="coming-soon.html"><li><img src="images/partnership.png" alt="services" width="15" height="15">Services
-            </li></a>
-            <a href="coming-soon.html"><li><img src="images/smile.png" alt="guide" width="15" height="13">Guide</li></a>
-            <a href="coming-soon.html"><li><img src="images/group.png" alt="about" width="15" height="15">About us</li></a>
+            <li><a href="coming-soon.html"><img src="images/heart.png" alt="products" width="15" height="15">Products</a></li>
+            <li><a href="coming-soon.html"><img src="images/partnership.png" alt="services" width="15" height="15">Services</a></li>
+            <li><a href="coming-soon.html"><img src="images/smile.png" alt="guide" width="15" height="13">Guide</a></li>
+            <li><a href="coming-soon.html"><img src="images/group.png" alt="about" width="15" height="15">About us</a></li>
             </ul>
          
          </nav>
@@ -44,11 +43,11 @@
 
           <div class="dropdown-menu__desk">
           <ul>
-          <a href="coming-soon.html"><li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font  u-fw-normal"><img src="images/heart.png" alt="products" width="20" height="17">Products</li></a>
-          <a href="coming-soon.html"><li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font  u-fw-normal"><img src="images/partnership.png" alt="services" width="20" height="17">Services
-          </li></a>
-          <a href="coming-soon.html"><li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font  u-fw-normal"><img src="images/smile.png" alt="guide" width="20" height="17">Guide</li></a>
-          <a href="coming-soon.html"><li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font u-fw-normal"><img src="images/group.png" alt="about" width="20" height="17">About us</li></a>
+          <li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font  u-fw-normal"><a href="coming-soon.html"><img src="images/heart.png" alt="products" width="20" height="17">Products</a></li>
+          <li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font  u-fw-normal"><a href="coming-soon.html"><img src="images/partnership.png" alt="services" width="20" height="17">Services</a>
+          </li>
+          <li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font  u-fw-normal"><a href="coming-soon.html"><img src="images/smile.png" alt="guide" width="20" height="17">Guide</a></li>
+          <li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font u-fw-normal"><a href="coming-soon.html"><img src="images/group.png" alt="about" width="20" height="17">About us</a></li>
           </ul>
         </div>
         </nav>
@@ -56,19 +55,19 @@
     </header>
 <main>
 
-     <!--Hero Section-->
-  <section class="main-hero content-wrapper__desk">
+     <!--Hero Section mobile-->
+  <section class="main-hero l-py-1-5">
 
        <!--Hero Heading-->
-    <h1 class="hero-heading serif-font u-fs-h1 u-fw-bold">Discover the heart of our Nursery</h1>
+    <h1 class="hero-heading serif-font u-fs-h2 u-fw-bold">Discover the heart of our Nursery</h1>
 
        <!--Slider Images-->
     <div class="main-slider__container">
     <div class="slider__container">
-      <img class="main-slider__image" src="images/slider1.jpg" alt="slider" width="100%">
-      <img class="main-slider__image" src="images/slider2.jpg" alt="slider" width="100%">
-      <img class="main-slider__image" src="images/slider3.jpg" alt="slider" width="100%">
-      <img class="main-slider__image" src="images/slider4.jpg" alt="slider" width="100%">
+      <img class="main-slider__image" src="images/slider1.jpg" alt="slider" >
+      <img class="main-slider__image" src="images/slider2.jpg" alt="slider">
+      <img class="main-slider__image" src="images/slider3.jpg" alt="slider">
+      <img class="main-slider__image" src="images/slider4.jpg" alt="slider">
     </div>
 
        <!--Pagination container-->
@@ -81,8 +80,39 @@
 
     <!-- Hero Call-to-action -->
     <a href="coming-soon.html" class="slider-anchor u-fs-h3 u-fw-bold serif-font">Explore our space</a>
-    
-  </div> 
+    </div> 
+</section>
+
+
+       <!--Hero Section Desktop-->
+       <section class="main-hero__desk content-wrapper__desk l-my-1">
+
+        <!--Hero Heading-->
+        <div class="hero-content__desk l-flex l-flex-column">
+     <h1 class="hero-heading__desk serif-font u-fs-h1 u-fw-bold">Welcome to the Outback Nursery!</h1>
+     <p class="hero-para sans-font u-fs-h2 u-fw-normal">Discover the heart of our Nursery, Step into a world where greenery thrives and nature's beauty awaits. Let's cultivate your perfect garden together."</p>
+        </div>
+
+        <!--Slider Images-->
+     <div class="maindesk-slider__container">
+     <div class="slider-desk__container">
+       <img class="maindesk-slider__image" src="images/slider1.jpg" alt="slider" >
+       <img class="maindesk-slider__image" src="images/slider2.jpg" alt="slider" >
+       <img class="maindesk-slider__image" src="images/slider3.jpg" alt="slider" >
+       <img class="maindesk-slider__image" src="images/slider4.jpg" alt="slider" >
+     </div>
+ 
+        <!--Pagination container-->
+     <div class="pagination-desk__container">
+       <span class="pagination-desk" onclick="showSlide(0)"></span>
+       <span class="pagination-desk" onclick="showSlide(1)"></span>
+       <span class="pagination-desk" onclick="showSlide(2)"></span>
+       <span class="pagination-desk" onclick="showSlide(3)"></span>
+     </div>
+ 
+     <!-- Hero Call-to-action -->
+     <a href="coming-soon.html" class="slider-anchor__desk u-fs-h2 u-fw-bold serif-font l-px-2 l-py-1">Explore our space</a>  
+   </div> 
   </section>  
 
 
@@ -353,19 +383,13 @@ and peaceful ambiance, each trip becomes a delight. I enthusiastically suggest i
 <div class="gift-content l-mb-2-25">
 <ul>
 <li class="gift-accordion l-flex l-flex-justify-between u-fs-body sans-font"><h3>Step 1</h3><p>+</p></li>
-<div class="gift-panel">
-  <p>Send an email to info@outbacknursery.ca - as a way to introduce yourself.</p>
-</div>
+
 
 <li class="gift-accordion l-flex l-flex-justify-between u-fs-body sans-font"><h3>Step 2</h3><p>+</p></li>
-<div class="gift-panel">
-  <p>Send an E-transfer to info@outbacknursery.ca with your chosen amount.</p>
-</div>
 
 <li class="gift-accordion l-flex l-flex-justify-between u-fs-body sans-font"><h3>Step 3</h3><p>+</p></li>
-<div class="gift-panel">
-  <p>I will scan a voucher and email it back to you or another email of your choosing.</p>
-</div>
+
+
 
 </ul>
 </div>
@@ -389,24 +413,50 @@ and peaceful ambiance, each trip becomes a delight. I enthusiastically suggest i
 
  <div class="footer-content">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2577.807370241173!2d-125.0534250878809!3d49.75206817134821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548810dc18bfe329%3A0xa080148546db78f5!2sOutback%20Nursery%20%26%20Garden%20Centre!5e0!3m2!1sen!2sca!4v1712063612897!5m2!1sen!2sca" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ 
 
-  <form class="footer-form l-mt-1 l-px-1 l-py-1-5">
-    <h3 class="form-heading l-mt-1 l-py-1 u-fs-h3 serif-font u-fw-bold">Get Support here!</h3>
-    <label for="first_name">First Name:</label>
-    <input type="text" id="first_name" name="First-name" required><br><br>
+  <div class="footer-form l-py-1 l-px-1 l-mt-2">
+    <div class="footer-content">
+    <h1 class="footer-heading serif-font u-fs-h2 u-fw-bold">Talk with us Today!</h1>
+   <p class="footer-para u-fs-body sans-font u-fw-normal"> No commitments, No hard selling - Just with one click</p>
+    </div>
+    <div class="form-mobile l-py-1 u-fs-body sans-font">
+     <label for="fname">First Name</label><br>
+       <input type="text" id="fname" name="fname"><br>
+       <label for="lname">Last Name</label><br>
+       <input type="text" id="lname" name="lname"><br>
+       <label for="phone">Phone</label><br>
+       <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+       <label for="email">Email</label><br>
+       <input type="text" id="email" name="email"><br>
+     
+    </div>
+    <div class="button">
+    <button class="u-fs-h3 serif-font" style="border-radius: 10px;">Submit Form</button>
+    </div>
+  </div>
 
-    <label for="last_name">Last Name:</label>
-    <input type="text" id="Last_name" name="Last-name" required><br><br>
+<!-- Desktop form -->
+<div class="footer-form__desk l-py-1">
+  <div class="footer-content__desk">
+  <h1>Talk with us Today!</h1>
+ <p> No commitments, No hard selling - Just with one click</p>
+  </div>
+  <div class="form-desk l-py-1">
+   <label for="fname">First Name</label><br>
+     <input type="text" id="f_name" name="fname"><br>
+     <label for="lname">Last Name</label><br>
+     <input type="text" id="l_name" name="lname"><br>
+     <label for="phone">Phone</label><br>
+     <input type="tel" id="phone_no" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+     <label for="email">Email</label><br>
+     <input type="text" id="email_id" name="email"><br>
+   </div>
+  <div class="button">
+  <button>Submit Form</button>
+  </div>
+</div>
 
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-
-    <button type="submit">SUBMIT</button>
-</form>
 
 <h3 class="footer-heading__social u-fs-h3 serif-font u-fw-normal ">follow us</h3>
 
