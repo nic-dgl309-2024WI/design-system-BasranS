@@ -795,7 +795,7 @@ color: var(--clr-hover);
 /* Style the slider images*/
 .main-slider__image {
   width: 100%;
-  height: auto;
+  height:300px;
  opacity: 0.8;
 }
 
@@ -856,7 +856,9 @@ border-radius: 25px;
 text-align: center;
 }
 
-
+.main-hero__desk{
+  display: none;
+}
 /* === Style products section for mobile  === */
 /* Style the slider anchor*/
 
@@ -912,6 +914,12 @@ border-radius: 25px;
 text-align: center;
 }
 
+
+
+.main-products__desk{
+  display:none;
+}
+
 /* === Style the information section of mobile  === */
 
 /* Style the information section paragraph*/
@@ -964,12 +972,14 @@ text-align: center;
   position: relative;
 }
 
-/* Style the carousel about image*/
-.about-carousel img {
+
+/* Hide all customer slides except the first one */
+.customer-slide {
   display: none;
 }
 
-.about-carousel img:first-child {
+/* Show the first customer slide */
+.customer-slide:first-child {
   display: block;
 }
 
@@ -1017,6 +1027,9 @@ background-color: var(--clr-primary-accent);
 text-decoration: none;
 border-radius: 25px;
 margin-left: 60px;
+}
+.main-about__desk {
+  display: none;
 }
 
 
@@ -1147,9 +1160,6 @@ button:hover {
   display: none;
 }
 
-.main-hero__desk{
-  display: none;
-}
 
 /* === Style Desktop Content  === */
 
@@ -1282,28 +1292,139 @@ text-align: center;
   text-shadow: 3px 3px 5px var(--clr-body-text);
 }
 
+.main-products__desk{
+  display: block;
+}
+.main-products{
+  display: none;
+}
 
 
- .products-heading{
-    font-size: var(--h1-font-size);
-   }
+/* Style the product cards */
+.card-products__desk {
+  background-color: var(--clr-tertiary-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--clr-secondary-accent);
+  text-align: center;
+}
 
-   .card-products{
-    padding: 20px;
-   }
+/* Style the product cards image*/
+.card-products__desk img {
+  border-radius: 8px;
 
-   .footer-form__desk{
-    display: flex;
-    flex-direction: column;
-   }
-   .footer-form{
-    display: none;
-   }
+}
 
-   .footer-content__desk label{
-    padding: 20px;
+/* Hover effect */
+.card-products__desk:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
 
-   }
+/* Style the product pagination for mobile*/
+.products-pagination__desk a {
+  color: var(--clr-body-text);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+}
+
+/* Style the product pagination hover*/
+.products-pagination__desk a:hover {
+  background-color:var(--clr-active) ;
+  color: var(--clr-accent-text);
+}
+
+/* Add the pagination active colour*/
+.pagination a:hover:not(.active-link) {background-color: var(--clr-active);}
+
+/* Style the plant anchor*/
+.plants-anchor__desk{
+background-color: var(--clr-primary-accent);
+text-decoration: none;
+border-radius: 25px;
+text-align: center;
+}
+
+.main-about__desk {
+  display: block;
+}
+
+.main-about{
+  display: none;
+}
+
+.about-carousel__desk{
+  position: relative;
+}
+
+/* Hide all customer slides except the first one */
+.customer-slide__desk {
+  display: none;
+}
+
+/* Show the first customer slide */
+.customer-slide__desk:first-child {
+  display: block;
+}
+
+/* Style the carousel buttons*/
+.prev-desk,
+.next-desk {
+  position: absolute;
+  top: 50%;
+  background-color: var(--clr-primary-accent);
+  color: var(--clr-accent-text);
+  font-size: 20px;
+  padding: 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.prev-desk {
+  left: 0;
+}
+
+.next-desk {
+  right: 0;
+}
+
+/* Style the carousel customer image*/
+.customer-image__desk {
+  border-radius: 50%;
+  width: 100px; 
+  height: 100px;
+
+}
+
+/* Style the carousel customet slide*/
+.customer-slide__desk {
+  border-radius: 25px;
+  box-shadow: 0 4px 8px var(--clr-secondary-accent);
+  text-align: center;
+}
+
+/* Style the carousel about links*/
+.about-anchor__desk{
+color: var(--clr-accent-text);
+background-color: var(--clr-primary-accent);
+text-decoration: none;
+border-radius: 25px;
+
+}
+
+.footer-form__desk{
+   display: flex;
+  flex-direction: column;
+}
+.footer-form{
+ display: none;
+}
+
+.footer-content__desk label{
+  padding: 20px;
+ }
 
    .footer-form__desk{  
     display: flex;

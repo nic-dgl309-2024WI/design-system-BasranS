@@ -17,7 +17,6 @@
 </head>
 <body>
     <header>
-
         <!--Mobile navbar-->
         <nav class="header-navbar__mobile l-flex l-flex-justify-between" >
           <a href="index.html"><img src="images/logo.png" alt="logo" width="35" height="35"></a>
@@ -33,12 +32,11 @@
             <li><a href="coming-soon.html"><img src="images/smile.png" alt="guide" width="15" height="13">Guide</a></li>
             <li><a href="coming-soon.html"><img src="images/group.png" alt="about" width="15" height="15">About us</a></li>
             </ul>
-         
-         </nav>
+            </nav>
       
-          <!--Desktop navbar-->
-    
-        <nav class="header-navbar__desk">
+         
+            <!--Desktop navbar-->
+         <nav class="header-navbar__desk">
           <a href="index.html"><img src="images/logo.png" alt="logo" width="80" height="80"></a>
 
           <div class="dropdown-menu__desk">
@@ -51,12 +49,14 @@
           </ul>
         </div>
         </nav>
-      
-    </header>
-<main>
+      </header>
+
+
+
+<main class="main-content">
 
      <!--Hero Section mobile-->
-  <section class="main-hero l-py-1-5">
+  <section class="main-hero ">
 
        <!--Hero Heading-->
     <h1 class="hero-heading serif-font u-fs-h2 u-fw-bold">Discover the heart of our Nursery</h1>
@@ -87,13 +87,13 @@
        <!--Hero Section Desktop-->
        <section class="main-hero__desk content-wrapper__desk l-my-1">
 
-        <!--Hero Heading-->
+        <!--Hero Heading content-->
         <div class="hero-content__desk l-flex l-flex-column">
      <h1 class="hero-heading__desk serif-font u-fs-h1 u-fw-bold">Welcome to the Outback Nursery!</h1>
      <p class="hero-para sans-font u-fs-h2 u-fw-normal">Discover the heart of our Nursery, Step into a world where greenery thrives and nature's beauty awaits. Let's cultivate your perfect garden together."</p>
         </div>
 
-        <!--Slider Images-->
+        <!--Slider Images for desktop-->
      <div class="maindesk-slider__container">
      <div class="slider-desk__container">
        <img class="maindesk-slider__image" src="images/slider1.jpg" alt="slider" >
@@ -102,7 +102,7 @@
        <img class="maindesk-slider__image" src="images/slider4.jpg" alt="slider" >
      </div>
  
-        <!--Pagination container-->
+        <!--Pagination container for desktop-->
      <div class="pagination-desk__container">
        <span class="pagination-desk" onclick="showSlide(0)"></span>
        <span class="pagination-desk" onclick="showSlide(1)"></span>
@@ -110,15 +110,15 @@
        <span class="pagination-desk" onclick="showSlide(3)"></span>
      </div>
  
-     <!-- Hero Call-to-action -->
+     <!-- Hero Call-to-action for desktop -->
      <a href="coming-soon.html" class="slider-anchor__desk u-fs-h2 u-fw-bold serif-font l-px-2 l-py-1">Explore our space</a>  
    </div> 
   </section>  
 
 
 
-   <!--Products section-->
-<section class="main-products content-wrapper__mobile content-wrapper__desk u-bg-primary">
+   <!--Products section mobile-->
+<section class="main-products content-wrapper__mobile u-bg-primary">
 
    <!--Products Heading-->
    <h2 class="products-heading u-fs-h2 u-fw-bold serif-font l-px-1 l-py-1">Your Best Picks</h2>
@@ -224,6 +224,113 @@
 
 
 
+
+   <!--Products section mobile-->
+   <section class="main-products__desk content-wrapper__desk u-bg-primary">
+
+    <!--Products Heading-->
+    <h2 class="products-heading__desk u-fs-h2 u-fw-bold serif-font l-px-1 l-py-1">Your Best Picks</h2>
+   
+        <!--Products Cards-->
+   <div class="card-container__desk l-flex">
+ 
+      <!--Products card 1-->
+   <div class="card-products__desk l-px-1 l-py-1">
+    <img src="images/lulima.jpg" alt="lulima" width="200" height="200">
+    <h2> Lulima</h2>
+    <p class="card-para sans-font u-fw-normal u-fs-body">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim veniam, quis nostrud exercitation ullamco
+     laboris nisi ut aliquip ex ea commodo consequat.</p>
+   </div>
+ 
+      <!--Products card 2-->
+      <div class="card-products__desk l-px-1 l-py-1">
+    <img src="images/little-diamond.jpg" alt="little" width="200" height="200">
+      <h2>Little Diamond</h2>
+    <p class="card-para u-fs-body sans-font u-fw-normal "> 
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim veniam, quis nostrud exercitation ullamco
+     laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+ 
+      <!--Products card 3-->
+      <div class="card-products__desk l-px-1 l-py-1">
+    <img src="images/leyland.jpeg" alt="leyland" width="200" height="200">
+    <h2>leyland</h2>
+    <p class="card-para u-fs-body sans-font u-fw-normal"> 
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim veniam, quis nostrud exercitation ullamco
+     laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+ 
+      <!--Products card 4-->
+      <div class="card-products__desk l-px-1 l-py-1">
+    <img src="images/sekkon.jpg" alt="sekkon" width="200" height="200">
+    <h2>Sekkon Sugi</h2>
+    <p class="card-para u-fs-body sans-font u-fw-normal">
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim veniam, quis nostrud exercitation ullamco
+     laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+      </div>
+ 
+      <!--Products card 5-->
+      <div class="card-products__desk l-px-1 l-py-1">
+    <img src="images/camellia.jpg" alt="camellia"  width="200" height="200">
+    <h2>Camellia</h2>
+    <p class="card-para u-fs-body sans-font u-fw-normal ">
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim veniam, quis nostrud exercitation ullamco
+     laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+      </div>
+ 
+      <!--Products card 6-->
+      <div class="card-products__desk l-px-1 l-py-1">
+    <img src="images/laurel.jpg" alt="laurel" width="200" height="200">
+    <h2>Laurel</h2>
+    <p class="card-para u-fs-body sans-font u-fw-normal">
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim veniam, quis nostrud exercitation ullamco
+     laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+      </div>
+ 
+      <!--Products card 7-->
+      <div class="card-products__desk l-px-1 l-py-1">
+    <img src="images/lilac.jpeg" alt="lilac" width="200" height="200">
+    <h2>Lilac</h2>
+    <p class="card-para u-fs-body sans-font u-fw-normal ">
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+     do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim veniam, quis nostrud exercitation ullamco
+     laboris nisi ut aliquip ex ea commodo consequat.
+   </p>
+    </div>
+   </div>
+ 
+   <div class="products-pagination__desk l-flex l-flex-row l-flex-justify-evenly l-py-2 sans-font">
+     <a href="#" class="pagination-link__desk">&laquo;</a>
+     <a href="#" class="pagination-link__desk">1</a>
+     <a href="#" class="pagination-link__desk">2</a>
+     <a href="#" class="pagination-link__desk">3</a>
+     <a href="#" class="pagination-link__desk">4</a>
+     <a href="#" class="pagination-link__desk">&raquo;</a>
+   </div>
+
+  <!--Products link for desktop-->
+  <a href="coming-soon.html" class=" plants-anchor__desk serif-font u-fs-h3 u-fw-bold l-px-1 l-py-1" style="color: var(--clr-accent-text); text-decoration: none;">Grab Your Happiness</a>
+ </section>
+ 
+
+
 <!-- Other Information section-->
 <section class="main-information content-wrapper__desk ">
   <div class="scrollable-container ">
@@ -253,7 +360,7 @@
 
 
 <!-- About section-->
-<section class="main-about content-wrapper__mobile u-bg-primary content-wrapper__desk">
+<section class="main-about content-wrapper__mobile u-bg-primary">
 
   <!-- About Information-->
 <div class="about-information l-flex l-flex-column l-flex-align-center">
@@ -309,6 +416,70 @@ and peaceful ambiance, each trip becomes a delight. I enthusiastically suggest i
   <a href="coming-soon.html" class=" about-anchor serif-font u-fs-h3 u-fw-bold l-p-1 l-py-1">Connect through Stories</a>
 </div>
 </section>
+
+
+
+<!-- About section desktop-->
+<section class="main-about__desk u-bg-primary content-wrapper__desk">
+
+  <!-- About Information desktop-->
+<div class="l-flex l-flex-row">
+<div class="about-information__desk l-px-1 l-py-2 l-flex l-flex-column l-flex-align-center">
+
+<h2 class="about-heading__desk l-py-1 serif-font">Our Nursery Tale</h2>
+<p class="about-para__desk l-py-1 sans-font u-fs-body u-fw-normal">
+  Outback Nursery & Garden Centre, located in Courtenay, BC, is a premier destination for gardening enthusiasts on Vancouver Island. Established in 1998-1999, our family-owned nursery spans across a spacious 6-acre property, featuring five expansive greenhouses totaling nearly 23,000 square feet. Our journey began with clearing trees and embracing country living, evolving into a thriving hub for plants, livestock, and top-quality products showcased at local markets and beyond.</p>
+<a href="coming-soon.html"><img style="border-radius: 10px;" src="images/about.jpg" alt="about" width="350"></a>
+ <!-- About link desktop-->
+ <a href="coming-soon.html" class=" about-anchor__desk serif-font u-fs-h3 u-fw-bold l-mt-1 l-px-1 l-py-1">Connect through Stories</a>
+  </div>
+
+  <!-- About customers content desktop-->
+  <div class="about-customers__desk">
+    
+    <div class="about-heading__desk serif-font u-fs-body u-fw-bold">
+      <h2>Heartfelt! Thanks to our customers</h2>
+  <img src="images/heart.png" alt="heartt" width="30" height="30">
+    </div>
+  
+  <!-- About carousel-->
+  <div class="about-carousel__desk l-flex l-px-2 l-py-2 ">
+
+      <!-- About Carousel Slides desktop-->
+
+  <div class="customer-slide__desk l-px-2 l-py-2 u-bg-secondary">
+  <img class="customer-image__desk l-mx-2-25" src="images/customer1.jpg" alt="customer">
+  <h2 class="customer-heading__desk l-pt-1 serif-font u-fs-h2">"Laura Smith</h2>
+  <p class="about-para__desk l-p-1 sans-font u-fs-body u-fw-normal">  
+"Outback Nursery stands out as my preferred destination for plants. With their extensive variety, knowledgeable guidance, 
+and peaceful ambiance, each trip becomes a delight. I enthusiastically suggest it to anyone seeking to elevate their garden experience!"</p>
+
+  </div>
+
+  <div class="customer-slide__desk l-px-2 l-py-2 u-bg-secondary">
+    <img class="customer-image__desk l-mx-2-25" src="images/customer2.jpg" alt="customer">
+    <h2 class="customer-heading__desk l-pt-1 serif-font u-fs-h2" >"Christina </h2>
+    <p class="about-para l-p-1 sans-font u-fs-body u-fw-normal">     
+"Outback Nursery stands out as my preferred destination for plants. With their extensive variety, knowledgeable guidance, 
+and peaceful ambiance, each trip becomes a delight. I enthusiastically suggest it to anyone seeking to elevate their garden experience!"</p>
+    </div>
+
+    <div class="customer-slide__desk l-px-2 l-py-2 u-bg-secondary">
+      <img class="customer-image__desk  l-mx-2-25" src="images/customer3.jpg" alt="customer">
+      <h2 class="customer-heading__desk  l-pt-1 serif-font u-fs-h2" >"Loralie Smith</h2>
+      <p class="about-para__desk l-p-1 sans-font u-fs-body u-fw-normal">    
+"Outback Nursery stands out as my preferred destination for plants. With their extensive variety, knowledgeable guidance, 
+and peaceful ambiance, each trip becomes a delight. I enthusiastically suggest it to anyone seeking to elevate their garden experience!"</p>
+      </div>
+
+  <a class="prev-desk" onclick="plusSlides(-1)">❮</a>
+<a class="next-desk" onclick="plusSlides(1)">❯</a>
+  </div>
+</div>
+</div>
+
+</section>
+
 
 
 <!-- Guide section-->
@@ -383,12 +554,12 @@ and peaceful ambiance, each trip becomes a delight. I enthusiastically suggest i
 <div class="gift-content l-mb-2-25">
 <ul>
 <li class="gift-accordion l-flex l-flex-justify-between u-fs-body sans-font"><h3>Step 1</h3><p>+</p></li>
-
-
+<li class="gift-panel">Send an email to info@outbacknursery.ca - as a way to introduce yourself</li>
 <li class="gift-accordion l-flex l-flex-justify-between u-fs-body sans-font"><h3>Step 2</h3><p>+</p></li>
-
+<li class="gift-panel">Send an E-transfer to info@outbacknursery.ca with your chosen amount</li>
 <li class="gift-accordion l-flex l-flex-justify-between u-fs-body sans-font"><h3>Step 3</h3><p>+</p></li>
-
+<li class="gift-panel">I will scan a voucher and email it back to you or another email of your choosing
+  Thank you!</li>
 
 
 </ul>
@@ -460,8 +631,8 @@ and peaceful ambiance, each trip becomes a delight. I enthusiastically suggest i
 
 <h3 class="footer-heading__social u-fs-h3 serif-font u-fw-normal ">follow us</h3>
 
-<a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook" width="30" height="30"></a>
-<a href="https://mail.google.com/"><img src="images/gmail.png" alt="gmail" width="25" height="30"></a>
+<a href="https://www.facebook.com/profile.php?id=100045470087619"><img src="images/facebook.png" alt="facebook" width="30" height="25"></a>
+<a href="https://mail.google.com/"><img src="images/gmail.png" alt="gmail" width="25" height="25"></a>
 <h3 class="footer-disclaimer u-fs-h3 serif-font l-mt-1">Disclaimer</h3>
 <p></p>
 
@@ -469,7 +640,7 @@ and peaceful ambiance, each trip becomes a delight. I enthusiastically suggest i
 
   <p>&copy; 2024 Outback Nursery. All rights reserved.</p>
 </footer>
-
+<script src="design-system.js"></script>
 <script src="main.js"></script>
 </body>
 </html>
