@@ -903,6 +903,8 @@ border-radius: 25px;
 text-align: center;
 }
 
+/* === Style the information section of mobile  === */
+
 /* Style the information section paragraph*/
 .info-para{
   text-align: left;
@@ -1119,10 +1121,6 @@ button:hover {
   background-color: var(--clr-tertiary-bg);
 }
 
-.heading__desk{
-  display: none;
-}
-
 /* === Style Desktop Content  === */
 
 @media (min-width: 768px) {
@@ -1163,14 +1161,6 @@ button:hover {
    .slider-anchor{
     font-size: var(--h1-font-size);
     
-   }
-
-   .hero-heading{
-    display: none;
-   }
- 
-   .heading__desk{
-    display: block;
    }
    
    .products-heading{

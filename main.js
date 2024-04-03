@@ -48,6 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
 
+// product
+
   // Card Carousel
   let slideIndex = 1;
   showSlides(slideIndex);

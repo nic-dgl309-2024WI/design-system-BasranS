@@ -4,26 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="u-bg-primary">
      <!-- Header -->
-    <header>
-      <!-- Navbar -->
-      <nav>
+     <header>
+
+      <!--Mobile navbar-->
+      <nav class="header-navbar__mobile l-flex l-flex-justify-between" >
+        <a href="index.html"><img src="images/logo.png" alt="logo" width="35" height="35"></a>
+
+        <!-- Toggle -->
+      
+        <i class="toggle fa fa-bars l-px-1 l-pt-1" onclick="toggleNav()" aria-hidden="true"> </i>
+
+         <!-- Toggle dropdown menu-->
+        <ul class="dropdown-menu l-py-1 l-px-1 serif-font u-fw-bold u-fs-body">
+          <a href="coming-soon.html"><li><img src="images/heart.png" alt="products" width="15" height="15">Products</li></a>
+          <a href="coming-soon.html"><li><img src="images/partnership.png" alt="services" width="15" height="15">Services
+          </li></a>
+          <a href="coming-soon.html"><li><img src="images/smile.png" alt="guide" width="15" height="13">Guide</li></a>
+          <a href="coming-soon.html"><li><img src="images/group.png" alt="about" width="15" height="15">About us</li></a>
+          </ul>
        
+       </nav>
+    
+        <!--Desktop navbar-->
+  
+      <nav class="header-navbar__desk">
         <a href="index.html"><img src="images/logo.png" alt="logo" width="80" height="80"></a>
-       
+
+        <div class="dropdown-menu__desk">
         <ul>
-        <a href="coming-soon.html"><li><img src="images/heart.png" alt="products" width="15" height="15">Products</li></a>
-        <a href="coming-soon.html"><li><img src="images/partnership.png" alt="services" width="15" height="15">Services
+        <a href="coming-soon.html"><li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font  u-fw-normal"><img src="images/heart.png" alt="products" width="20" height="17">Products</li></a>
+        <a href="coming-soon.html"><li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font  u-fw-normal"><img src="images/partnership.png" alt="services" width="20" height="17">Services
         </li></a>
-        <a href="coming-soon.html"><li><img src="images/smile.png" alt="guide" width="15" height="13">Guide</li></a>
-        <a href="coming-soon.html"><li><img src="images/group.png" alt="about" width="15" height="15">About us</li></a>
+        <a href="coming-soon.html"><li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font  u-fw-normal"><img src="images/smile.png" alt="guide" width="20" height="17">Guide</li></a>
+        <a href="coming-soon.html"><li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font u-fw-normal"><img src="images/group.png" alt="about" width="20" height="17">About us</li></a>
         </ul>
-      </nav>
-        <h1>Coming-Soon</h1>
-    </header>
-
-
+      </div>
+      </nav>  
+  </header>
+  
+<section class="coming-soon">
+  <h1 class="u-fs-h1 u-fw-bold serif-font" style="text-align: center;">Coming-Soon</h1>
+  
+</section>
 </body>
 </html>
