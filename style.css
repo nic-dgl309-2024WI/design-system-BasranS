@@ -776,6 +776,7 @@ background-color: var(--clr-primary-bg);
 
 }
 
+/* === Styles for mobile === */
 
 /* === Style header for mobile  === */
 
@@ -783,11 +784,10 @@ background-color: var(--clr-primary-bg);
 .content-wrapper__mobile {
   max-width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
-/* === Style header for mobile  === */
 /* Style the mobile navbar */
 
 .header-navbar__desk{
@@ -816,8 +816,6 @@ header ul a{
   background-color: var(--clr-secondary-bg);
   
 }
-
-
 
 /* Style mobile dropdown navbar*/
 
@@ -866,7 +864,9 @@ header ul a{
 color: var(--clr-hover);
 }
 
+
 /* === Style hero section for mobile  === */
+
 /* Style the slider container*/
 .main-slider__container {
   position: relative;
@@ -1257,8 +1257,15 @@ button:hover {
 .content-wrapper__desk {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
   box-sizing: border-box;
 
+}
+
+.content-full__width{
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
       /* Show the desktop navbar */
