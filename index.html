@@ -20,7 +20,7 @@
       <!------------------- HEADER MOBILE----------------------->
 
         <!--Mobile navbar-->
-        <nav class="header-navbar__mobile l-flex l-flex-justify-between" >
+        <nav class="header-navbar__mobile l-flex l-flex-justify-between l-fixed" >
           <a href="index.html"><img src="images/logo.png" alt="logo" width="50" height="35"></a>
 
           <!-- Toggle -->
@@ -28,11 +28,11 @@
           <i class="toggle fa fa-bars l-px-1 l-pt-1" onclick="toggleNav()" aria-hidden="true"> </i>
 
            <!-- Toggle dropdown menu-->
-          <ul class="dropdown-menu l-py-1 l-px-1 serif-font u-fw-bold u-fs-body ">
-            <li><a href="coming-soon.html"><img src="images/heart.png" alt="products" width="15" height="15">Products</a></li>
-            <li><a href="coming-soon.html"><img src="images/partnership.png" alt="services" width="15" height="15">Services</a></li>
-            <li><a href="coming-soon.html"><img src="images/smile.png" alt="guide" width="15" height="13">Guide</a></li>
-            <li><a href="coming-soon.html"><img src="images/group.png" alt="about" width="15" height="15">About us</a></li>
+          <ul class="dropdown-menu l-absolute l-py-1 l-px-1 serif-font u-fw-bold u-fs-body ">
+            <li><a href="coming-soon.html"><img src="images/heart.png" alt="products" width="16" height="15">Products</a></li>
+            <li><a href="coming-soon.html"><img src="images/partnership.png" alt="services" width="16" height="20">Services</a></li>
+            <li><a href="coming-soon.html"><img src="images/smile.png" alt="guide" width="16" height="16">Guide</a></li>
+            <li><a href="coming-soon.html"><img src="images/group.png" alt="about" width="16" height="18">About us</a></li>
             </ul>
             </nav>
       
@@ -65,11 +65,11 @@
   <section class="main-hero ">
 
        <!--Hero Heading-->
-    <h1 class="hero-heading serif-font u-fs-h2 u-fw-bold">Discover the heart of our Nursery</h1>
+    <h1 class="hero-heading l-absolute l-z-index-1 serif-font u-fs-h2 u-fw-bold">Discover the heart of our Nursery</h1>
 
        <!--Slider Images-->
-    <div class="main-slider__container">
-    <div class="slider__container">
+    <div class="main-slider__container l-relative l-overflow-hidden">
+    <div class="slider__container l-flex">
       <img class="main-slider__image" src="images/slider1.jpg" alt="slider" >
       <img class="main-slider__image" src="images/slider2.jpg" alt="slider">
       <img class="main-slider__image" src="images/slider3.jpg" alt="slider">
@@ -189,7 +189,7 @@
   
   </div>
  <!--Products link-->
- <div class=" plants-anchor serif-font u-fs-h3 u-fw-bold l-mt-1 l-px-1 l-py-1">
+ <div class=" plants-anchor serif-font u-fs-h3 u-fw-bold l-px-1 l-py-2">
  <a href="coming-soon.html"  style="color: var(--clr-accent-text); text-decoration: none;">Grab Your Happiness</a>
  </div>
 </section>
@@ -266,32 +266,60 @@
  
 
 
-<!------------------- INFORMATION SECTION ----------------------->
+<!------------------- INFORMATION MOBILE ----------------------->
 
-<section class="main-information content-wrapper__desk ">
-  <div class="scrollable-container ">
- <div class="main-info__container l-flex l-flex-row">
+<section class="main-information">
+<div class="scrollable-container">
+<div class="main-info__container l-flex l-flex-row">
 <div class="main-info l-flex l-flex-column l-px-1 l-py-1">
-<a href="coming-soon.html" class="info-image l-px-1"><img src="images/tracking.png" alt="order" width="50" height="70"></a>
-<p class="info-para u-fs-body sans-font u-fw-normal ">Orders & Delivery</p>
+<a href="coming-soon.html" class="info-image l-px-1">
+<img src="images/truck.gif" alt="order" width="50" height="50"></a>
+<p class="info-para u-fs-body sans-font u-fw-normal ">Orders<br>& Delivery</p>
 </div>
 
 <div class="main-info l-flex l-flex-column  l-px-1 l-py-1">
-<a href="coming-soon.html" class="info-image l-px-1"><img src="images/heart.png" alt="help" width="50" height="70"></a>
-<p class="info-para u-fs-body sans-font u-fw-normal ">Plant help at home</p>
+<a href="coming-soon.html" class="info-image l-px-1">
+<img src="images/gardener.gif" alt="help" width="50" height="50"></a>
+<p class="info-para u-fs-body sans-font u-fw-normal ">Plant help<br> at home</p>
 </div>
 
 <div class="main-info l-flex l-flex-column  l-px-1 l-py-1">
-<a href="coming-soon.html" class="info-image l-px-1"><img src="images/offer.png" alt="offers" width="50" height="70"></a>
-<p class="info-para u-fs-body sans-font u-fw-normal ">Promotion & Offers</p>
+<a href="coming-soon.html" class="info-image l-px-1">
+<img src="images/sales.gif" alt="offers" width="50" height="50"></a>
+<p class="info-para u-fs-body sans-font u-fw-normal ">Promotion <br>& Offers</p>
 </div>
 
 <div class="main-info l-flex l-flex-column  l-px-1 l-py-1">
-<a href="coming-soon.html" class="info-image l-px-1"><img src="images/star.png" alt="favorite" width="50" height="70"></a>
-<p class="info-para u-fs-body sans-font u-fw-normal ">Annette's Favorite</p>
+<a href="coming-soon.html" class="info-image l-px-1">
+<img src="images/favorite.gif" alt="favorite" width="50" height="50"></a>
+<p class="info-para u-fs-body sans-font u-fw-normal ">Annette's<br> Favorite</p>
+</div>
+</div>
+</div>
+
+<!------------------- INFORMATION DESKTOP----------------------->
+
+<div class="main-information__desk content-wrapper__desk">
+  <div class="scrollable-container__desk l-flex l-flex-row l-flex-justify-center l-flex-justify-evenly u-bg-acccent l-mt-1" >
+    <div class="main-info__desk" style="margin-left: 50px; margin-top: 20px;" >
+      <img src="images/truck.gif" class="information__image">
+      <h4 style="font-size: 20px;">Order &<br>Delivery</h4>
+    </div>
+    <div class="main-info__desk" style="margin-left: 50px; margin-top: 20px;" >
+      <img src="images/gardener.gif" class="information__image">
+      <h4 style="font-size: 20px;">Plant help<br>at home</h4>
+    </div>
+    <div class="main-info__desk" style="margin-left: 50px; margin-top: 20px;">
+      <img src="images/sales.gif" class="information__image">
+      <h4 style="font-size: 20px;">Promotion<br>& Offers</h4>
+    </div>
+    <div class="main-info__desk" style="margin-left: 50px; margin-top: 20px;">
+      <img src="images/favorite.gif" class="information__image">
+      <h4 style="font-size: 20px;">Annette's <br>Favorite</h4>
+    </div>
   </div>
 </div>
-</div>
+
 </section>
 
 <!------------------- ABOUT US MOBILE ----------------------->
