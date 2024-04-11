@@ -7,12 +7,14 @@
 /* Style active class*/
  .active{
    color:var(--clr-active);
+   text-decoration: underline;
 }
 
 
 /* Style hover*/
  a:hover{
   color: var(--clr-hover);
+ 
 }
 
 /* Style header */

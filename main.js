@@ -77,6 +77,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+//card 
+
   //  Customer Card Carousel
   let slideIndex = 1;
   showSlides(slideIndex);
@@ -99,6 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     slides[slideIndex - 1].style.display = "block";
   }
+
 
   // Card carousel desktop
   // Function to initialize desktop carousel

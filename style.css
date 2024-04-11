@@ -2,16 +2,15 @@
 
   /* Color variables for the theme */
   
-  --clr-primary-bg:#f9f8fc;
-  --clr-secondary-bg: #fec7d7;
-  --clr-tertiary-bg:#d9d4e7;
+  --clr-primary-bg:#f5f5f5;
+  --clr-secondary-bg: #d3d0cb;
+  --clr-tertiary-bg:#e5e9ec;
   --clr-body-text: #0e172c; 
-  --clr-primary-accent:#0e172c; 
-  --clr-secondary-accent:#724592;
+  --clr-accent:#485B58;
   --clr-accent-text:#fffffe; 
-  --clr-hover:#D15D10;
-  --clr-active:#bc2b73d8;
-  --clr-transparent: rgba(234, 189, 200, 0.8);
+  --clr-hover:#7cb091;
+  --clr-active:#5e8728d8;
+  --clr-transparent: rgb(214, 204, 194,0.8);
 
  /* Typefaces for heading and body text */
  
@@ -114,20 +113,11 @@ background-color: var(--clr-primary-bg);
 
 /* Primary accent colour swatch */
 
-.u-bg-accent-primary{
-  background-color:var(--clr-primary-accent);
+.u-bg-accent{
+  background-color:var(--clr-accent);
  
 
 }
-
-
-/* Secondary accent colour swatch */
-
-.u-bg-accent-secondary{
-  background-color:var(--clr-secondary-accent);
-
-} 
-
 
 /* Accent text colour swatches */
 
@@ -224,6 +214,8 @@ background-color: var(--clr-primary-bg);
   /*  Margin space layout classes*/
 
 /* margin for all sides */
+
+
 
 .l-m-1 { 
   margin: 1rem; 
@@ -659,7 +651,68 @@ background-color: var(--clr-primary-bg);
   gap: 2rem; 
 }
 
+/*Position classes*/
 
+/* Position classes */
+
+.l-relative {
+  position: relative;
+}
+
+.l-absolute {
+  position: absolute;
+}
+
+.l-fixed {
+  position: fixed;
+}
+
+/* Top, Right, Bottom, Left */
+
+.l-top-0 {
+  top: 0;
+}
+
+.l-right-0 {
+  right: 0;
+}
+
+.l-bottom-0 {
+  bottom: 0;
+}
+
+.l-left-0 {
+  left: 0;
+}
+
+/* Z-index */
+
+.l-z-index-1 {
+  z-index: 1;
+}
+
+.l-z-index-2 {
+  z-index: 2;
+}
+
+
+/* Overflow */
+
+.l-overflow-hidden {
+  overflow: hidden;
+}
+
+.l-overflow-scroll {
+  overflow: scroll;
+}
+
+.l-overflow-auto {
+  overflow: auto;
+}
+
+.l-overflow-visible {
+  overflow: visible;
+}
 
 /* Mobile container */
 .u-container-mobile{
@@ -731,6 +784,8 @@ header ul a{
   background-color: var(--clr-secondary-bg);
   
 }
+
+
 
 /* Style mobile dropdown navbar*/
 
