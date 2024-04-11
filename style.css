@@ -10,7 +10,7 @@
   --clr-accent-text:#fffffe; 
   --clr-hover:#7cb091;
   --clr-active:#5e8728d8;
-  --clr-transparent: rgb(211, 208, 203, 0.8);
+  --clr-transparent: rgb(211, 208, 203, 0.9);
 
  
   /* Typefaces for heading and body text */
@@ -751,7 +751,7 @@ background-color: var(--clr-primary-bg);
 .u-container-mobile{
   max-width: 100%;
   margin: 0 auto; 
-  padding: 20px;
+  padding: 0 20px;
   box-sizing: border-box; 
 }
 
@@ -760,7 +760,7 @@ background-color: var(--clr-primary-bg);
 
 .u-full-width-container {
   width: 100%; 
-  padding: 20px; 
+  padding:0 20px; 
   box-sizing: border-box; 
 }
 
@@ -771,23 +771,13 @@ background-color: var(--clr-primary-bg);
 .u-container-desktop {
   max-width: 1200px; 
   margin: 0 auto; 
+  padding: 0 20px;
   box-sizing: border-box; 
 }
 
 }
 
-
-/* === Styles for mobile === */
-
 /* === Style header for mobile  === */
-
-/* Wrapper width for content on mobile */
-.content-wrapper__mobile {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
 
 /* Style the mobile navbar */
 
@@ -1237,21 +1227,6 @@ button:hover {
 
 @media (min-width: 768px) {
 
-
-  /* Wrapper width for content */
-.content-wrapper__desk {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-
-}
-
-.content-full__width{
-  width: 100%;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
 
       /* Show the desktop navbar */
     .header-navbar__desk {
