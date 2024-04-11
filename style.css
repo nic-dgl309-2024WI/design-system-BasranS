@@ -10,7 +10,7 @@
   --clr-accent-text:#fffffe; 
   --clr-hover:#7cb091;
   --clr-active:#5e8728d8;
-  --clr-transparent: rgba(172, 159, 146, 0.8);
+  --clr-transparent: rgb(211, 208, 203, 0.8);
 
  
   /* Typefaces for heading and body text */
@@ -825,12 +825,15 @@ header ul a{
   width: 100%;
 }
 
+
 /* Style mobile dropdown navbar list*/
 
 .dropdown-menu li {
   list-style: none;
   margin: 5px 0;
-  padding: 5px 0;
+ height: 150px;
+ text-transform: uppercase;
+ font-size: 20px;
 }
 
 /* Style mobile dropdown navbar links*/
@@ -838,6 +841,7 @@ header ul a{
 .dropdown-menu li a {
   text-decoration: none;
   color: var(--clr-body-text);
+
 }
 
 /* Style mobile dropdown navbar image*/
