@@ -907,7 +907,7 @@ bottom: 30px;
 left: 50%;
 padding: 12px;
 transform: translateX(-50%);
-border-radius: 25px;
+border-radius: 20px;
 text-align: center;
 }
 
@@ -927,58 +927,46 @@ text-align: center;
 /* Style the product cards */
 .card-products {
   background-color: var(--clr-tertiary-bg);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px var(--clr-secondary-accent);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px var(--clr-accent);
   text-align: center;
 }
 
 /* Style the product cards image*/
 .card-products img {
-  border-radius: 8px;
-
+  border-radius: 5px;
 }
 
-/* Hover effect */
-.card-products:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
 
 /* Style the product pagination for mobile*/
-.products-pagination a {
-  color: var(--clr-body-text);
+.cards-pagination {
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-
+  color: var(--clr-body-text);
+  padding: 5px 10px;
 }
 
-/* Style the product pagination hover*/
-.products-pagination a:hover {
-  background-color:var(--clr-active) ;
-  color: var(--clr-accent-text);
+/* Style the hover for product pagination for mobile*/
+.cards-pagination:hover {
+  background-color: var(--clr-hover);
 }
-
-/* Add the pagination active colour*/
-.pagination a:hover:not(.active-link) {background-color: #ddd;}
 
 /* Style the plant anchor*/
 .plants-anchor {
-background-color: var(--clr-primary-accent);
+background-color: var(--clr-accent);
+color: var(--clr-accent-text);
 text-decoration: none;
-border-radius: 25px;
+padding: 12px;
+border-radius: 20px;
 text-align: center;
-}
+} 
 
-
-
-/* === Style the information section of mobile  === */
-
-
+/* Hide desktop product section*/
 .main-products__desk{
   display:none;
 }
+
+
+/* === Style the information section of mobile  === */
 
 .main-information__desk{
   display: none;
