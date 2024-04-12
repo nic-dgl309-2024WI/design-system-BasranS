@@ -819,8 +819,8 @@ header ul a{
 /* Style mobile dropdown navbar list*/
 
 .dropdown-menu li {
-  list-style: none;
-  margin: 5px 0;
+ list-style: none;
+ margin: 5px 0;
  height: 150px;
  text-transform: uppercase;
  font-size: 20px;
@@ -837,7 +837,7 @@ header ul a{
 /* Style mobile dropdown navbar image*/
 
 .dropdown-menu img{
-  margin-right: 7px;
+  margin-right: 5px;
 }
 
 /* Show mobile dropdown navbar when toggle clicked*/
@@ -846,13 +846,8 @@ header ul a{
 }
 
 /* For mobile navbar */
-.dropdown-menu li:hover{
+.dropdown-menu ul li:hover{
  color: var(--clr-hover);
-}
-
-/* For desktop navbar */
-.dropdown-menu__desk li:hover{
-color: var(--clr-hover);
 }
 
 
@@ -869,26 +864,22 @@ color: var(--clr-hover);
   opacity: 0.8;
 }
 
-
 /* Style the hero section heading*/
 .hero-heading {
   top: 20%;
-  left: 22%;
-  right: 20%;
+  left: 10%;
+  right: 10%;
   text-align: center;
   transform: translateY(-60%);
+  background-color: rgba(0, 0, 0, 0.3);
   color: var(--clr-accent-text);
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
-
 
 /* Style the pagination container*/
 .pagination-container {
-  position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
 }
 
 
@@ -902,23 +893,19 @@ color: var(--clr-hover);
   cursor: pointer;
 }
 
-
 /* Add active link to pagination*/
 .pagination.active-link {
   background-color: var(--clr-secondary-bg);
 }
 
-
 /* Style the slider anchor*/
 .slider-anchor{
-background-color: var(--clr-secondary-accent);
+background-color: var(--clr-accent);
 color: var(--clr-accent-text);
 text-decoration: none;
-position: absolute;
-bottom: 50px;
-padding: 13px;
-padding-left: 13px;
+bottom: 30px;
 left: 50%;
+padding: 12px;
 transform: translateX(-50%);
 border-radius: 25px;
 text-align: center;
@@ -927,7 +914,10 @@ text-align: center;
 .main-hero__desk{
   display: none;
 }
+
+
 /* === Style products section for mobile  === */
+
 /* Style the slider anchor*/
 
 .card-container .card-products:not(:first-child) {
