@@ -911,6 +911,7 @@ border-radius: 20px;
 text-align: center;
 }
 
+/* Hide desktop hero section*/
 .main-hero__desk{
   display: none;
 }
@@ -937,7 +938,6 @@ text-align: center;
   border-radius: 5px;
 }
 
-
 /* Style the product pagination for mobile*/
 .cards-pagination {
   text-decoration: none;
@@ -951,13 +951,14 @@ text-align: center;
 }
 
 /* Style the plant anchor*/
-.plants-anchor {
+.plants-anchor a{
 background-color: var(--clr-accent);
 color: var(--clr-accent-text);
 text-decoration: none;
-padding: 12px;
 border-radius: 20px;
 text-align: center;
+padding: 10px;
+
 } 
 
 /* Hide desktop product section*/
@@ -981,6 +982,7 @@ text-align: center;
 .main-information {
   overflow-x: hidden; 
   overflow-y: scroll; 
+  
 }
 
 /* Style the main info section*/

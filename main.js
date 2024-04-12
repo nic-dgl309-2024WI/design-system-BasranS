@@ -214,3 +214,40 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const cards = document.querySelectorAll(".card-products");
+  const paginationLinks = document.querySelectorAll(".cards-pagination");
+  let currentPage = 0;
+
+  const updatePage = () => {
+    cards.forEach((card, index) => {
+      card.style.display = index === currentPage ? "block" : "none";
+    });
+    paginationLinks.forEach((link, index) => {
+      link.classList.toggle("active", index === currentPage);
+    });
+  };
+
+  paginationLinks.forEach((link, index) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      currentPage = index;
+      updatePage();
+    });
+  });
+
+  document.getElementById("previous").addEventListener("click", (e) => {
+    e.preventDefault();
+    currentPage = currentPage > 0 ? currentPage - 1 : cards.length - 1;
+    updatePage();
+  });
+
+  document.getElementById("next").addEventListener("click", (e) => {
+    e.preventDefault();
+    currentPage = currentPage < cards.length - 1 ? currentPage + 1 : 0;
+    updatePage();
+  });
+
+  updatePage();
+});
