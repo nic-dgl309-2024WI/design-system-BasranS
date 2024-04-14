@@ -1133,6 +1133,10 @@ background-repeat: no-repeat;
  border-radius: 25px;
 }
 
+button a{
+  text-decoration: none;
+  color: var(--clr-accent-text);
+}
 /* Style the footer form */
 .footer-form {
   text-align: left;
@@ -1142,17 +1146,13 @@ background-repeat: no-repeat;
 
 /* Style the form button */
 button {
-  background-color: var(--clr-secondary-accent);
   color: var(--clr-accent-text);
-  border-radius: 4px;
   cursor: pointer;
-  padding: 12px 55px;
-  font-size: 15px;
 }
 
 /* Apply hover to form button */
 button:hover {
-  background-color: var(--clr-tertiary-bg);
+  color: var(--clr-hover);
 }
 
 .coming-soon{
