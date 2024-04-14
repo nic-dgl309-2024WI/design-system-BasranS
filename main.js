@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function() {
       card.style.display = index === currentPage ? "block" : "none";
     });
     paginationLinks.forEach((link, index) => {
-      link.classList.toggle("active", index === currentPage);
+      link.classList.toggle("active-link", index === currentPage);
     });
   };
 

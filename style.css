@@ -820,6 +820,7 @@ header ul a{
 
 .dropdown-menu li a {
   text-decoration: none;
+
 }
 
 /* Style mobile dropdown navbar image*/
@@ -903,9 +904,7 @@ text-align: center;
 
 /* Style the slider anchor*/
 
-.main-products{
-  height: 680px;
-}
+
 .card-container .card-products:not(:first-child) {
   display: none;
 }
