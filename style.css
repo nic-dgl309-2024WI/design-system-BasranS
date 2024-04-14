@@ -785,16 +785,8 @@ background-color: var(--clr-primary-bg);
   display: none;
 }
 
-/* Style header */
-header{
-  background-color: var(--clr-secondary-bg);
-  color: var(--clr-body-text);
-}
-
-
 /* Style links in header */
 header ul a{
-  text-decoration: none;
   color: var(--clr-body-text);
 }
 
@@ -819,8 +811,6 @@ header ul a{
 /* Style mobile dropdown navbar list*/
 
 .dropdown-menu li {
- list-style: none;
- margin: 5px 0;
  height: 150px;
  text-transform: uppercase;
  font-size: 20px;
@@ -830,8 +820,6 @@ header ul a{
 
 .dropdown-menu li a {
   text-decoration: none;
-  color: var(--clr-body-text);
-
 }
 
 /* Style mobile dropdown navbar image*/
@@ -844,12 +832,6 @@ header ul a{
 .show-dropdown {
   display: block !important;
 }
-
-/* For mobile navbar */
-.dropdown-menu ul li:hover{
- color: var(--clr-hover);
-}
-
 
 /* === Style hero section for mobile  === */
 
@@ -1153,20 +1135,9 @@ background-repeat: no-repeat;
 
 /* Style the footer form */
 .footer-form {
-  display: inline-block;
   text-align: left;
-  border: 1px solid var(--clr-secondary-accent);
-  border-radius: 20px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: calc(100% - 22px);
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid var(--clr-secondary-bg);
-  border-radius: 4px;
+  border: 1px solid var(--clr-accent);
+  border-radius: 15px;
 }
 
 /* Style the form button */
