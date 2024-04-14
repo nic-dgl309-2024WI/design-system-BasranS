@@ -760,7 +760,7 @@ background-color: var(--clr-primary-bg);
 
 .u-full-width-container {
   width: 100%; 
-  padding:0 20px; 
+  padding:0 10px; 
   box-sizing: border-box; 
 }
 
@@ -836,6 +836,7 @@ header ul a{
 
 /* === Style hero section for mobile  === */
 
+/* Style the slider container*/
 .slider__container {
   transition: transform 0.3s ease;
 }
@@ -1044,6 +1045,7 @@ border-radius: 20px;
 
 }
 
+/* Hide about section of desktop from mobile*/
 .main-about__desk {
   display: none;
 }
@@ -1089,6 +1091,7 @@ border-radius: 20px;
 }
 
 /* === Style Gift certificate section  === */
+
 /* Style the gift certificate accordion*/
 
 .main-gift__certificates{
@@ -1132,10 +1135,8 @@ background-repeat: no-repeat;
  border-radius: 25px;
 }
 
-button a{
-  text-decoration: none;
-  color: var(--clr-accent-text);
-}
+
+/* === Footer Styling === */
 
 /* Hide the footer form*/
 .footer-form__desk{
@@ -1155,6 +1156,11 @@ button {
   cursor: pointer;
 }
 
+/* Style the form button anchor */
+button a{
+  text-decoration: none;
+  color: var(--clr-accent-text);
+}
 
 /* === Coming soon page === */
 
@@ -1172,7 +1178,6 @@ button {
 .coming-soon h1:hover {
   color: var(--clr-active); 
 }
-
 
 
 /* === Style Desktop Content  === */
@@ -1193,24 +1198,29 @@ button {
       display: none;
      }
 
+     /* Style the dropdown menu of desk*/
    .dropdown-menu__desk ul {
     display: flex;
     justify-content: space-between;
    }
 
+   /* Style the dropdown menu links*/
    .dropdown-menu__desk li a{
     color: var(--clr-body-text);
     text-decoration: none;
    }
 
+   /* Style the desktop navbar icons*/
    .desk-list img{
    margin-right: 10px;
    }
 
+   /* Display the hero desktop*/
    .main-hero__desk{
     display: block;
    }
 
+   /* Hide the main hero section of mobile*/
    .main-hero{
     display: none;
    }
@@ -1221,7 +1231,7 @@ button {
   overflow: hidden;
 }
 
-
+/* Style the slider desktop container*/
 .slider-desk__container {
   display: flex;
   transition: transform 0.2s ease;
@@ -1252,19 +1262,14 @@ button {
   
 }
 
+/* Style the hero section heading*/
 .hero-content__desk h1{
 font-family: var(--primary-font);
 font-size: var(--h1-font-size);
 font-weight: var(--bold-font-weight);
 }
 
-.hero-para{
-  font-family: var(--secondary-font);
-  font-size: var(--body-font-size);
-  font-weight: var(--normal-font-weight);
-  max-width: 45em; 
- 
-}
+
 
 /* Style the pagination container*/
 .pagination-desk__container {
@@ -1306,10 +1311,10 @@ border-radius: 25px;
 text-align: center;
 }
 
-
+/* Style the hero section paragraph*/
 .hero-para{
   position: absolute;
- top:60%;
+  top:60%;
   left: 22%;
   right: 20%;
   text-align: center;
@@ -1317,13 +1322,19 @@ text-align: center;
   z-index: 1;
   color: var(--clr-accent-text);
   text-shadow: 3px 3px 5px var(--clr-body-text);
+  font-family: var(--secondary-font);
+  font-size: var(--body-font-size);
+  font-weight: var(--normal-font-weight);
+  max-width: 30em; 
+ 
 }
 
-
-
+/* Display the products section of desktop*/
 .main-products__desk{
   display: block;
 }
+
+/* Hide the products section of mobile*/
 .main-products{
   display: none;
 }
@@ -1376,10 +1387,9 @@ border-radius: 25px;
 text-align: center;
 }
 
+/* Display the information section of desktop*/
 .main-information__desk{
 display: block;
-
-
 }
 
 .information__image{
