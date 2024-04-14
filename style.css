@@ -921,6 +921,9 @@ text-align: center;
 
 /* Style the slider anchor*/
 
+.main-products{
+  height: 680px;
+}
 .card-container .card-products:not(:first-child) {
   display: none;
 }
@@ -929,7 +932,7 @@ text-align: center;
 .card-products {
   background-color: var(--clr-tertiary-bg);
   border-radius: 20px;
-  box-shadow: 0 4px 8px var(--clr-accent);
+  box-shadow: 0 4px 8px var(--clr-body-text);
   text-align: center;
 }
 
@@ -949,17 +952,6 @@ text-align: center;
 .cards-pagination:hover {
   background-color: var(--clr-hover);
 }
-
-/* Style the plant anchor*/
-.plants-anchor a{
-background-color: var(--clr-accent);
-color: var(--clr-accent-text);
-text-decoration: none;
-border-radius: 20px;
-text-align: center;
-padding: 10px;
-
-} 
 
 /* Hide desktop product section*/
 .main-products__desk{
@@ -997,7 +989,7 @@ padding: 10px;
 }
 
 .scrollable-container::-webkit-scrollbar {
-  border: 1px solid var(--clr-primary-bg);
+  border: 1px solid var(--clr-body-text);
 }
 
 .scrollable-container::-webkit-scrollbar-thumb {
@@ -1031,8 +1023,8 @@ padding: 10px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: var(--clr-primary-accent);
-  color: white;
+  background-color: var(--clr-body-text);
+  color: var(--clr-accent-text);
   font-size: 20px;
   padding: 5px;
   cursor: pointer;
@@ -1058,18 +1050,19 @@ padding: 10px;
 /* Style the carousel customet slide*/
 .customer-slide {
   border-radius: 25px;
-  box-shadow: 0 4px 8px var(--clr-secondary-accent);
+  box-shadow: 0 4px 8px var(--clr-body-text);
   text-align: center;
 }
 
 /* Style the carousel about links*/
 .about-anchor{
 color: var(--clr-accent-text);
-background-color: var(--clr-primary-accent);
+background-color: var(--clr-accent);
 text-decoration: none;
-border-radius: 25px;
-margin-left: 60px;
+border-radius: 20px;
+
 }
+
 .main-about__desk {
   display: none;
 }
@@ -1117,11 +1110,17 @@ margin-left: 60px;
 /* === Style Gift certificate section  === */
 /* Style the gift certificate accordion*/
 
+.main-gift__certificates{
+background-image: url(images/gift.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
 .gift-accordion {
   background-color: var(--clr-secondary-bg);
   color: var(--clr-body-text);
   cursor: pointer;
-  border: 1px solid var(--clr-primary-accent);
+  border: 1px solid var(--clr-accent);
   border-radius: 10px;
   padding: 20px;
   width: 100%;
@@ -1147,9 +1146,9 @@ margin-left: 60px;
 /* Style the gift anchor links */
 .gift-anchor{
  text-decoration: none;
- background-color: var(--clr-primary-accent);
+ background-color: var(--clr-accent);
  color:var(--clr-accent-text);
- border-radius: 30px;
+ border-radius: 25px;
 }
 
 /* Style the footer form */
