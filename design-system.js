@@ -5,4 +5,11 @@ function toggleNav() {
   }
 
 
-
+  function copyToClipboard() {
+    var htmlCode = document.querySelector('.code-container code').innerText;
+    navigator.clipboard.writeText(htmlCode).then(function() {
+      alert('HTML code copied to clipboard!');
+    }, function(err) {
+      console.error('Unable to copy HTML code: ', err);
+    });
+  }
