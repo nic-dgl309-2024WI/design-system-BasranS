@@ -1,4 +1,10 @@
 
+  // Toggle for outback nursery
+  function toggleNav() {
+    var dropdownMenu = document.querySelector('.dropdown-menu');
+    dropdownMenu.classList.toggle('show-dropdown');
+    }
+    
 //slider mobile
 document.addEventListener('DOMContentLoaded', function() {
   var slides = document.querySelectorAll('.main-slider__image');
@@ -232,6 +238,8 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+
+
 document.addEventListener("DOMContentLoaded", function() {
   const cards = document.querySelectorAll(".card-products");
   const paginationLinks = document.querySelectorAll(".cards-pagination");
@@ -268,3 +276,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
   updatePage();
 });
+
+
+

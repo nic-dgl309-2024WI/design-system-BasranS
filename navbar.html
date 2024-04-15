@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Colour swatches</title>
+    <title>Navbars</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="design-system.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -84,9 +84,45 @@
         </nav>
         
     </header>
+<main class="main-content u-container-desktop l-py-2 l-px-1">
+<h1 class="serif-font u-fs-h2 u-fw-bold">Navigation Bar</h1>
+  <p class="sans-font u-lh-body u-fw-normal l-pt-1">navbars are indispensable tools for website navigation, providing users with clear and intuitive pathways to explore the site's content. By effectively organizing and presenting information, navbars contribute to a positive user experience and help users accomplish their goals more efficiently while browsing the web.
+  </p>
 
-<main class="main-content">
+  <h2 class="output">Output</h2>
 
+  <nav class="header-navbar__desk" >
+    <a href="index.html"><img src="images/logo.png" alt="logo" width="80" height="80"></a>
+
+    <div class="dropdown-menu__desk">
+    <ul>
+    <li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font  u-fw-normal"><a href="coming-soon.html"><img src="images/heart.png" alt="products" width="20" height="17">Products</a></li>
+    <li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font  u-fw-normal"><a href="coming-soon.html"><img src="images/partnership.png" alt="services" width="20" height="17">Services</a>
+    </li>
+    <li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font  u-fw-normal"><a href="coming-soon.html"><img src="images/smile.png" alt="guide" width="20" height="17">Guide</a></li>
+    <li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font u-fw-normal"><a href="coming-soon.html"><img src="images/group.png" alt="about" width="20" height="17">About us</a></li>
+    </ul>
+  </div>
+  </nav>
+
+  <h2 class="code">HTML Code</h2>
+  
+  <div class="code-container" style="max-width: 50em;">
+    <pre><code>
+      &lt;nav class="header-navbar__desk"&gt;
+      &lt;a href="index.html"&gt;&lt;img src="images/logo.png" alt="logo" width="80" height="80"&gt;&lt;/a&gt;
+      &lt;div class="dropdown-menu__desk"&gt;
+          &lt;ul&gt;
+              &lt;li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font u-fw-normal"&gt;&lt;a href="coming-soon.html"&gt;&lt;img src="images/heart.png" alt="products" width="20" height="17"&gt;Products&lt;/a&gt;&lt;/li&gt;
+              &lt;li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font u-fw-normal"&gt;&lt;a href="coming-soon.html"&gt;&lt;img src="images/partnership.png" alt="services" width="20" height="17"&gt;Services&lt;/a&gt;&lt;/li&gt;
+              &lt;li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font u-fw-normal"&gt;&lt;a href="coming-soon.html"&gt;&lt;img src="images/smile.png" alt="guide" width="20" height="17"&gt;Guide&lt;/a&gt;&lt;/li&gt;
+              &lt;li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font u-fw-normal"&gt;&lt;a href="coming-soon.html"&gt;&lt;img src="images/group.png" alt="about" width="20" height="17"&gt;About us&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+      &lt;/div&gt;
+  &lt;/nav&gt;  
+  </code></pre>
+</div>
     </main>
+    <script src="design-system.js"></script>
   </body>
     </html>
