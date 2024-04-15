@@ -1179,11 +1179,28 @@ button a{
   color: var(--clr-active); 
 }
 
+.guide-desk{
+  display: none;
+}
 
 /* === Style Desktop Content  === */
 
 @media (min-width: 768px) {
 
+.guide-desk{
+  display: block;
+}
+.guide{
+  display: none;
+}
+
+/* === Style Guide section  === */
+
+#more-desk {display: none;}
+
+#more1-desk {display: none;}
+#more2-desk {display: none;}
+#more3-desk {display: none;}
 
       /* Show the desktop navbar */
     .header-navbar__desk {
@@ -1344,7 +1361,7 @@ text-align: center;
 .card-products__desk {
   background-color: var(--clr-tertiary-bg);
   border-radius: 10px;
-  box-shadow: 0 4px 8px var(--clr-secondary-accent);
+  box-shadow: 0 4px 8px var(--clr-accent);
   text-align: center;
 }
 
@@ -1353,6 +1370,7 @@ text-align: center;
   border-radius: 8px;
 
 }
+
 
 /* Hover effect */
 .card-products__desk:hover {
@@ -1381,7 +1399,7 @@ text-align: center;
 
 /* Style the plant anchor*/
 .plants-anchor__desk{
-background-color: var(--clr-primary-accent);
+background-color: var(--clr-accent);
 text-decoration: none;
 border-radius: 25px;
 text-align: center;
@@ -1428,7 +1446,7 @@ display: block;
 .next-desk {
   position: absolute;
   top: 50%;
-  background-color: var(--clr-primary-accent);
+  background-color: var(--clr-accent);
   color: var(--clr-accent-text);
   font-size: 20px;
   padding: 2px;
@@ -1455,14 +1473,14 @@ display: block;
 /* Style the carousel customet slide*/
 .customer-slide__desk {
   border-radius: 25px;
-  box-shadow: 0 4px 8px var(--clr-secondary-accent);
+  box-shadow: 0 4px 8px var(--clr-accent);
   text-align: center;
 }
 
 /* Style the carousel about links*/
 .about-anchor__desk{
 color: var(--clr-accent-text);
-background-color: var(--clr-primary-accent);
+background-color: var(--clr-accent);
 text-decoration: none;
 border-radius: 25px;
 
@@ -1513,7 +1531,7 @@ border-radius: 25px;
   }
   
   .button button{
-    background-color: var(--clr-secondary-accent);
+    background-color: var(--clr-accent);
     border: 1px solid var(--clr-primary-bg);
     color: var(--clr-accent-text);
     cursor: pointer;

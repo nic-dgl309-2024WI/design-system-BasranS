@@ -148,7 +148,7 @@ initDesktopCarousel();
 
   
 
-  // Accordion
+  // Accordion (Guide section)
   function myFunction(btnId, dotsId, moreId) {
     var dots = document.getElementById(dotsId);
     var moreText = document.getElementById(moreId);
@@ -165,7 +165,7 @@ initDesktopCarousel();
     }
   }
 
-  // Event listeners for each section
+  // Event listeners for each section of mobile
   document.getElementById("myBtn").addEventListener("click", function() {
     myFunction("myBtn", "dots", "more");
   });
@@ -181,6 +181,23 @@ initDesktopCarousel();
   document.getElementById("myBtn3").addEventListener("click", function() {
     myFunction("myBtn3", "dots3", "more3");
   });
+
+    // Event listeners for each section of desktop
+    document.getElementById("myBtn-desk").addEventListener("click", function() {
+      myFunction("myBtn-desk", "dots-desk", "more-desk");
+    });
+  
+    document.getElementById("myBtn1-desk").addEventListener("click", function() {
+      myFunction("myBtn1-desk", "dots1-desk", "more1-desk");
+    });
+  
+    document.getElementById("myBtn2-desk").addEventListener("click", function() {
+      myFunction("myBtn2-desk", "dots2-desk", "more2-desk");
+    });
+  
+    document.getElementById("myBtn3-desk").addEventListener("click", function() {
+      myFunction("myBtn3-desk", "dots3-desk", "more3-desk");
+    });
 
 
     // Function to navigate to a specific accordion section
