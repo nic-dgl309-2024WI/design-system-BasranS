@@ -930,10 +930,7 @@ text-align: center;
   padding: 5px 10px;
 }
 
-/* Style the hover for product pagination for mobile*/
-.cards-pagination:hover {
-  background-color: var(--clr-hover);
-}
+
 
 /* Hide desktop product section*/
 .main-products__desk{
@@ -1095,9 +1092,7 @@ border-radius: 20px;
 /* Style the gift certificate accordion*/
 
 .main-gift__certificates{
-background-image: url(images/gift.jpg);
-background-size: cover;
-background-repeat: no-repeat;
+background-color: var(--clr-primary-bg);
 }
 
 .gift-accordion {
@@ -1112,6 +1107,10 @@ background-repeat: no-repeat;
   outline: none;
   font-size: 15px;
   transition: 0.4s;
+}
+
+.main-gift__content img{
+  width: 310px;
 }
 
 /* Add active color to gift accordion */
@@ -1133,6 +1132,7 @@ background-repeat: no-repeat;
  background-color: var(--clr-accent);
  color:var(--clr-accent-text);
  border-radius: 25px;
+ 
 }
 
 
@@ -1174,11 +1174,6 @@ button a{
   transition: color 0.3s ease-in-out; 
 }
 
-/* Define the hover effect */
-.coming-soon h1:hover {
-  color: var(--clr-active); 
-}
-
 .guide-desk{
   display: none;
 }
@@ -1207,6 +1202,7 @@ button a{
       display: flex; 
     justify-content: space-between;
     background-color: var(--clr-secondary-bg);
+    
     
     }
    

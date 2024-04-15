@@ -42,7 +42,7 @@
          <!------------------- HEADER DESKTOP ----------------------->
 
             <!--Desktop navbar-->
-         <nav class="header-navbar__desk">
+         <nav class="header-navbar__desk" >
           <a href="index.html"><img src="images/logo.png" alt="logo" width="80" height="80"></a>
 
           <div class="dropdown-menu__desk">
@@ -64,7 +64,7 @@
 
      <!------------------- HERO MOBILE ----------------------->
 
-  <section class="main-hero">
+  <section class="main-hero ">
 
        <!--Hero Heading-->
     <h1 class="hero-heading l-absolute l-z-index-1 serif-font u-fs-h2 u-fw-bold u-container-mobile l-px-1-5">Discover the heart of our Nursery</h1>
@@ -94,7 +94,7 @@
 
 <!------------------- HERO DESKTOP ----------------------->
    
-       <section class="main-hero__desk u-full-width-container">
+       <section class="main-hero__desk u-container-desktop">
 
         <!--Hero Heading content-->
         <div class="hero-content__desk">
@@ -103,7 +103,7 @@
         </div>
 
         <!--Slider Images for desktop-->
-     <div class="maindesk-slider__container">
+     <div class="maindesk-slider__container l-relative l-overflow-hidden">
      <div class="slider-desk__container">
        <img class="maindesk-slider__image" src="images/slider1.jpg" alt="slider" >
        <img class="maindesk-slider__image" src="images/slider2.jpg" alt="slider" >
@@ -112,7 +112,7 @@
      </div>
  
         <!--Pagination container for desktop-->
-     <div class="pagination-desk__container">
+     <div class="pagination-desk__container l-flex l-absolute">
        <span class="pagination-desk" onclick="showSlide(0)"></span>
        <span class="pagination-desk" onclick="showSlide(1)"></span>
        <span class="pagination-desk" onclick="showSlide(2)"></span>
@@ -128,13 +128,13 @@
 
  <!------------------- PRODUCTS MOBILE ----------------------->
 
-<section class="main-products u-container-mobile u-bg-primary">
+<section class="main-products u-container-mobile ">
 
    <!--Products Heading-->
    <h2 class="products-heading u-fs-h2 u-fw-bold serif-font l-px-1 l-py-1-5">Your Best Picks</h2>
   
        <!--Products Cards-->
-  <div class="card-container l-flex">
+  <div class="card-container l-flex ">
 
      <!--Products card 1-->
   <div class="card-products l-px-1 l-py-1">
@@ -274,7 +274,7 @@
 
 
 <!------------------- INFORMATION MOBILE ----------------------->
-
+ 
 <section class="main-information l-py-1">
 <div class="scrollable-container">
 <div class="main-info__container l-flex l-flex-row">
@@ -306,22 +306,26 @@
 
 <!------------------- INFORMATION DESKTOP----------------------->
 
-<div class="main-information__desk u-full-width-container">
+<div class="main-information__desk u-container-desktop">
   <div class="scrollable-container__desk l-flex l-flex-row l-flex-justify-center l-flex-justify-evenly u-bg-acccent l-mt-1" >
     <div class="main-info__desk" style="margin-left: 50px; margin-top: 20px;" >
-      <img src="images/truck.gif" class="information__image">
+      <a href="coming-soon.html" class="info-image l-px-1">
+      <img src="images/truck.gif" class="information__image"></a>
       <h4 style="font-size: 20px;">Order &<br>Delivery</h4>
     </div>
     <div class="main-info__desk" style="margin-left: 50px; margin-top: 20px;" >
-      <img src="images/gardener.gif" class="information__image">
+      <a href="coming-soon.html" class="info-image l-px-1">
+      <img src="images/gardener.gif" class="information__image"></a>
       <h4 style="font-size: 20px;">Plant help<br>at home</h4>
     </div>
     <div class="main-info__desk" style="margin-left: 50px; margin-top: 20px;">
-      <img src="images/sales.gif" class="information__image">
+      <a href="coming-soon.html" class="info-image l-px-1">
+      <img src="images/sales.gif" class="information__image"></a>
       <h4 style="font-size: 20px;">Promotion<br>& Offers</h4>
     </div>
     <div class="main-info__desk" style="margin-left: 50px; margin-top: 20px;">
-      <img src="images/favorite.gif" class="information__image">
+      <a href="coming-soon.html" class="info-image l-px-1">
+      <img src="images/favorite.gif" class="information__image"></a>
       <h4 style="font-size: 20px;">Annette's <br>Favorite</h4>
     </div>
   </div>
@@ -545,27 +549,28 @@ and peaceful ambiance, each trip becomes a delight. I enthusiastically suggest i
   <div class="guide-accordion__desk  l-pt-1">
   <img  class=" guide-image__desk l-mx-1" src="images/spacing.jpg" style="border-radius: 20px; box-shadow:0 4px 8px var(--clr-primary-accent);" alt="space" width="300" height="250">
   <p class="guide-para__desk u-fs-body sans-font l-px-1 l-py-1 u-lh-body" style="max-width: 60em;">
-    Spacing requirements for seeds refer to the recommended distance between each seed or plant to ensure optimal growth and development without competition for resources. It's crucial to follow spacing guidelines provided on seed packets or plant labels<span id="dots3-desk">...</span><span id="more3-desk">  to avoid overcrowding, which can lead to stunted growth, disease susceptibility, and reduced yields. Proper spacing allows plants to access sunlight, nutrients, and water more efficiently, promoting healthier and more robust growth. Additionally, consider the layout of your garden to maximize space and airflow between plants, reducing the risk of fungal diseases and pest infestations. Companion planting, where certain plants are grown together for mutual benefit, can also optimize space and enhance plant health. Take into account factors such as plant height, spread, and growth habits when planning your garden layout. </span></p>
+    Spacing requirements for seeds refer to the recommended distance between each seed or plant to ensure optimal growth and development without competition for resources. It's crucial to follow spacing guidelines provided on seed packets or plant labels<span id="dots3-desk">...</span><span id="more3-desk">  to avoid overcrowding, which can lead to stunted growth, disease susceptibility, and reduced yields. Proper spacing allows plants to access sunlight, nutrients, and water more efficiently, promoting healthier and more robust growth. Additionally, consider the layout of your garden to maximize space and airflow between plants, reducing the risk of fungal diseases and pest infestations. Companion planting, where certain plants are grown together for mutual benefit, can also optimize space and enhance plant health. Take into account factors such as plant height, spread. </span></p>
   <p class="guide-read__desk u-fs-body serif-font u-fw-bold l-pl-1" style="text-align: left;" onclick="myFunction()" id="myBtn3-desk">Read On</p>
   </div>
 </div>
 
     <!-- Guide anchor-->
-  <a href="coming-soon.html" class=" guide-anchor__desk u-fs-h3 serif-font u-fw-bold l-px-1 l-py-1 l-ml-2 l-mt-1" style="text-decoration: none; color: var(--clr-accent-text); background-color: var(--clr-accent); border-radius: 20px;">Cultivate your knowledge</a>
+  <a href="coming-soon.html" class=" l-relative guide-anchor__desk u-fs-h3 serif-font u-fw-bold l-px-1 l-py-1 l-ml-2 l-mt-1" style="text-decoration: none; color: var(--clr-accent-text); background-color: var(--clr-accent); border-radius: 20px; left:30%; " >Cultivate your knowledge</a>
   </div>
 </section>
 
 
 <!------------------- GIFT SECTION ----------------------->
 
-<section class="main-gift__certificates u-bg-primary l-py-1 u-container-desktop">
-<div class="main-gift__content l-py-1 l-px-1">
+<section class="main-gift__certificates u-bg-primary l-py-1 u-container-desktop l-mt-1 ">
+<div class="main-gift__content l-py-2 l-px-1 ">
 <h2 class="serif-font u-fs-h2 u-fw-bold" style="text-align: left;">Give yourself a gift Today!</h2>
 
-<div class="gift-content l-py-1">
+
+<div class="gift-content l-py-1"  style="max-width: 30em;">
 <ul>
 <li class="gift-accordion l-flex l-flex-justify-between u-fs-body sans-font"><h3>Step 1: Email</h3><p>+</p></li>
-<li class="gift-panel">Send an email to info@outbacknursery.ca - as a way to introduce yourself includes:<br/>
+<li class="gift-panel" style="max-width: 30em;">Send an email to info@outbacknursery.ca - as a way to introduce yourself includes:<br/>
   &#10004; The recipient's name.<br/>
   &#10004;Your name or the sender's name (From).<br/>
   &#10004;Specify the timeline for the gift certificate<br/>
@@ -573,16 +578,18 @@ and peaceful ambiance, each trip becomes a delight. I enthusiastically suggest i
   &#10004;Include any special message you'd like to accompany the gift certificate.
 </li>
 <li class="gift-accordion l-flex l-flex-justify-between u-fs-body sans-font"><h3>Step 2: E-Transfer</h3><p>+</p></li>
-<li class="gift-panel">After sending the email with your details, proceed to send an e-transfer to the same email address, info@outbacknursery.ca, with the chosen amount for the gift certificate.</li>
+<li class="gift-panel" style="max-width: 30em;">After sending the email with your details, proceed to send an e-transfer to the same email address, info@outbacknursery.ca, with the chosen amount for the gift certificate.</li>
 <li class="gift-accordion l-flex l-flex-justify-between u-fs-body sans-font"><h3>Step 3: Voucher Delivery</h3><p>+</p></li>
-<li class="gift-panel">Once the e-transfer is received by Outback Nursery, we will process your request and then send a scanned voucher back to you via email<br/>
+<li class="gift-panel" style="max-width: 30em;">Once the e-transfer is received by Outback Nursery, we will process your request and then send a scanned voucher back to you via email<br/>
   &#10004;Optional Personalization:<br/>
   You can inform us of your preference regarding this customization.</li>
-
-
 </ul>
+
 </div>
-<a href="coming-soon.html" class="gift-anchor u-fs-h3 serif-font u-fw-bold l-px-1 l-ml-2 l-py-1 ">Unwrap Nature's gift</a>
+
+<img src="images/gift.jpg"  alt="gift">
+
+<a href="coming-soon.html" class="gift-anchor u-fs-h3 serif-font u-fw-bold l-px-1 l-ml-2 l-pt-1 l-py-1">Unwrap Nature's gift</a>
 
 </div>
 </section>
@@ -590,7 +597,7 @@ and peaceful ambiance, each trip becomes a delight. I enthusiastically suggest i
 
 
 <!------------------- FOOTER ----------------------->
-<footer class="main-footer u-bg-tertiary l-px-1" style="text-align: center; border: 1px solid var(--clr-secondary-bg);">
+<footer class="main-footer u-container-desktop   u-bg-tertiary l-px-1" style="text-align: center; border: 1px solid var(--clr-secondary-bg);">
 
   <div class="footer-contact">
     <a href="coming-soon.html"><img src="images/logo.png" alt="logo-footer" width="80" height="80"></a>
