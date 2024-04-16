@@ -83,11 +83,44 @@
          </ul>
         </nav>
     </header>
-  <main class="hero l-px-1 l-py-1">
+    
+  <main class="hero">
   <h1 class="serif-font u-fs-h1 u-fw-bold l-px-1 l-py-1" style="color: var(--clr-accent);">10 Hero</h1>
   
   
+<!---------- MOBILE ------------->
+<section class="main-hero ">
 
+  <!--Hero Heading-->
+<h1 class="hero-heading l-absolute l-z-index-1 serif-font u-fs-h2 u-fw-bold" style="margin-top:60px">Discover the heart of our Nursery</h1>
+
+  <!--Slider Images-->
+<div class="main-slider__container l-relative l-overflow-hidden">
+<div class="slider__container l-flex">
+ <img class="main-slider__image" src="images/slider1.jpg" alt="slider" >
+ <img class="main-slider__image" src="images/slider2.jpg" alt="slider">
+ <img class="main-slider__image" src="images/slider3.jpg" alt="slider">
+ <img class="main-slider__image" src="images/slider4.jpg" alt="slider">
+</div>
+
+  <!--Pagination container-->
+<div class="pagination-container l-flex l-absolute">
+ <span class="pagination" onclick="showSlide(0)"></span>
+ <span class="pagination" onclick="showSlide(1)"></span>
+ <span class="pagination" onclick="showSlide(2)"></span>
+ <span class="pagination" onclick="showSlide(3)"></span>
+</div>
+
+<!-- Hero Call-to-action -->
+<a href="coming-soon.html" class="slider-anchor l-absolute u-fs-h3 u-fw-bold serif-font">Explore our space</a>
+</div> 
+</section>
+
+
+
+
+
+  <!---------- DESKTOP ------------>
 
   <section class="main-hero__desk u-container-desktop">
 
@@ -119,7 +152,8 @@
  <a href="coming-soon.html" class="slider-anchor__desk u-fs-h2 u-fw-bold serif-font l-px-2 l-py-1">Explore our space</a>  
 </div> 
 </section>  
- 
+
+<div class="html-codes l-px-1">
 <h2 class="code l-py-1 l-mt-1 serif-font u-fs-h2 u-fw-bold" style="color: var(--clr-accent);">Mobile Code</h2>
 <div class="code-container l-px-1 " >
   <pre><code>
@@ -127,7 +161,7 @@
      &lt;section class=&quot;main-hero &quot;&gt;
 
      &lt;!--Hero Heading--&gt;
-  &lt;h1 class=&quot;hero-heading l-absolute l-z-index-1 serif-font u-fs-h2 u-fw-bold u-container-mobile l-px-1-5&quot;&gt;Discover the heart of our Nursery&lt;/h1&gt;
+  &lt;h1 class=&quot;hero-heading l-absolute l-z-index-1 serif-font u-fs-h2 u-fw-bold u-container-mobile&quot;&gt;Discover the heart of our Nursery&lt;/h1&gt;
 
      &lt;!--Slider Images--&gt;
   &lt;div class=&quot;main-slider__container l-relative l-overflow-hidden&quot;&gt;
@@ -194,7 +228,7 @@
 <i class="fas fa-copy" onclick="copyToClipboard()"></i>
 </div>
  
- 
+</div>
   </main>
     <script src="design-system.js"></script>
   </body>
