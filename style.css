@@ -765,7 +765,7 @@ background-color: var(--clr-primary-bg);
 
 /* Full-width container */
 
-.u-full-width-container {
+.u-full-width {
   width: 100%; 
   padding:0 10px; 
   box-sizing: border-box; 
