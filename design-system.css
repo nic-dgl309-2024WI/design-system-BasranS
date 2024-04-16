@@ -195,6 +195,12 @@ header ul li a{
     font-weight: var(--bold-font-weight);
     }
 
+    .code-container {
+      border: solid 1px var(--clr-accent);
+      overflow-y: auto; /* Enable vertical scrollbar */
+  }
+  
+
 
 /* Desktop navbar */
 
