@@ -5,11 +5,3 @@ function toggleNav() {
   }
 
 
-  function copyToClipboard() {
-    const textToCopy = "Text to be copied";
-    navigator.clipboard.writeText(textToCopy).then(() => {
-      alert("Text copied to clipboard");
-    }).catch((error) => {
-      console.error("Unable to copy text: ", error);
-    });
-  }

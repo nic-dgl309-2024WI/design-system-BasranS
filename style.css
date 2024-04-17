@@ -1129,7 +1129,6 @@ background-color: var(--clr-primary-bg);
 .gift-panel {
   padding: 0 18px;
   display: none;
-  background-color: var(--clr-accent-text);
   overflow: hidden;
 }
 
@@ -1245,11 +1244,6 @@ button a{
     display: none;
    }
 
-   /* Style the slider container*/
-.maindesk-slider__container {
-  position: relative;
-  overflow: hidden;
-}
 
 /* Style the slider desktop container*/
 .slider-desk__container {
@@ -1267,14 +1261,11 @@ button a{
 
 /* Style the hero section heading*/
 .hero-content__desk {
-  position: absolute;
   top: 50%;
-  left: 22%;
-  right: 20%;
-  bottom: 20%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
   text-align: center;
-  transform: translateY(-60%);
-  z-index: 1;
   color: var(--clr-accent-text);
   background-color: var(--clr-body-text);
   opacity: 0.6;
@@ -1292,8 +1283,7 @@ font-weight: var(--bold-font-weight);
 
 
 /* Style the pagination container*/
-.pagination-desk__container {
-  position: absolute;
+.pagination-desk__container { 
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
@@ -1331,23 +1321,6 @@ border-radius: 25px;
 text-align: center;
 }
 
-/* Style the hero section paragraph*/
-.hero-para{
-  position: absolute;
-  top:60%;
-  left: 22%;
-  right: 20%;
-  text-align: center;
-  transform: translateY(-60%);
-  z-index: 1;
-  color: var(--clr-accent-text);
-  text-shadow: 3px 3px 5px var(--clr-body-text);
-  font-family: var(--secondary-font);
-  font-size: var(--body-font-size);
-  font-weight: var(--normal-font-weight);
-  max-width: 30em; 
- 
-}
 
 /* Display the products section of desktop*/
 .main-products__desk{

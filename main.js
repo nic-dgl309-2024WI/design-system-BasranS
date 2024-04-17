@@ -4,83 +4,61 @@
     var dropdownMenu = document.querySelector('.dropdown-menu');
     dropdownMenu.classList.toggle('show-dropdown');
     }
-    
-//slider mobile
-document.addEventListener('DOMContentLoaded', function() {
-  var slides = document.querySelectorAll('.main-slider__image');
-  var paginationLinks = document.querySelectorAll('.pagination'); 
-  var currentIndex = 0;
-  var totalSlides = slides.length;
 
-  function showSlide(index) {
-      slides.forEach(function(slide) {
-          slide.style.display = "none";
-      });
-      slides[index].style.display = "block";
 
-      paginationLinks.forEach(function(link) {
-          link.classList.remove('active-link');
-      });
-      paginationLinks[index].classList.add('active-link');
-  }
-
-  function nextSlide() {
-      currentIndex++;
-      if (currentIndex >= totalSlides) {
-          currentIndex = 0;
-      }
-      showSlide(currentIndex);
-  }
-
-  function prevSlide() {
-      currentIndex--;
-      if (currentIndex < 0) {
-          currentIndex = totalSlides - 1;
-      }
-      showSlide(currentIndex);
-  }
-
-  var timer = setInterval(nextSlide, 2000);
-});
-
+    document.addEventListener('DOMContentLoaded', function() {
+      // For mobile slider
+      var mobileSlides = document.querySelectorAll('.main-slider__image');
+      var mobilePaginationLinks = document.querySelectorAll('.pagination'); 
+      var mobileCurrentIndex = 0;
+      var mobileTotalSlides = mobileSlides.length;
   
-//slider desktop
-document.addEventListener('DOMContentLoaded', function() {
-  var slides = document.querySelectorAll('.maindesk-slider__image');
-  var paginationLinks = document.querySelectorAll('.pagination-desk'); 
-  var currentIndex = 0;
-  var totalSlides = slides.length;
-
-  function showSlide(index) {
-      slides.forEach(function(slide) {
-          slide.style.display = "none";
-      });
-      slides[index].style.display = "block";
-
-      paginationLinks.forEach(function(link) {
-          link.classList.remove('active-link');
-      });
-      paginationLinks[index].classList.add('active-link');
-  }
-
-  function nextSlide() {
-      currentIndex++;
-      if (currentIndex >= totalSlides) {
-          currentIndex = 0;
+      // For desktop slider
+      var desktopSlides = document.querySelectorAll('.maindesk-slider__image');
+      var desktopPaginationLinks = document.querySelectorAll('.pagination-desk'); 
+      var desktopCurrentIndex = 0;
+      var desktopTotalSlides = desktopSlides.length;
+  
+      function showSlide(slides, paginationLinks, currentIndex) {
+          slides.forEach(function(slide) {
+              slide.style.display = "none";
+          });
+          slides[currentIndex].style.display = "block";
+  
+          paginationLinks.forEach(function(link) {
+              link.classList.remove('active-link');
+          });
+          paginationLinks[currentIndex].classList.add('active-link');
       }
-      showSlide(currentIndex);
-  }
-
-  function prevSlide() {
-      currentIndex--;
-      if (currentIndex < 0) {
-          currentIndex = totalSlides - 1;
+  
+      function nextSlide(slides, currentIndex, totalSlides) {
+          currentIndex++;
+          if (currentIndex >= totalSlides) {
+              currentIndex = 0;
+          }
+          return currentIndex;
       }
-      showSlide(currentIndex);
-  }
-
-  var timer = setInterval(nextSlide, 2000);
-});
+  
+      function prevSlide(slides, currentIndex, totalSlides) {
+          currentIndex--;
+          if (currentIndex < 0) {
+              currentIndex = totalSlides - 1;
+          }
+          return currentIndex;
+      }
+  
+      function startTimer(slides, paginationLinks, currentIndex, totalSlides) {
+          setInterval(function() {
+              currentIndex = nextSlide(slides, currentIndex, totalSlides);
+              showSlide(slides, paginationLinks, currentIndex);
+          }, 2000);
+      }
+  
+      // Start timers for both desktop and mobile sliders
+      startTimer(mobileSlides, mobilePaginationLinks, mobileCurrentIndex, mobileTotalSlides);
+      startTimer(desktopSlides, desktopPaginationLinks, desktopCurrentIndex, desktopTotalSlides);
+  });
+  
 
 
 //card 
