@@ -218,11 +218,23 @@ header ul li a{
     margin: 0 5px; 
   }
   
+  .output-desk, .code-desk{
+display: none;
+  }
 
 /* Desktop navbar */
 
 @media (min-width: 768px) {
 
+
+  .output-mobile, .code-mobile{
+    display: none;
+   }
+    
+      .output-desk, .code-desk{
+        display: block;
+    }
+        
 /* Hide the mobile navbar for desktop */
   .mobile-navbar {
     display: none; 

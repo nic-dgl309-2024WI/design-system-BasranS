@@ -93,7 +93,7 @@
   </p>
 
         <!---------- MOBILE NAVBAR ------------->
-          
+          <div class="output-mobile">
           <nav class="header-navbar__mobile" style=" border: 1px solid var(--clr-tertiary-bg);">
             <a href="index.html"><img src="images/logo.png" alt="logo" width="50" height="35"></a>
   
@@ -110,10 +110,10 @@
               <li><a href="coming-soon.html"><img src="images/group.png" alt="about" width="16" height="18">About us</a></li>
               </ul>
               </nav>
-            
+            </div>
 
      <!---------- DESKTOP NAVBAR ------------->   
-  
+  <div class="output-desk">
   <nav class="header-navbar__desk l-my-1" >
     <a href="index.html"><img src="images/logo.png" alt="logo" width="80" height="80"></a>
 
@@ -126,10 +126,12 @@
     <li class="desk-list l-px-2 l-py-1 u-fs-h3 serif-font u-fw-normal"><a href="coming-soon.html"><img src="images/group.png" alt="about" width="20" height="17">About us</a></li>
     </ul>
   </div>
-  </nav>
 
+  </nav>
+</div>
 <!---------- MOBILE CODE------------->
-  <h2 class="code l-py-1-5 serif-font u-fs-h2 u-fw-bold " style="color: var(--clr-accent);">Mobile Code</h2>
+<div class="code-mobile">
+  <h2 class="code l-py-1-5 serif-font u-fs-h2 u-fw-bold " style="color: var(--clr-accent);">HTML Code</h2>
   <div class="code-container l-px-1 l-py-1" >
     <pre><code>
       &lt;nav class=&quot;header-navbar__mobile&quot; style=&quot; border: 1px solid var(--clr-tertiary-bg);&quot;&gt;
@@ -151,10 +153,10 @@
  <i class="fas fa-copy" onclick="copyToClipboard()"></i>
 </div>
   
-
+</div>
 <!---------- DESKTOP CODE ------------->
-
-  <h2 class="code l-py-1-5 serif-font u-fs-h2 u-fw-bold " style="color: var(--clr-accent);">Desktop Code</h2>
+<div class="code-desk">
+  <h2 class="code l-py-1-5 serif-font u-fs-h2 u-fw-bold " style="color: var(--clr-accent);">HTML Code</h2>
   <div class="code-container l-px-1 l-py-1" >
     <pre><code>
       &lt;nav class="header-navbar__desk"&gt;
@@ -178,7 +180,7 @@
   </code></pre>
  <i class="fas fa-copy" onclick="copyToClipboard()"></i>
 </div>
-
+</div>
 </main>
 <script>
   // Toggle for outback nursery
