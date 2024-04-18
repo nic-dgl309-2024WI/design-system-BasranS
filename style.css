@@ -1381,12 +1381,8 @@ text-align: center;
 /* Add the pagination active colour*/
 .pagination a:hover:not(.active-link) {background-color: var(--clr-active);}
 
-/* Style the plant anchor*/
-.plants-anchor__desk{
-background-color: var(--clr-accent);
-text-decoration: none;
-border-radius: 25px;
-text-align: center;
+.plants-anchor__desk a{
+  position: relative;
 }
 
 /* Display the information section of desktop*/
