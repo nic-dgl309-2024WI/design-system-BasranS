@@ -1145,7 +1145,7 @@ background-color: var(--clr-primary-bg);
 /* === Footer Styling === */
 
 /* Hide the footer form*/
-.footer-form__desk{
+.main-footer__desk{
   display: none;
 }
 
@@ -1272,7 +1272,7 @@ a:hover{
   top: 50%;
   left: 25%;
   right: 25%;
-  bottom: 25%;
+  bottom: 30%;
   text-align: center;
   color: var(--clr-accent-text);
   background-color: var(--clr-body-text);
@@ -1470,17 +1470,13 @@ border-radius: 25px;
 
 }
 
-.footer-form__desk{
+.main-footer__desk{
    display: flex;
   flex-direction: column;
 }
-.footer-form{
+.main-footer__mobile{
  display: none;
 }
-
-.footer-content__desk label{
-  padding: 20px;
- }
 
    .footer-form__desk{  
     display: flex;
@@ -1510,7 +1506,6 @@ border-radius: 25px;
   .form-desk input {
     vertical-align: middle;
     margin: 5px 10px 5px 0;
-    padding: 10px;
     background-color: var(--clr-primary-bg);
   }
   
