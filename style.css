@@ -1383,6 +1383,7 @@ text-align: center;
 
 .plants-anchor__desk a{
   position: relative;
+
 }
 
 /* Display the information section of desktop*/
@@ -1411,21 +1412,13 @@ display: block;
   position: relative;
 }
 
-/* Hide all customer slides except the first one */
-.customer-slide__desk {
-  display: none;
-}
 
-/* Show the first customer slide */
-.customer-slide__desk:first-child {
-  display: block;
-}
 
 /* Style the carousel buttons*/
 .prev-desk,
 .next-desk {
   position: absolute;
-  top: 50%;
+  bottom:45%;
   background-color: var(--clr-accent);
   color: var(--clr-accent-text);
   font-size: 20px;

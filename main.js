@@ -6,6 +6,7 @@
 
 // Slider
     document.addEventListener('DOMContentLoaded', function() {
+
       // For mobile slider
       var mobileSlides = document.querySelectorAll('.main-slider__image');
       var mobilePaginationLinks = document.querySelectorAll('.pagination'); 
@@ -57,10 +58,6 @@
       startTimer(mobileSlides, mobilePaginationLinks, mobileCurrentIndex, mobileTotalSlides);
       startTimer(desktopSlides, desktopPaginationLinks, desktopCurrentIndex, desktopTotalSlides);
   });
-  
-
-
-
   
 
   // Accordion (Guide section)
