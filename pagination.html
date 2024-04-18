@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="design-system.js"></script>
   </head>
   <body>
     <header class="header">
@@ -83,28 +84,32 @@
          </ul>
         </nav>
     </header>
-  <main>
+  <main class="l-py-1-5 l-px-1">
 
   <h1 class="serif-font u-fs-h1 u-fw-body " style="color: var(--clr-accent);">09 Pagination</h1>
  <p class="sans-font u-fs-body u-fw-body u-lh-body l-py-1" style="max-width: 600px;">Pagination is an essential UI pattern for organizing and presenting large datasets or content in a user-friendly and efficient manner, enabling users to navigate through the content systematically.</p>
 
- <div class="output">
- <div class="pagination-desk__container l-absolute">
+<div class="outputs">
+
+
+  <div class="products-pagination__desk l-relative l-px-1" style="left: 30%;">
+    <a href="#" class="cards-pagination__desk">&laquo;</a>
+    <a href="#" class="cards-pagination__desk">1</a>
+    <a href="#" class="cards-pagination__desk">2</a>
+    <a href="#" class="cards-pagination__desk">3</a>
+    <a href="#" class="cards-pagination__desk">&raquo;</a>
+  </div>
+
+
+<div class="pagination-desk__container l-absolute">
   <span class="pagination-desk" onclick="showSlide(0)"></span>
   <span class="pagination-desk" onclick="showSlide(1)"></span>
   <span class="pagination-desk" onclick="showSlide(2)"></span>
   <span class="pagination-desk" onclick="showSlide(3)"></span>
 </div>
 
-<div class="products-pagination l-flex l-flex-justify-evenly l-px-1 l-py-2">
-  <a href="#" class="cards-pagination">&laquo;</a>
-  <a href="#" class="cards-pagination">1</a>
-  <a href="#" class="cards-pagination">2</a>
-  <a href="#" class="cards-pagination">3</a>
-  <a href="#" class="cards-pagination">&raquo;</a>
 </div>
 
-</div>
     <h2 class="code l-py-1-5 serif-font u-fs-h2 u-fw-bold " style="color: var(--clr-accent);">HTML Code</h2>
     <div class="code-container l-px-1 l-py-1" >
       <pre><code>
@@ -128,6 +133,61 @@
   </div>
 
   </main>
-  <script src="design-system.js"></script>
-  <script src="main.js"></script>
-  </body></html>
+  <script>
+    
+// Slider
+document.addEventListener('DOMContentLoaded', function() {
+      // For mobile slider
+      var mobileSlides = document.querySelectorAll('.main-slider__image');
+      var mobilePaginationLinks = document.querySelectorAll('.pagination'); 
+      var mobileCurrentIndex = 0;
+      var mobileTotalSlides = mobileSlides.length;
+  
+      // For desktop slider
+      var desktopSlides = document.querySelectorAll('.maindesk-slider__image');
+      var desktopPaginationLinks = document.querySelectorAll('.pagination-desk'); 
+      var desktopCurrentIndex = 0;
+      var desktopTotalSlides = desktopSlides.length;
+  
+      function showSlide(slides, paginationLinks, currentIndex) {
+          slides.forEach(function(slide) {
+              slide.style.display = "none";
+          });
+          slides[currentIndex].style.display = "block";
+  
+          paginationLinks.forEach(function(link) {
+              link.classList.remove('active-link');
+          });
+          paginationLinks[currentIndex].classList.add('active-link');
+      }
+  
+      function nextSlide(slides, currentIndex, totalSlides) {
+          currentIndex++;
+          if (currentIndex >= totalSlides) {
+              currentIndex = 0;
+          }
+          return currentIndex;
+      }
+  
+      function prevSlide(slides, currentIndex, totalSlides) {
+          currentIndex--;
+          if (currentIndex < 0) {
+              currentIndex = totalSlides - 1;
+          }
+          return currentIndex;
+      }
+  
+      function startTimer(slides, paginationLinks, currentIndex, totalSlides) {
+          setInterval(function() {
+              currentIndex = nextSlide(slides, currentIndex, totalSlides);
+              showSlide(slides, paginationLinks, currentIndex);
+          }, 2000);
+      }
+  
+      // Start timers for both desktop and mobile sliders
+      startTimer(mobileSlides, mobilePaginationLinks, mobileCurrentIndex, mobileTotalSlides);
+      startTimer(desktopSlides, desktopPaginationLinks, desktopCurrentIndex, desktopTotalSlides);
+  });
+  </script>
+  </body>
+  </html>
