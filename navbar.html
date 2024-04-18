@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="design-system.js"></script>
+    
   </head>
   <body>
     <header class="header">
@@ -97,7 +99,7 @@
   
             <!-- Toggle -->
           
-            <i class="toggle fa fa-bars" style="margin-left: 250px; " onclick="toggleNav()" aria-hidden="true"> </i>
+            <i class="toggle fa fa-bars" style="margin-left: 250px; " onclick="toggle()" aria-hidden="true"> </i>
   
              <!-- Toggle dropdown menu-->
             
@@ -133,7 +135,7 @@
       &lt;nav class=&quot;header-navbar__mobile&quot; style=&quot; border: 1px solid var(--clr-tertiary-bg);&quot;&gt;
       &lt;a href=&quot;index.html&quot;&gt;&lt;img src=&quot;images/logo.png&quot; alt=&quot;logo&quot; width=&quot;50&quot; height=&quot;35&quot;&gt;&lt;/a&gt;
     
-      &lt;i class=&quot;toggle fa fa-bars&quot; style=&quot;margin-left: 250px; &quot; onclick=&quot;toggleNav()&quot; aria-hidden=&quot;true&quot;&gt; &lt;/i&gt;
+      &lt;i class=&quot;toggle fa fa-bars&quot; style=&quot;margin-left: 250px; &quot; onclick=&quot;toggle()&quot; aria-hidden=&quot;true&quot;&gt; &lt;/i&gt;
 
       &lt;ul class=&quot;dropdown-menu l-absolute l-py-1 l-px-1 serif-font u-fw-bold u-fs-body &quot;&gt;
         &lt;li&gt;&lt;a href=&quot;coming-soon.html&quot;&gt;&lt;img src=&quot;images/heart.png&quot; alt=&quot;products&quot; width=&quot;16&quot; height=&quot;15&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
@@ -178,7 +180,12 @@
 </div>
 
 </main>
-<script src="design-system.js"></script>
-
+<script>
+  // Toggle for outback nursery
+  function toggle() {
+    var dropdownMenu = document.querySelector('.dropdown-menu');
+    dropdownMenu.classList.toggle('show-dropdown');
+    }
+  </script>
 </body>
 </html>

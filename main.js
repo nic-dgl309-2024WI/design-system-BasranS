@@ -1,5 +1,5 @@
   // Toggle for outback nursery
-  function toggleNav() {
+  function toggle() {
     var dropdownMenu = document.querySelector('.dropdown-menu');
     dropdownMenu.classList.toggle('show-dropdown');
     }

@@ -1183,6 +1183,10 @@ button a{
 .guide-desk{
   display: none;
 }
+a:hover{
+  color: var(--clr-hover);
+  text-decoration: underline;
+}
 
 /* === Style Desktop Content  === */
 
@@ -1203,6 +1207,10 @@ button a{
 #more2-desk {display: none;}
 #more3-desk {display: none;}
 
+ a:hover{
+  color: var(--clr-hover);
+  text-decoration: underline;
+}
       /* Show the desktop navbar */
     .header-navbar__desk {
       display: flex; 
