@@ -1,11 +1,10 @@
-
   // Toggle for outback nursery
   function toggleNav() {
     var dropdownMenu = document.querySelector('.dropdown-menu');
     dropdownMenu.classList.toggle('show-dropdown');
     }
 
-
+// Slider
     document.addEventListener('DOMContentLoaded', function() {
       // For mobile slider
       var mobileSlides = document.querySelectorAll('.main-slider__image');
@@ -60,8 +59,6 @@
   });
   
 
-
-//card 
 
   //  Customer Card Carousel
   let slideIndex = 1;
