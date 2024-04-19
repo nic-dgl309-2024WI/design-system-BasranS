@@ -145,7 +145,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-
+// Products Mobile
 document.addEventListener("DOMContentLoaded", function() {
   const cards = document.querySelectorAll(".card-products");
   const paginationLinks = document.querySelectorAll(".cards-pagination");
@@ -182,6 +182,88 @@ document.addEventListener("DOMContentLoaded", function() {
 
   updatePage();
 });
+
+// Customers Card Mobile
+document.addEventListener("DOMContentLoaded", function() {
+  // JavaScript function to show a specific card
+  function showCard(index) {
+    var slides = document.getElementsByClassName("customer-slide");
+    
+    // Hide all slides
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    
+    // Show the specified slide
+    slides[index].style.display = "block";
+  }
+
+  // Show the first card initially
+  showCard(0);
+
+  // Function to handle previous and next buttons
+  function plusSlides(n) {
+    // Get the current displayed slide
+    var slides = document.getElementsByClassName("customer-slide");
+    var currentIndex = Array.from(slides).findIndex(slide => slide.style.display === "block");
+
+    // Calculate the index of the next slide
+    var nextIndex = (currentIndex + n + slides.length) % slides.length;
+
+    // Show the next slide
+    showCard(nextIndex);
+  }
+
+  // Event listeners for previous and next buttons
+  document.querySelector(".prev").addEventListener("click", function() {
+    plusSlides(-1);
+  });
+
+  document.querySelector(".next").addEventListener("click", function() {
+    plusSlides(1);
+  });
+});
+
+
+// Customers Card Desktop
+let slideIndex = 0;
+const slides = document.getElementsByClassName("customer-slide__desk");
+const totalSlides = slides.length;
+const slidesToShow = 3;
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  if (n >= totalSlides) {
+    slideIndex = 0;
+  }
+  if (n < 0) {
+    slideIndex = totalSlides - slidesToShow;
+  }
+  for (i = 0; i < totalSlides; i++) {
+    if (i >= slideIndex && i < slideIndex + slidesToShow) {
+      slides[i].style.display = "block";
+    } else {
+      slides[i].style.display = "none";
+    }
+  }
+}
+
+// Show the first three slides initially
+showSlides(slideIndex);
+
+
+
+
+
+
 
 
 

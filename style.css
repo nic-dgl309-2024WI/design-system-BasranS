@@ -937,13 +937,15 @@ text-align: center;
   padding: 5px 10px;
 }
 
-
-
 /* Hide desktop product section*/
 .main-products__desk{
   display:none;
 }
 
+.products-pagination a:hover{
+  background-color: var(--clr-active);
+  color: var(--clr-accent-text);
+}
 
 /* === Style the information section of mobile  === */
 
@@ -1053,6 +1055,16 @@ border-radius: 30px;
 .main-about__desk {
   display: none;
 }
+
+.card-products__desk {
+  display: none;
+}
+
+/* Show the first three card products initially */
+.card-products__desk:nth-child(-n+3) {
+  display: block;
+}
+
 
 
 /* === Style Guide section  === */
@@ -1191,8 +1203,15 @@ a:hover{
 
 @media (min-width: 768px) {
 
-
-
+  .cards-pagination__desk{
+    padding: 0 10px;
+  }
+  .products-pagination__desk a:hover{
+    background-color: var(--clr-active);
+    color: var(--clr-accent-text);
+  
+  }
+  
 .guide-desk{
   display: block;
 }
@@ -1212,7 +1231,6 @@ a:hover{
   color: var(--clr-hover);
   
 }
-
       /* Show the desktop navbar */
     .header-navbar__desk {
       display: flex; 
