@@ -1045,7 +1045,7 @@ text-align: center;
 color: var(--clr-accent-text);
 background-color: var(--clr-accent);
 text-decoration: none;
-border-radius: 20px;
+border-radius: 30px;
 
 }
 
@@ -1137,10 +1137,9 @@ background-color: var(--clr-primary-bg);
  text-decoration: none;
  background-color: var(--clr-accent);
  color:var(--clr-accent-text);
- border-radius: 25px;
+ border-radius: 30px;
  
 }
-
 
 /* === Footer Styling === */
 
@@ -1160,41 +1159,44 @@ background-color: var(--clr-primary-bg);
 button {
   color: var(--clr-accent-text);
   cursor: pointer;
+ 
 }
 
 /* Style the form button anchor */
 button a{
-  text-decoration: none;
   color: var(--clr-accent-text);
+  text-decoration: none;
 }
 
 /* === Coming soon page === */
 
 /* Style the coming soon content */
 .coming-soon{
-  margin-top: 190px;
-}
-
-/* Style the coming soon heading */
-.coming-soon h1 {
-  transition: color 0.3s ease-in-out; 
+  margin-top: 250px;
 }
 
 .guide-desk{
   display: none;
 }
+
 a:hover{
-  color: var(--clr-hover);
-  text-decoration: underline;
+  color: var(--clr-hover);  
+}
+
+.about-desk{
+  display: none;
 }
 
 /* === Style Desktop Content  === */
 
 @media (min-width: 768px) {
 
+
+
 .guide-desk{
   display: block;
 }
+
 .guide{
   display: none;
 }
@@ -1202,15 +1204,15 @@ a:hover{
 /* === Style Guide section  === */
 
 #more-desk {display: none;}
-
 #more1-desk {display: none;}
 #more2-desk {display: none;}
 #more3-desk {display: none;}
 
  a:hover{
   color: var(--clr-hover);
-  text-decoration: underline;
+  
 }
+
       /* Show the desktop navbar */
     .header-navbar__desk {
       display: flex; 
@@ -1325,7 +1327,7 @@ position: absolute;
 bottom: 150px;
 left: 50%;
 transform: translateX(-50%);
-border-radius: 25px;
+border-radius: 30px;
 text-align: center;
 }
 
@@ -1451,13 +1453,21 @@ display: block;
 }
 
 /* Style the carousel about links*/
-.about-anchor__desk{
+.about-anchor__desk a{
 color: var(--clr-accent-text);
 background-color: var(--clr-accent);
 text-decoration: none;
-border-radius: 25px;
+border-radius: 30px;
+padding: 15px;
+margin-left: 440px;
 
 }
+
+.about-desk{
+  display: block;
+}
+
+
 
 .main-footer__desk{
    display: flex;
@@ -1498,18 +1508,18 @@ border-radius: 25px;
     background-color: var(--clr-primary-bg);
   }
   
-  .button button{
+   button {
     background-color: var(--clr-accent);
     border: 1px solid var(--clr-primary-bg);
     color: var(--clr-accent-text);
     cursor: pointer;
     border-radius:10px;
-  
+    
   }
-
   
-  .button button:hover {
-    background-color: var(--clr-active);
+  button:hover {
+    background-color: var(--clr-hover);
+    
   }
   
   
